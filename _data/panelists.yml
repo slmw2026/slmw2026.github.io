@@ -1,0 +1,14 @@
+- num_row: 1
+  speakers:
+    - title: Dr.
+      name: Nazneen Rajani
+      affiliation: Huggingface
+      photo: Nazneen_Rajan.jpg
+    - title: Dr.
+      name: Minjia Zhang
+      affiliation: Microsoft / Deepspeed
+      photo: Minjia_Zhang.png
+    - title: Dr.
+      name: Tim Dettmers
+      affiliation: University of Washington
+      photo: Tim.png

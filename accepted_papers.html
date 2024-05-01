@@ -1,0 +1,169 @@
+---
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
+layout: home
+---
+{% assign rows = site.data.accepted_papers %}
+<script>
+$("#pop").on("click", function() {
+   $('#imagepreview').attr('src', $('#imageresource').attr('src')); // here asign the image to the modal when the user click the enlarge link
+   $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+$("body").on("keyup", function(event){
+	console.log(event);
+});
+function display_poster(paper_id){
+	var modal = document.getElementById("myModal");
+	var modalImg = document.getElementById("img01");
+	modal.style.display = "block";
+	modalImg.src = "/images/posters/"+paper_id+".png";
+}
+function close_modal() { 
+	var modal = document.getElementById("myModal");
+	modal.style.display = "none";
+}
+function keyup_modal(e){
+	console.log(e.key);
+	if(e.key=="Escape"){
+		var modal = document.getElementById("myModal");
+		modal.style.display = "none";
+	}
+}
+</script>
+<style>
+.img2zoom:hover{
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+.img2zoom:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.our-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.our-modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height:90%;
+  max-width: 800px;
+}
+
+
+/* Add Animation */
+.our-modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.our-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.our-close:hover,
+.our-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .our-modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+<div id="myModal" class="our-modal" onkeyup="keyup_modal(event)">
+  <span class="our-close" onclick="close_modal()">&times;</span>
+  <img class="our-modal-content" id="img01">
+</div>
+
+{% for row in rows %}
+<div class="modal fade" id="paper_{{row.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<b>Title:</b> {{ row.title }}
+				<br>
+				<b>Authors:</b><p class="par_panel_perso">{{ row.authors }}</p>
+				<b>Abstract:</b><p class="par_panel_perso">{{ row.abstract }}</p>
+			</div>
+			<div class="modal-footer">
+				<a href="/papers/paper_{{row.id}}.pdf" download class="btn btn-primary active" aria-current="page">Paper</a>
+			        {% if row.has_supp %}
+			          <a href="/papers/paper_{{row.id}}_supp.pdf" download class="btn btn-primary active" aria-current="page">Supplementary Material</a>
+			        {% else %}
+				  <button type="button" class="btn btn-secondary" disabled>Supplementary Material</button>
+			        {% endif %}
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
+
+<h2>Accepted papers</h2>
+<div class="container">
+	<div class="row">
+	{% for row in rows %}
+	<div class="col-lg-3 mb-3 d-flex align-items-stretch">
+		<div class="card">
+			<img class="img2zoom" src="/images/posters/{{row.id}}.png" class="card-img-top" alt="poster" style="width:auto; height:13vw;" onclick="display_poster({{row.id}})">
+			<!--<iframe id="fred" style="border:1px solid #666CCC" title="PDF in an i-Frame" src="https://neurips2023-enlsp.github.io/papers/paper_{{row.id}}.pdf" frameborder="1" scrolling="auto"></iframe>-->
+			<div class="card-body">
+				<h5 class="card-title">{{ row.title }}</h5>
+			</div>
+			<div class="card-footer">
+				<center>
+					<button data-bs-toggle="modal" data-bs-target="#paper_{{row.id}}" class="btn btn-info" style="color:white;"><i class="bi bi-info-circle" style="font-size: 1.1rem;"></i> &nbsp; Read More</button><br><br>
+					<a href="/papers/paper_{{row.id}}.pdf" download class="btn btn-primary active" aria-current="page">Paper</a> &nbsp; 
+				        {% if row.has_supp %}
+				          <a href="/papers/paper_{{row.id}}_supp.pdf" download class="btn btn-primary active" aria-current="page">Appendix</a>
+				        {% else %}
+					  <button type="button" class="btn btn-secondary" disabled>Appendix</button>
+				        {% endif %}
+				</center>
+		  	</div>
+		</div>
+	</div>
+	{% endfor %}
+	</div>
+</div>
