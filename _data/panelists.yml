@@ -1,14 +1,14 @@
 - num_row: 1
   speakers:
     - title: Dr.
-      name: Nazneen Rajani
-      affiliation: Huggingface
-      photo: Nazneen_Rajan.jpg
+      name: Marjan Ghazvini Nejad
+      affiliation: Meta
+      photo: MarjanGhazvininejad.jpg
     - title: Dr.
-      name: Minjia Zhang
-      affiliation: Microsoft / Deepspeed
-      photo: Minjia_Zhang.png
+      name: Lu Hou
+      affiliation: Huawei
+      photo: luhou.jpg
     - title: Dr.
-      name: Tim Dettmers
-      affiliation: University of Washington
-      photo: Tim.png
+      name: Joel Hestness
+      affiliation: Cerebras
+      photo: joelhestness.jpg

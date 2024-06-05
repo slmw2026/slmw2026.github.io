@@ -7,9 +7,9 @@
 #
 layout: home
 ---
-<img src="/images/banner6.png" style="pointer-events: none; user-select: none;">
+<img src="/images/banner2024.png" style="pointer-events: none; user-select: none;">
 <p>
-The third version of the Efficient Natural Language and Speech Processing (ENLSP-III) workshop will focus on the future of large language models and their emerging applications on different domains such as natural language, speech processing, and biological sequences; and the target is on how to make them more efficient in terms of <b>Data</b>, <b>Model</b>, <b>Training</b>, and <b>Inference</b> for real-world applications as well as academic research.  The workshop program offers an interactive platform for gathering different experts and talents from academia and industry through invited talks, panel discussion, paper submissions, reviews, interactive posters, oral presentations and a mentorship program.
+The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on the future of large language models and their emerging applications on different domains such as natural language, speech processing, and biological sequences; and the target is on how to make them more efficient in terms of <b>Data</b>, <b>Model</b>, <b>Training</b>, and <b>Inference</b> for real-world applications as well as academic research.  The workshop program offers an interactive platform for gathering different experts and talents from academia and industry through invited talks, panel discussion, paper submissions, reviews, interactive posters, oral presentations and a mentorship program.
 This will be a unique opportunity to discuss and share challenging problems, build connections,  exchange ideas and brainstorm solutions, and foster future collaborations. The topics of this workshop can be of interest for people working on general machine learning, deep learning, optimization, theory and NLP & Speech applications. 
 </p>
 
@@ -89,10 +89,10 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <h2 class="blackpar_title">Important Dates:</h2>
 <p>
 <ul>
-	<li>Submission Deadline: October 2, 2023 <b>AOE</b> </li>
-	<li>Acceptance Notification: October 27, 2023 <b>AOE</b> </li>
-	<li>Camera-Ready Submission: November 3, 2023 <b>AOE</b> </li>
-	<li>Workshop Date: <b>December 16, 2023 </b></li>
+	<li>Submission Deadline: October 2, 2024 <b>AOE</b> </li>
+	<li>Acceptance Notification: October 27, 2024 <b>AOE</b> </li>
+	<li>Camera-Ready Submission: November 3, 2024 <b>AOE</b> </li>
+	<li>Workshop Date: <b>December 16, 2024 </b></li>
 </ul>
 </p>
 
