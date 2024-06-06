@@ -139,6 +139,19 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 				<i class="bi bi-linkedin" style="font-size: 2rem;"></i>
 			</a>
 		</h6>
+		<h6>
+			<b>David Alfonso-Hermelo</b>
+			<br>
+			Huawei Noah's Ark Lab
+			<br>
+			<a href="https://scholar.google.ca/citations?user=g6GccGAAAAAJ&hl=en&oi=ao">
+				<i class="da da-mortarboard-fill" style="font-size: 2rem;"></i>
+			</a>
+			&nbsp;
+			<a href="https://www.linkedin.com/in/david-alfonso-hermelo-6646a1b1/">
+				<i class="bi bi-linkedin" style="font-size: 2rem;"></i>
+			</a>
+		</h6>
 		</center>
 	  </div>
 	</div>
@@ -179,13 +192,18 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 			<img src="/images/netmind_logo.png" width="400px">
 		</center>
 	</div>
+	<div class="col">
+		<center>
+			<img src="/images/shanghai_ai_lab1.png" width="400px">
+		</center>
+	</div>
 </div>
 <br><br>
 <h2 class="blackpar_title">Gold Sponsor</h2>
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/Apple-Logo.jpg" width="200px">
+			<img src="/images/Logo-Sanofi.png" width="200px">
 		</center>
 	</div>
 </div>
