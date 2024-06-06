@@ -1,0 +1,60 @@
+{% assign rows = site.data.volunteers %}
+{% for row in rows %}
+	{% assign c = 1 %}
+	<div class="row_perso">
+	{% assign mod = row.volunteers.size | modulo:2 == 0 %}
+	{% if mod == 0 %}
+		{% for volunteer in row.volunteers %}
+			<div class="card_perso column_perso">
+			  <img src="/images/{{ volunteer.photo }}" alt="{{ volunteer.name }}" class="img_card_perso">
+			  <div class="container_perso" >
+				<center>
+				<h6>
+					<b>{{ volunteer.name }}</b>
+					<br>
+					{{ volunteer.affiliation }}
+				</h6>
+				<br>
+				{% if volunteer.scholar_link %}
+					<a href="{{ volunteer.scholar_link }}"><i class="bi bi-mortarboard-fill" style="font-size: 2rem;"></i></a>
+				{% endif %}
+				{% if volunteer.scholar_link and volunteer.linkedin_link %}
+					&nbsp;
+				{% endif %}
+				{% if volunteer.linkedin_link %}
+					<a href="{{ volunteer.linkedin_link }}"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a>
+				{% endif %}
+				</center>
+			  </div>
+			</div>
+		{% endfor %}
+	{% else %}
+		{% for volunteer in row.volunteers %}
+			{% if c == 1 %}
+			{% assign style_val = "style='margin-left:13%;'" %}
+			{% else %}
+			{% assign style_val = '' %}
+			{% endif %}
+			<div class="card_perso column_perso" {{ style_val }}>
+			  <img src="/images/{{ volunteer.photo }}" alt="{{ volunteer.name }}" class="img_card_perso">
+			  <div class="container_perso" >
+				<center>
+				<h6>
+					<b>{{ volunteer.name }}</b>
+					<br>
+					{{ volunteer.affiliation }}
+				</h6>
+				<br>
+				{% if volunteer.scholar_link %}
+					<a href="{{ volunteer.scholar_link }}"><i class="bi bi-mortarboard-fill" style="font-size: 2rem;"></i></a>
+				{% endif %}
+				&nbsp;
+				<a href="{{ volunteer.linkedin_link }}"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></a>
+				</center>
+			  </div>
+			</div>
+			{% assign c = 2 %}
+		{% endfor %}
+	{% endif %}
+	</div>
+{% endfor %}

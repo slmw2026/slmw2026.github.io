@@ -121,7 +121,10 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </p>
 
 <h2 class="blackpar_title" id="Organizers">Volunteers</h2>
-<div class="row_perso">
+<p>
+{% include volunteers.html %}
+</p>
+<!-- <div class="row_perso">
 	<div class="card_perso column_perso justify-content-center" id="volunteer_card">
 	  <img src="/images/khalil_bibi.png" alt="Khalil Bibi" class="img_card_perso">
 	  <div class="container_perso" >
@@ -162,7 +165,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 		</center>
 	  </div>
 	</div>
-</div>
+</div> -->
 
 
 <br><br>
