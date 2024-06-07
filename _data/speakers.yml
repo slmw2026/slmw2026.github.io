@@ -4,10 +4,10 @@
       title: Prof.
       affiliation: Princeton
       photo: danqi_2019.jpg
-    - name: Maciej Besta
+    - name: Christopher Re
       title: Prof.
-      affiliation: ETH Zurich
-      photo: Maciej-Besta.png
+      affiliation: Stanford
+      photo: christopher_re.jpg
     - name: Weizhu Chen
       title: Dr.
       affiliation: Microsoft
@@ -26,11 +26,7 @@
       title: Dr.
       affiliation: Apple
       photo: navdeep-jaitly.jpg
-    - name: Christopher Re
+    - name: Maciej Besta
       title: Prof.
-      affiliation: Stanford
-      photo: christopher_re.jpg
-    - name: Di Niu
-      title: Prof.
-      affiliation: University of Alberta
-      photo: dniu.jpg
+      affiliation: ETH Zurich
+      photo: Maciej-Besta.png

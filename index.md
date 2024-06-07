@@ -177,7 +177,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </p>
 <br><br>
 
-<h2 class="blackpar_title">Diamond Sponsors</h2>
+<!-- <h2 class="blackpar_title">Diamond Sponsors</h2> -->
 <!-- <center>
 	<img src="/images/logos.png">	
 	<img src="/images/BASF_logo.png">	
@@ -190,30 +190,35 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	</div>
 	<div class="col">
 		<center>
-			<img src="/images/BASF_logo.png" width="400px">
+			<img src="/images/BASF_logo.png" width="250px">
+		</center>
+	</div>	
+	<div class="col">
+		<center>
+			<img src="/images/netmind_logo.png" width="500px">
 		</center>
 	</div>
 </div>
 <br><br>
-<h2 class="blackpar_title">Platinum Sponsor</h2>
-<div class="row">
+<!-- <h2 class="blackpar_title">Platinum Sponsor</h2> -->
+<!-- <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/netmind_logo.png" width="400px">
-		</center>
-	</div>
-	<div class="col">
-		<center>
-			<img src="/images/shanghai_ai_lab1.png" width="400px">
+			<img src="/images/netmind_logo.png" width="450px">
 		</center>
 	</div>
 </div>
-<br><br>
-<h2 class="blackpar_title">Gold Sponsor</h2>
+<br><br> -->
+<!-- <h2 class="blackpar_title">Gold Sponsor</h2> -->
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/Logo-Sanofi.png" width="200px">
+			<img src="/images/shanghai_ai_lab1.png" width="250px">
+		</center>
+	</div>
+	<div class="col">
+		<center>
+			<img src="/images/Logo-Sanofi.png" width="220px">
 		</center>
 	</div>
 </div>
