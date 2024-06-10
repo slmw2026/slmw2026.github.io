@@ -75,17 +75,17 @@ To encourage engagement from the NeurIPS community, we present several active re
 
 <h2 class="blackpar_title">Submission Instructions</h2>
 <p>
-You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be longer than 4 pages, strictly following the NeurIPS template style. 
-<br /><br />
-Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission. Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Award to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Also, we will give one outstanding paper certification for our special track of protein language models. Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website.
+You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be longer than 6 pages, strictly following the NeurIPS template style. 
+<br />
+Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission. Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Awards to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website.
 </p>
 
 <h2 class="blackpar_title">Important Dates:</h2>
 <p>
 <ul>
-	<li>Submission Deadline: August 30, 2024 <b>AOE</b> </li>
-	<li>Acceptance Notification: September 29, 2024 <b>AOE</b> </li>
-	<li>Camera-Ready Submission: October 11, 2024 <b>AOE</b> </li>
+	<li>Submission Deadline: <b>August 30, 2024 Anywhere on Earth (AOE)</b> </li>
+	<li>Acceptance Notification: <b>September 29, 2024 AOE</b> </li>
+	<li>Camera-Ready Submission: <b>October 11, 2024 AOE</b> </li>
 	<li>Workshop Date: <b>TBD </b></li>
 </ul>
 </p>
@@ -103,7 +103,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </p>
 
 <!-- Schedule -->
-<h2 class="blackpar_title" id="schedule">Schedule</h2>
+<h2 class="blackpar_title" id="schedule">Tentative Schedule</h2>
 <p>
 {% include schedule.html %}
 </p>
