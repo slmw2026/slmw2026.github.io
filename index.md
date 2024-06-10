@@ -162,7 +162,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </div> -->
 
 
-<br><br>
+<br> 
 
 <!-- Technical Committee -->
 <h2 class="blackpar_title" id="technical_committee">Confirmed Technical Committee</h2>
@@ -195,7 +195,18 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 		</center>
 	</div>
 </div>
-<br><br>
+<br>
+
+<div class="row">
+	<div class="col">
+		<center>
+			<img src="/images/BASF_logo.png" width="250px">
+		</center>
+	</div>	
+</div>
+
+<br>
+
 <!-- <h2 class="blackpar_title">Platinum Sponsor</h2> -->
 <!-- <div class="row">
 	<div class="col">
@@ -214,7 +225,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	</div>
 	<div class="col">
 		<center>
-			<img src="/images/Logo-Sanofi.png" width="180px">
+			<img src="/images/Logo-Sanofi.png" width="160px">
 		</center>
 	</div>
 </div>
