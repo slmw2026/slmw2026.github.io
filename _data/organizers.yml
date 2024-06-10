@@ -8,28 +8,25 @@
     - name: Peyman Passban
       affiliation: BenchSci
       photo: peyman_passban.jpg
+      scholar_link: https://scholar.google.ca/citations?user=wRaQX-EAAAAJ&hl=en&oi=ao
       linkedin_link: https://www.linkedin.com/in/passban/?originalSubdomain=ca
     - name: Yue Dong
       affiliation: University of California
       photo: Yue_Dong.jpg
       scholar_link: https://scholar.google.ca/citations?user=WYkn4loAAAAJ
       linkedin_link: https://www.linkedin.com/in/yuedongcs/
+- num_row: 1
+  organizers:
     - name: Yu Cheng
       affiliation: Microsoft
       photo: yu_cheng.jfif
       scholar_link: https://scholar.google.com/citations?user=ORPxbV4AAAAJ&hl=en
       linkedin_link: https://www.linkedin.com/in/chengyu05/
-- num_row: 1
-  organizers:
-    - name: Lili Mou
-      affiliation: University of Alberta
-      photo: lili_mou.jpg
-      scholar_link: https://scholar.google.com/citations?user=32UrMrQAAAAJ&hl=en 
-    - name: Qun Liu
+    - name: Vahid Partovi Nia
       affiliation: Huawei Noah's Ark Lab
-      photo: qun_liu.png
-      scholar_link: https://scholar.google.com.sg/citations?user=2HhiGzcAAAAJ&hl=en
-      linkedin_link: https://www.linkedin.com/in/qunliu/
+      photo: vahid_partovi.jpg
+      scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
+      linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
     - name: Boxing Chen
       affiliation: Huawei Noah's Ark Lab
       photo: boxing.jpg

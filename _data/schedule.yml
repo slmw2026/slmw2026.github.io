@@ -1,156 +1,164 @@
-- Title: Breakfast 
-  Time: 8:15M - 8:20AM
-  Whole_line: true
-
+# - Title: Breakfast 
+#   Time: 8:10AM - 8:20AM
+#   Whole_line: true
+# 
 - Title: Opening Speech
-  Time: 8:15AM - 8:20AM
+  Time: 8:10AM - 8:15AM
   Whole_line: true  
 
-- Title: (<b>KeyNote Talk</b>) Deploying efficient translation at every level of the stack 
-  Time: 8:20AM - 8:45AM
-  Presenter: Kenneth Heafield
+- Title: (<b>KeyNote Talk</b>) Title TBD 
+  Time: 8:15AM - 8:45AM
+  Presenter: Prof. Maciej Besta
   Is_paper: false
   Whole_line: false
-  Bio: Kenneth Heafield is the founder of Efficient Translation Limited and left the University of Edinburgh last week, where he was an Associate Professor.  He trained a large language model on a trillion tokens in 2013 before it was cool.  Then he ran EU projects ParaCrawl to gather data from the web, Bergamot to make fast translation for browsers, and HPLT to make language models large again.
-  Abstract: Practical efficient neural networks combine several optimizations ranging from assembly code to network structure. Yet most papers about optimization start with an unoptimized baseline, omitting comparison even with simple methods like using a smaller network. Shared tasks force a different mentality, where each idea has to prove its worth against a highly optimized baseline. This informs our work on fast and small machine translation with latency under 20 ms for an average sentence. The models are now deployed in Firefox.
+  Bio: <b> Maciej Besta</b> leads research on efficient computations for large language models and graphs at ETH Zurich, with a background in high-performance computing and a passion for irregular data structures.
+  Abstract: Abstract TBD
 
-- Title: (<b>KeyNote Talk</b>) Simple and efficient self-training approaches for speech recognition 
-  Time: 8:45AM - 9:30AM
-  Presenter: Samy Bengio <br> Tatiana Likhomanenko
+- Title: (<b>KeyNote Talk</b>) Title TBD
+  Time: 8:45AM - 9:15AM
+  Presenter: Dr. Peter Clark
   Is_paper: false
   Whole_line: false
-  Bio: <b>Samy Bengio</b> is a senior director of machine learning research at Apple since 2021. Before that, he was a distinguished scientist at Google Research since 2007 where he was heading part of the Google Brain team, and at IDIAP in the early 2000s where he co-wrote the well-known open-source Torch machine learning library. His research interests span many areas of machine learning such as deep architectures, representation learning, vision and language processing and more recently, reasoning. He is action editor of the Journal of Machine Learning Research and on the board of the NeurIPS foundation. He was on the editorial board of the Machine Learning Journal, has been program chair (2017) and general chair (2018) of NeurIPS, program chair of ICLR (2015, 2016), general chair of BayLearn (2012-2015), MLMI (2004-2006), as well as NNSP (2002), and on the program committee of several international conferences such as NeurIPS, ICML, ICLR, ECML and IJCAI. More details can be found at http://bengio.abracadoudou.com. <br> <br> <b>Tatiana</b> is a research scientist at the machine learning research team at Apple. Prior to Apple, she was an AI resident and later a postdoctoral research scientist in the speech recognition team, Facebook AI Research. Back in the day, Tatiana received a Ph.D. in mixed type partial differential equations from Moscow State University. For 4 years she worked on applications of machine learning to high energy physics as a researcher in the joint lab at Yandex and CERN, and later at the startup NTechLab, a leader in face recognition. The main focus of her recent research is transformers training and generalization, efficient speech recognition with less supervision and private federated learning. 
-  Abstract: Self-training, or pseudo-labeling (PL), algorithms have recently emerged as a powerful strategy for semi-supervised learning in speech recognition in the era of transformers and large scale data. In this talk, we will walk you from the first successful pseudo-labeling algorithms based on teacher-student training, that alternates between training a model and generating pseudo-labels (PLs) with it, to continuous pseudo-labeling algorithms, where PLs are generated in end-to-end manner as training proceeds, improving training speed and the accuracy of the final model. We will discuss different aspects of PL algorithms to make it simple and resource efficient and overall what are the key components of such huge success :what exactly the model learns, how training dynamics changes, how speaker diversity and amount of hours affect training, and how training depends on the language models. Finally, we will show how pseudo-labeling can be used to train a model on a source language with labeled data and to fine-tune it on a target language with only unlabeled data.
+  Bio: <b>Peter Clark</b> is a leading AI researcher at the Allen Institute for AI, he currently directs a project to develop AI agents capable of scientific discovery.
+  Abstract: Abstract TBD
   
 
-- Title: (<b>Spotlight 1</b>) Query-Dependent Prompt Evaluation and Optimization with Offline Inverse RL
-  Time: 9:30AM - 9:36AM
-  Presenter: Hao Sun
+- Title: Accepted Oral Presentations (4)
+  Time: 9:15AM - 10:00AM
+  Presenter: TBD
   Is_paper: true
   Whole_line: false
-  Authors: Hao Sun · Alihan Hüyük · Mihaela van der Schaar
-  Abstract: In this study, we aim to enhance the arithmetic reasoning ability of Large Language Models (LLMs) through zero-shot prompt optimization. We identify a previously overlooked objective of query dependency in such optimization and elucidate two ensuing challenges that impede the successful and economical design of prompt optimization techniques. We introduce Prompt-OIRL, which harnesses offline inverse reinforcement learning to draw insights from offline prompting demonstration data. Such data exists as by-products when diverse prompts are benchmarked on open-accessible datasets. With Prompt-OIRL, the query-dependent prompt optimization objective is achieved by first learning an offline reward model. This model can evaluate any query-prompt pairs without accessing LLMs. Subsequently, a best-of-N strategy is deployed to recommend the optimal prompt. Our experimental evaluations across various LLM scales and arithmetic reasoning datasets underscore both the efficacy and economic viability of the proposed approach.
-- Title: (<b>Spotlight 2</b>) MatFormer:Nested Transformer for Elastic Inference
-  Time: 9:36AM - 9:42AM
-  Presenter: Fnu Devvrit
-  Is_paper: true
-  Whole_line: false
-  Authors: Fnu Devvrit · Sneha Kudugunta · Aditya Kusupati · Tim Dettmers · Kaifeng Chen · Inderjit Dhillon · Yulia Tsvetkov · Hanna Hajishirzi · Sham Kakade · Ali Farhadi · Prateek Jain
-  Abstract: Transformer models are deployed in a wide range of settings, from multi-accelerator clusters to standalone mobile phones. The diverse inference constraints in these scenarios necessitate practitioners to train foundation models such as PaLM 2 & Llama as a series of models of varying sizes. Due to significant training costs, only a select few model sizes are trained and supported, limiting more fine-grained control over relevant tradeoffs (latency, cost, accuracy). We introduce MatFormer, a nested Transformer architecture designed to offer elasticity in a variety of deployment constraints. Each Feed Forward Network (FFN) block of a MatFormer model is jointly optimized with a few nested smaller FFN blocks. This allows for the Mix'n'Match of model granularities across layers -- i.e., a trained universal MatFormer model enables extraction of hundreds of accurate smaller models which were never explicitly optimized. We empirically demonstrate MatFormer's effectiveness for decoder only language modeling and find that a 2.6B decoder-only MatFormer language model (MatLM) allows us to extract smaller models spanning from 1.5B to 2.6B, each exhibiting comparable validation loss and one-shot downstream evaluations to their independently trained counterparts. Finally, we showcase that speculative decoding with the accurate and consistent submodels extracted from MatFormer can further reduce inference latency.
-- Title: (<b>Spotlight 3</b>) Decoding Data Quality via Synthetic Corruptions:Embedding-guided Pruning of Code Data 
-  Time: 9:42AM - 9:48AM
-  Presenter: Yu Yang
-  Is_paper: true
-  Whole_line: false
-  Authors: Yu Yang · Aaditya Singh · Mostafa Elhoushi · Anas Mahmoud · Kushal Tirumala · Fabian Gloeckle · Baptiste Roziere · Carole-Jean Wu · Ari Morcos · Newsha Ardalani
-  Abstract: TBDCode datasets, often collected from diverse and uncontrolled sources such as GitHub, potentially suffer from quality issues, thereby affecting the performance and training efficiency of Large Language Models (LLMs) optimized for code generation. Previous studies demonstrated the benefit of using embedding spaces for data pruning, but they mainly focused on duplicate removal or increasing variety, and in other modalities, such as images. Our work focuses on using embeddings to identify and remove low-quality'' code data. First, we explore features oflow-quality'' code in embedding space, through the use of synthetic corruptions. Armed with this knowledge, we devise novel pruning metrics that operate in embedding space to identify and remove low-quality entries in the Stack dataset. We demonstrate the benefits of this synthetic corruption informed pruning (SCIP) approach on the well-established HumanEval and MBPP benchmarks, outperforming existing embedding-based methods. Importantly, we achieve up to a 3% performance improvement over no pruning, thereby showing the promise of insights from synthetic corruptions for data pruning.
-- Title: (<b>Spotlight 4</b>) FlashFFTConv:Efficient Convolutions for Long Sequences with Tensor Cores 
-  Time: 9:48AM - 9:54AM
-  Presenter: Dan Fu
-  Is_paper: true
-  Whole_line: false
-  Authors: Dan Fu · Hermann Kumbong · Eric Nguyen · Christopher Ré
-  Abstract: Convolution models with long filters have demonstrated state-of-the-art reasoning abilities in many long-sequence tasks but lag behind the most optimized Transformers in wall-clock time.A major bottleneck is the Fast Fourier Transform (FFT)---which allows long convolutions to run in $O(N \log N)$ time in sequence length $N$ but has poor hardware utilization.In this paper, we study how to optimize the FFT convolution.We find two key bottlenecks:the FFT does not effectively use specialized matrix multiply units, and it incurs expensive I/O between layers of the memory hierarchy.In response, we propose FlashFFTConv.FlashFFTConv uses a matrix decomposition that computes the FFT using matrix multiply units and enables kernel fusion for long sequences, reducing I/O.FlashFFTConv speeds up exact FFT convolutions by up to 6.54$\times$ over PyTorch and achieves up to 4.4$\times$ speedup end-to-end.Given the same compute budget, FlashFFTConv allows Hyena-GPT-s to achieve 2.3 points better perplexity and M2-BERT-base to achieve 3.3 points higher GLUE score---matching models with twice the parameter count.
-- Title: (<b>Spotlight 5</b>) Ensemble of low-rank adapters for large language model fine-tuning
-  Time: 9:54AM - 10:00AM
-  Presenter: Xi Wang
-  Is_paper: true
-  Whole_line: false
-  Authors: Xi Wang · Laurence Aitchison · Maja Rudolph
-  Abstract: Finetuned LLMs often exhibit poor uncertainty quantification, manifesting as overconfidence, poor calibration, and unreliable prediction results on test data or out-of-distribution samples. One approach commonly used in vision for alleviating this issue is a deep ensemble, which constructs an ensemble by training the same model multiple times using different random initializations. However, there is a huge challenge to ensembling LLMs:the most effective LLMs are very, very large. Keeping a single LLM in memory is already challenging enough:keeping an ensemble of e.g. 5 LLMs in memory is impossible in many settings. To address these issues, we propose an ensemble approach using Low-Rank Adapters (LoRA), a parameter-efficient fine-tuning technique. Critically, these low-rank adapters represent a very small number of parameters, orders of magnitude less than the underlying pre-trained model. Thus, it is possible to construct large ensembles of LoRA adapters with almost the same computational overhead as using the original model. We find that LoRA ensembles, applied on its own or on top of pre-existing regularization techniques, gives consistent improvements in predictive accuracy and uncertainty quantification.
+  Authors: TBD
+  Abstract: Abstract TBD
+# - Title: (<b>Spotlight 2</b>) Title TBD
+#   Time: 9:36AM - 9:42AM
+#   Presenter: Fnu Devvrit
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Fnu Devvrit · Sneha Kudugunta · Aditya Kusupati · Tim Dettmers · Kaifeng Chen · Inderjit Dhillon · Yulia Tsvetkov · Hanna Hajishirzi · Sham Kakade · Ali Farhadi · Prateek Jain
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 3</b>) Title TBD
+#   Time: 9:42AM - 9:48AM
+#   Presenter: Yu Yang
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Yu Yang · Aaditya Singh · Mostafa Elhoushi · Anas Mahmoud · Kushal Tirumala · Fabian Gloeckle · Baptiste Roziere · Carole-Jean Wu · Ari Morcos · Newsha Ardalani
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 4</b>) Title TBD
+#   Time: 9:48AM - 9:54AM
+#   Presenter: Dan Fu
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Dan Fu · Hermann Kumbong · Eric Nguyen · Christopher Ré
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 5</b>) Title TBD
+#   Time: 9:54AM - 10:00AM
+#   Presenter: Xi Wang
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Xi Wang · Laurence Aitchison · Maja Rudolph
+#   Abstract: Abstract TBD
 
 
 
-- Title: Morning Break and <b>Poster Setup</b>
+- Title: Morning Break
   Time: 10:00AM - 10:30AM
   Whole_line: true
 
 
-- Title: (<b>KeyNote Talk</b>) Branch-Train-Merge:Embarrassingly Parallel Training of Expert Language Models
+- Title: (<b>KeyNote Talk</b>) Title TBD
   Time: 10:30AM - 11:00AM
-  Presenter: Luke Zettelmoyer
+  Presenter: Prof. Christopher Re
   Is_paper: false
   Whole_line: false
-  Bio: Luke Zettlemoyer is a Professor in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, and a Research Director at Meta. His research focuses on empirical methods for natural language semantics, and involves designing machine learning algorithms, introducing new tasks and datasets, and, most recently, studying how to best develop self-supervision signals for pre-training. His honors include being named an ACL Fellow as well as winning a PECASE award, an Allen Distinguished Investigator award, and multiple best paper awards. Luke received his PhD from MIT and was a postdoc at the University of Edinburgh.
-  Abstract: Existing language model (LM) training regimes entangle compute, data, and parameters, requiring expensive synchronous communication with massive supercomputers. This talk introduces a new algorithm called Branch-Train-Merge (BTM) that asynchronously trains LMs that are fundamentally modular. In BTM, components (or experts) of the LM are specialized to distinct domains in the training corpus, and experts are conditionally updated based on the domain of the incoming document. We show how BTM enables LMs that are rapidly customizable (with the ability to mix, add, or remove experts after training), embarrassingly parallel (requiring no communication between experts), and sparse (needing only a few experts active at a time for inference). Key to our proposal is exploring what constitutes the domains to which experts specialize, as well as reflecting on the data sources used to train LMs. Our new techniques chart a path towards collaborative and iterative LM development, where anyone can contribute and maintain experts at modest computational cost.
-- Title: (<b>KeyNote Talk</b>)  Knowledge Consolidation and Utilization (In)Ability of Large Language Models
+  Bio: <b>Christopher Re</b> is a Stanford AI Lab associate professor, he leads research on foundational AI with a focus on weak supervision and the interplay between AI and systems design.
+  Abstract: Abstract TBD
+- Title: (<b>KeyNote Talk</b>) Title TBD
   Time: 11:00AM - 11:30AM
-  Presenter: Sarath Chandar
+  Presenter: Dr. Navdeep Jaitly
   Is_paper: false
   Whole_line: false
-  Bio: Sarath Chandar is an Assistant Professor at Polytechnique Montreal where he leads the Chandar Research Lab. He is also a core faculty member at Mila, the Quebec AI Institute. Sarath holds a Canada CIFAR AI Chair and the Canada Research Chair in Lifelong Machine Learning. His research interests include lifelong learning, deep learning, optimization, reinforcement learning, and natural language processing. To promote research in lifelong learning, Sarath created the Conference on Lifelong Learning Agents (CoLLAs) in 2022 and served as a program chair for 2022 and 2023. He received his PhD from the University of Montreal and MS by research from the Indian Institute of Technology Madras. For more details, please visit http://sarathchandar.in/.
-  Abstract: Large language models (LLMs) are becoming increasingly used in various downstream applications not only in natural language processing but also in various other domains including computer vision, reinforcement learning, and scientific discovery to name a few. This talk will focus on some of the fundamental limitations of using LLMs as task solvers. In the first half of the talk, I will show that LLMs cannot consolidate the knowledge that is spread across training documents. In the second half, I will show that while LLMs can acquire simple facts from the training data, they cannot utilize all the acquired facts while solving a new task and this utilization gap gets worse when the task distribution is very different from the training data distribution. I will also show that scaling will not solve both of these issues and argue for better pre-training procedures.
+  Bio: <b>Navdeep Jaitly</b> worked under Geoffrey Hinton at the University of Toronto, his interest lie in pushing the frontier of Deep Learning research deep learning for Apple, following work on Google's Brain team.
+  Abstract: Abstract TBD
+- Title: (<b>KeyNote Talk</b>) Title TBD
+  Time: 11:30AM - 12:00AM
+  Presenter: Prof. Danqi Chen
+  Is_paper: false
+  Whole_line: false
+  Bio: <b>Danqi Chen</b> co-leads Princeton's NLP Group, researches large language models, and emphasizes practicality and accessibility in AI development.
+  Abstract: Abstract TBD
   
 
-- Title: (<b>Spotlight 6</b>) LoDA:Low-Dimensional Adaptation of Large Language Models 
-  Time: 11:30AM - 11:36AM
-  Presenter: Jing Liu 
+- Title: Accepted Oral Presentations (3)
+  Time: 12:00PM - 12:30PM
+  Presenter: TBD
   Is_paper: true
   Whole_line: false
-  Authors: Jing Liu · Toshiaki Koike-Akino · Perry Wang · Matthew Brand · Ye Wang · Kieran Parsons
-  Abstract: Parameter-Efficient Fine-Tuning (PEFT) has recently garnered significant attention, due to the enormous size of Large Language Models (LLM). Among various PEFT methods, Low-Rank Adaptation (LoRA) demonstrates comparable performance to full fine-tuning, despite having significantly fewer trainable parameters. In this work, we first generalize LoRA from a low-rank linear adaptation/mapping to low-dimensional, non-linear adaptation/mapping, called Low-Dimensional Adaptation (LoDA). We further propose LoDA+, which further improves the expressiveness of the non-linear adaptation and still uses almost the same number of tunable parameters as LoRA. Both LoDA and LoDA+ include LoRA as a special case. To improve computational efficiency at inference, we further propose R-LoDA(+) and S-LoDA(+), replacing the pre-trained weight matrix by its low-rank or sparse approximation, which is frozen during fine-tuning. Empirical evaluations on Natural Language Generation tasks show that LoDA(+) and some variants outperform LoRA as well as other baselines. We will release a package that facilitates the integration of LoDA(+) and their variants with PyTorch models.
-- Title: (<b>Spotlight 7</b>) MultiPrompter:Cooperative Prompt Optimization with Multi-Agent Reinforcement Learning
-  Time: 11:36AM - 11:42AM
-  Presenter: Dong-Ki Kim
-  Is_paper: true
-  Whole_line: false
-  Authors: Dong-Ki Kim · Sungryull Sohn · Lajanugen Logeswaran · Dongsub Shim · Honglak Lee
-  Abstract: Recently, there has been an increasing interest in automated prompt optimization based on reinforcement learning (RL). This approach offers important advantages, such as generating interpretable prompts and being compatible with black-box foundation models. However, the substantial prompt space size poses challenges for RL-based methods, often leading to suboptimal policy convergence. This paper introduces MultiPrompter, a new framework that views prompt optimization as a cooperative game between prompters who take turns composing a prompt together. Our cooperative prompt optimization effectively reduces the problem size and helps prompters learn optimal prompts. We test our method on the text-to-image task and demonstrate its ability to generate higher-quality images than baselines.
-- Title: (<b>Spotlight 8</b>) LoftQ:LoRA-Fine-Tuning-Aware Quantization for Large Language Models
-  Time: 11:42AM - 11:48PM
-  Presenter: Yixiao Li
-  Is_paper: true
-  Whole_line: false
-  Authors: Yixiao Li · Yifan Yu · Chen Liang · Nikos Karampatziakis · Pengcheng He · Weizhu Chen · Tuo Zhao
-  Abstract: Quantization is an indispensable technique for serving Large Language Models(LLMs) and has recently found its way into LoRA fine-tuning (Dettmers et al.,2023). In this work we focus on the scenario where quantization and LoRA fine-tuning are applied together on a pre-trained model. In such cases it is commonto observe a consistent gap in the performance on downstream tasks between fullfine-tuning and quantization plus LoRA fine-tuning approach. In response, wepropose LoftQ (LoRA-Fine-Tuning-aware Quantization), a novel quantizationframework that simultaneously quantizes an LLM and finds a proper low-rankinitialization for LoRA fine-tuning. Such an initialization alleviates the discrep-ancy between the quantized and full-precision model and significantly improvesthe generalization in downstream tasks. We evaluate our method on natural lan-guage understanding, question answering, summarization, and natural languagegeneration tasks. Experiments show that our method is highly effective and out-performs existing quantization methods, especially in the challenging 2-bit and2/4-bit mixed precision regimes. We will release our code.
-- Title: (<b>Spotlight 9</b>) Improving Linear Attention via Softmax Mimicry 
-  Time: 11:48AM - 11:54PM
-  Presenter: Michael Zhang
-  Is_paper: true
-  Whole_line: false
-  Authors: Michael Zhang · Kush Bhatia · Hermann Kumbong · Christopher Ré
-  Abstract: Linear attentions are promising methods to improve Transformer efficiency. This improved efficiency is applicable to training linear Transformers from scratch, converting finetuned Transformers into linear versions that recover task-specific performance, and converting pretrained Transformers into linear versions for downstream transfer. However, linear attentions often lag behind softmax attention in performance. To address this gap, we identify two key empirical properties of softmax attention missing in linear attentions:low-entropy "spiky" weights and dot-product monotonicity. We thus introduce Hedgehog, a learnable linear attention trained to "mimic" softmax attention by minimizing cross-entropy between attention weights. Experiments show Hedgehog significantly closes the attention performance gap. Hedgehog closes 68.6% of the gap on WikiText-103 when training 125M-parameter linear Transformers from scratch, improving upon prior linear attentions by up to 6 perplexity points (PPL), and recovers >99% of GLUE points when converting finetuned BERT models, outperforming prior methods up to 8.7 points. By "linearizing" GPT-2, Hedgehog outperforms efficient Transformer alternatives, obtaining state-of-the-art 16.7 perplexity on WikiText-103.
-- Title: (<b>Spotlight 10</b>) PaSS:Parallel Speculative Sampling  
-  Time: 11:54AM - 12:00PM
-  Presenter: Giovanni Monea
-  Is_paper: true
-  Whole_line: false
-  Authors: Giovanni Monea · Armand Joulin · Edouard Grave
-  Abstract: Scaling the size of language models to tens of billions of parameters has led to impressive performance on a wide range of tasks. At generation, these models are used auto-regressively, requiring a forward pass for each generated token, and thus reading the full set of parameters from memory. This memory access forms the primary bottleneck for generation and it worsens as the model size increases. Moreover, executing a forward pass for multiple tokens in parallel often takes nearly the same time as it does for just one token. These two observations lead to the development of speculative sampling, where a second smaller model is used to draft a few tokens, that are then validated or rejected using a single forward pass of the large model. Unfortunately, this method requires two models that share the same tokenizer and thus limits its adoption. As an alternative, we propose to use parallel decoding as a way to draft multiple tokens from a single model with no computational cost, nor the need for a second model. Our approach only requires an additional input token that marks the words that will be generated simultaneously. We show promising performance (up to $30\%$ speed-up) while requiring only as few as $O(d_{emb})$ additional parameters.
+  Authors: TBD
+  Abstract: Abstract TBD
+# - Title: (<b>Spotlight 7</b>) Title TBD
+#   Time: 11:36AM - 11:42AM
+#   Presenter: Dong-Ki Kim
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Dong-Ki Kim · Sungryull Sohn · Lajanugen Logeswaran · Dongsub Shim · Honglak Lee
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 8</b>) Title TBD
+#   Time: 11:42AM - 11:48PM
+#   Presenter: Yixiao Li
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Yixiao Li · Yifan Yu · Chen Liang · Nikos Karampatziakis · Pengcheng He · Weizhu Chen · Tuo Zhao
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 9</b>) Title TBD
+#   Time: 11:48AM - 11:54PM
+#   Presenter: Michael Zhang
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Michael Zhang · Kush Bhatia · Hermann Kumbong · Christopher Ré
+#   Abstract: Abstract TBD
+# - Title: (<b>Spotlight 10</b>) Title TBD
+#   Time: 11:54AM - 12:00PM
+#   Presenter: Giovanni Monea
+#   Is_paper: true
+#   Whole_line: false
+#   Authors: Giovanni Monea · Armand Joulin · Edouard Grave
+#   Abstract: Abstract TBD
 
 - Title: Lunch Break
-  Time: 12:00PM - 1:00PM
+  Time: 12:30PM - 1:15PM
   Whole_line: true
+
  
-- Title: <b>Poster Session I </b> (Paper IDs:# 1-45)
-  Time: 1:00PM - 2:00PM
+- Title: <b>Poster Session I </b> & Free Discussion
+  Time: 1:15PM - 2:00PM
   Whole_line: true
-  
-- Title: (<b>KeyNote Talk</b>) LLMs for Protein Design:A Research Journey
+
+- Title: (<b>KeyNote Talk</b>) Title TBD
   Time: 2:00PM - 2:30PM
-  Presenter: Ali Madani
+  Presenter: Dr. Weizhu Chen
   Is_paper: false
   Whole_line: false
-  Bio: Ali Madani is the founder of Profluent Bio, an AI startup in protein design. Previously, he received his PhD from UC Berkeley and led machine learning research initiatives at Salesforce Research utilizing deep learning, language modeling, and computer vision. Most notably, Ali was the architect of the ProGen moonshot which demonstrated the first use of large language models for functional protein design.
-  Abstract: TBD  
+  Bio: <b>Weizhu Chen</b> leads a modeling team in Microsoft Gen AI, working on large-scale (OpenAI and Microsoft) model training.
+  Abstract: Abstract TBD
   
-- Title: (<b>KeyNote Talk</b>) End-to-End Speech Recognition:The Journey from Research to Production
-  Time: 2:30PM-3:00PM
-  Presenter: Tara Sainath
+- Title: (<b>KeyNote Talk</b>) Title TBD
+  Time: 2:30PM - 3:00PM
+  Presenter: Prof. Hananeh Hajishirzi
   Is_paper: false
   Whole_line: false
-  Bio: Tara Sainath received her S.B., M.Eng and PhD in Electrical Engineering and Computer Science (EECS) from MIT. After her PhD, she spent 5 years at the Speech and Language Algorithms group at IBM T.J. Watson Research Center, before joining Google Research. She has served as a Program Chair for ICLR in 2017 and 2018. Also, she has co-organized numerous special sessions and workshops, including Interspeech 2010, ICML 2013, Interspeech 2016, ICML 2017, Interspeech 2019, NeurIPS 2020. In addition, she has served as a member of the IEEE Speech and Language Processing Technical Committee (SLTC) as well as the Associate Editor for IEEE/ACM Transactions on Audio, Speech, and Language Processing. She is an IEEE and ISCA Fellow and the recipient of the 2021 IEEE SPS Industrial Innovation Award. She is currently a Principal Research Scientist at Google, working on applications of deep neural networks for automatic speech recognition.
-  Abstract: End-to-end (E2E) speech recognition has become a popular research paradigm in recent years, allowing the modular components of a conventional speech recognition system (acoustic model, pronunciation model, language model), to be replaced by one neural network. In this talk, we will discuss a multi-year research journey of E2E modeling for speech recognition at Google. This journey has resulted in E2E models that can surpass the performance of conventional models across many different quality and latency metrics, as well as the productionization of E2E models for Pixel 4, 5 and 6 phones. We will also touch upon future research efforts with E2E models, including multi-lingual speech recognition.
+  Bio: <b>Hananeh Hajishirzi</b>, a leading NLP expert focusing on large language models, explores how AI can reason and understand complex information from various sources.
+  Abstract: Abstract TBD
 
 
 
-- Title: Afternoon Break and <b>Poster Setup II</b>
-  Time: 03:00PM - 03:20PM
+- Title: Afternoon Break
+  Time: 03:00PM - 03:15PM
   Whole_line: true
 
 - Title: <b>Interactive Panel Discussion</b>
   Time: 3:20PM - 4:10PM
-  Presenter: <ul><li>Nazneen Rajani</li><li>Minjia Zhang</li><li>Tim Dettmers</li></ul>
+  Presenter: <ul><li>Dr. Marjan Ghazvini Nejad</li><li>Dr. Joel Hestness</li><li>Dr. Lu Hou</li></ul>
   Is_paper: false
   Whole_line: false
   
@@ -158,9 +166,9 @@
   Time: 4:10PM-4:15PM
   Whole_line: true  
   
-- Title: <b>Poster Session II</b> (Paper IDs:# 46-96)
-  Time: 4:15PM - 5:15PM
-  Whole_line: true
+# - Title: <b>Poster Session II</b> (Paper IDs:# 46-96)
+#   Time: 4:15PM - 5:15PM
+#   Whole_line: true
 
 
 
