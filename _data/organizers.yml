@@ -18,12 +18,12 @@
 - num_row: 1
   organizers:
     - name: Yu Cheng
-      affiliation: Microsoft
+      affiliation: Chinese University of Hong Kong
       photo: yu_cheng.jfif
       scholar_link: https://scholar.google.com/citations?user=ORPxbV4AAAAJ&hl=en
       linkedin_link: https://www.linkedin.com/in/chengyu05/
     - name: Vahid Partovi Nia
-      affiliation: Huawei Noah's Ark Lab
+      affiliation: Ecole Polytechnique \& Huawei 
       photo: vahid_partovi.jpg
       scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
       linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
