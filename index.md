@@ -9,8 +9,9 @@ layout: home
 ---
 <img src="/images/banner2024.png" style="pointer-events: none; user-select: none;">
 <p>
-The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on the future of large language models and their emerging applications on different domains such as natural language, speech processing, and biological sequences; and the target is on how to make them more efficient in terms of <b>Data</b>, <b>Model</b>, <b>Training</b>, and <b>Inference</b> for real-world applications as well as academic research.  The workshop program offers an interactive platform for gathering different experts and talents from academia and industry through invited talks, panel discussion, paper submissions, reviews, interactive posters, oral presentations and a mentorship program.
-This will be a unique opportunity to discuss and share challenging problems, build connections,  exchange ideas and brainstorm solutions, and foster future collaborations. The topics of this workshop can be of interest for people working on general machine learning, deep learning, optimization, theory and NLP & Speech applications. 
+The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on how to make large language and foundation models more efficient in terms of <b>Architecture</b>, <b>Training</b>, and <b>Inference</b> in their real-world applications. This year, following the trend of industry and academia, we put more emphasis on investigating new architectures to make future language and foundation models more efficient. Moreover, we highlight the importance of comprehensive evaluation and benchmarking new efficient models from different practical aspects. 
+The workshop program offers an interactive platform for gathering experts and talents from academia and industry through invited talks, panel discussion, paper submission, reviews, interactive poster sessions, oral presentations and a couple of mentorship sessions for new researchers.
+This will be a unique opportunity to discuss and share challenging problems, build connections,  exchange ideas and brainstorm, and foster future collaborations. The topics of this workshop can be of interest for people working on general machine learning, deep learning, hardware, optimization, theory and applications. 
 </p>
 
 
