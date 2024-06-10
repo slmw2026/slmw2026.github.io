@@ -24,59 +24,51 @@ While it is true that the computational power and GPU resources have played a si
 Building upon the framework of our previous three editions, this workshop remains dedicated to investigating solutions for enhancing the efficiency of pre-trained language and foundation models but with introducing some fresh and important new topics to the community and encouraging their contributions.  
 Just to highlight a few:  <b>(1)</b> Despite the ubiquitous usage of Transformers, they suffer from quadratic computational complexity which limits their efficiency especially for longer sequence lengths. Should we improve the efficiency of Transformers (e.g. in <a href="https://openreview.net/forum?id=4g02l2N2Nx">Hedgehog</a>, <a href="http://arxiv.org/abs/2312.06635">Gated Linear Attention</a>) or look for other architectures (e.g. <a href="https://arxiv.org/abs/2312.00752">Mamba</a>, <a href="http://arxiv.org/abs/2403.19887">Jamba</a>, <a href="http://arxiv.org/abs/2305.13048">RVKW</a>, <a href="http://arxiv.org/abs/2405.04517">xLSTM</a>,  and <a href="http://arxiv.org/abs/2111.00396">SSMs</a>)? <b>(2)</b> For accelerating training, we have seen the significant impact of designing hardware efficient implementations such as in <a href = "http://arxiv.org/abs/2205.14135">Flash Attention</a>. Should we focus more on these hardware-aware solutions or more on new/improved architectures? 
 <b>(3)</b> For efficient inference, there are solutions such as: Speculative Decoding <a href="http://arxiv.org/abs/2302.01318">[Link1]</a> <a href="http://arxiv.org/abs/2211.17192">[Link2]</a> where the performance is strongly model and task-dependent and the draft and target models should have the same vocabulary (tokenizer); improved KV-caching~\citep{zhang2023h2o} which has a limited speed-up; and many-in-one models such as <a href="http://arxiv.org/abs/2309.00255">SortedNet</a>, <a href="http://arxiv.org/abs/2310.07707">MatFormer</a>, and <a href="http://arxiv.org/abs/2404.16710">LayerSkip</a> but the performance of sub-models drops compared to their corresponding individual models. 
-<b>(4)</b> While there are many so-called efficient solutions in the literature, there is no fair, comprehensive and practical evaluation of these models and their comparison to each other. For example, we do not know the hallucination extent of the new architectures vs. the transformer model(e.g. in <a href="http://arxiv.org/abs/2402.01032">Link</a>).  
+<b>(4)</b> While there are many so-called efficient solutions in the literature, there is no fair, comprehensive and practical evaluation of these models and their comparison to each other. For example, we do not know the hallucination extent of the new architectures vs. the transformer model (e.g. in <a href="http://arxiv.org/abs/2402.01032">[Link]</a>).  
 </p>
 
 <!-- Call for Papers -->
 <h2 class="blackpar_title" id="call_for_papers">Call for Papers</h2>
 <p>
-It is of vital importance to invest on future of large foundation models by enhancing their efficiency in terms of data, modeling, training and inference from different perspectives highlighted in the workshop.  In this regard, we share some active research topics in this domain which might be of interest to the NeurIPS community to get their participation, ideas and contributions.  The scope of this workshop includes, but not limited to, the following topics:
+Investing in the future of language and foundation models requires a concrete effort to enhance their efficiency across multiple dimensions (including architecture, training, and inference) and having a comprehensive evaluation framework. 
+To encourage engagement from the NeurIPS community, we present several active research topics in this field that invite participation and contributions. The scope of this workshop includes, but not limited to, the following topics:
 <br><br>
-<b>Efficient Pre-Training</b> How can we reduce the cost of pre-training new models?
+<b>Efficient Architectures</b> Proposing alternative architectures that are more efficient than Transformers (in terms of computational complexity, memory footprint, handling longer sequence lengths ) or modifying Transformer architectures to make them more efficient  
 <ul>
-	<li>Accelerating the pre-training process</li>
-	<li>Efficient initialization and hyper-parameter tuning (HPT)</li>
-	<li>Data vs. scale of pre-trained models</li>
-	<li>Efficient Multimodal (e.g., text–speech) pre-trained models and efficiency issues related to it</li>
-	<li>New efficient architectures (e.g. using sparse structures or mixture of experts (MoEs)) or new training objectives for pre-trained models</li>
+	<li>Linear and sub-quadratic Transformers , sparse attention Transformers</li>
+	<li>New architures for LLMs and foundation models and their scalability</li>
+	<li>Evaluation and benchmarking of new architectures (fair comparison of different models)</li>
+	<li>Long sequence modeling</li>
+	<li>Dense vs. sparse architectures (MoEs)</li>
 </ul>
-<b>Efficient Fine-tuning</b> Fine-tuning the entire parameters of large pre-trained models on downstream
-tasks can be expensive and it is prone to overfitting.
+<b>Efficient Training</b> How can we reduce the cost of pre-training or fine-tuning new models?
 <ul>	
-	<li>Efficient prompt engineering and in-context learning</li>
-	<li>Parameter-efficient tuning solutions (i.e. training only a portion of the entire network)</li>
-	<li>Accelerating the fine-tuning process (e.g. by improving the optimizer, and layer-skipping)</li>
+	<li>More efficient pre-training solutions, from better initialization and hyper-parameter tuning to better optimization which lowers the cost of pre-training</li>
+	<li>Parameter efficient fine-tuning  (PEFT) solutions for large pre-trained models</li>
+	<li>Efficient instruction tuning,  prompt engineering and in-context learning</li>
+	<li>Hardware-aware solutions (e.g. better CUDA kernels), memory read/write aware solutions </li>
+	<li>Data-efficient training, reducing the requirement for labeled data, data compression and distillation</li>
 </ul>
-<b>Data Efficiency</b> Pre-training (with unlabeled data) and fine-tuning (with labeled data) are both data hungry processes. Labeling data and incorporating human annotated data or human feedback are very time consuming and costly. Here we would like to address "how to reduced the costs borne by data?"
+<b>Efficient Inference</b> How can we reduce the cost of inference for LLMs and foundation models?
 <ul>
-	<li>Sample efficient training, training with less data, few-shot and zero-shot learning</li>
-	<li>How to reduce the requirements for human labeled data?</li>
-	<li>Can we rely on machine generated data for training models? (e.g. data collected from ChatGPT)</li>
-	<li>Data compression, data distillation</li>
+	<li>Improved speculative sampling for LLMs, self-speculative sampling, selecting among multiple drafts, one draft model for different heterogeneous target models</li>
+	<li>Neural model compression techniques such as quantization, pruning, and knowledge distillation</li>
+	<li>Improved KV-caching solutions for Transformers</li>
+	<li>Distributed inference of large pre-trained models</li>
+	<li>Serving many target devices with one model, many-in-one models, early exiting, elastic networks</li>
 </ul>
-<b>Efficient Deployment</b> How can we reduce the inference time or memory footprint of a trained model for a particular task?
+<b>Evaluation and Benchmarking of Efficient Models</b> Introducing new efficient solutions underscores the need for comprehensive benchmarks to accurately evaluate their efficacy and performance. 
 <ul>
-	<li>Relying on in-context learning and prompt engineering of large language models or fine-tuning smaller models (by knowledge transfer from larger models)?</li>
-	<li>Neural model compression techniques such as (post-training) quantization, pruning, layer decom- position and knowledge distillation (KD) for NLP and Speech</li>
-	<li>Impact of different efficient deployment solutions on the inductive biases learned by the original models (such as OOD generalization, in-context learning, in-domain performance, hallucination).</li>
+	<li>Datasets, benchmarks, leaderboards for evaluating efficient models</li>
+	<li>Benchmarking the performance of efficient models from different perspectives such as reasoning, hallucination,  understanding, and generation quality </li>
+	<li>Benchmarking efficiency of models in terms of their memory footprint, training time, inference time, different target hardware devices and inference platforms (e.g. GPU vs. CPU) </li>
 </ul>
-<b>Special track: Protein Language Models </b> Emergence and the future of language models for biological sequences and how to make them more efficient.
+<b>Efficient Solutions in other Modalities and Applications </b> 
 <ul>
-	<li>Protein language models and their applications</li>
-	<li>Refining the pretraining algorithm and/or model architecture of LLMs to optimize performance in the protein domain.</li>
-	<li>Optimizing the curriculum learning (order of pretraining data presentation) for more efficient pre-training or fine tuning of protein language models</li>
-	<li>Efficient remote homology via dense retrieval using protein language models</li>
-	<li>Combining sequence and 3D structure in pretraining or fine-tuning of the models</li>
-	<li>Multi-modal language models for biological sequences.</li>
-</ul>
-<b>Other Efficient Applications</b>
-<ul>
-	<li>Knowledge localization, knowledge editing, or targeted editing/training of foundation models</li>
-	<li>Efficient dense retrieval and search</li>
-	<li>Efficient graphs for NLP</li>
-	<li>Training models on device</li>
-	<li>Incorporating external knowledge into pre-trained models</li>
-	<li>Efficient Federated learning for NLP: reduce the communication costs, tackling heterogeneous data, heterogeneous models.</li>
+	<li> Efficiency of foundational or pre-trained models in multi-modal set-up and other modalities (beyond NLP and Speech) such as biology, chemistry, computer vision, and time series </li>
+	<li>Efficient representations (e.g. Matryoshka representation) and models in dense retrieval and search</li>
+	<li>Efficient Federated learning, lower communication costs, tackling heterogeneous data and models</li>
+	<li>Efficient graph and LLM joint learning</li>
 </ul>
 
 </p>
