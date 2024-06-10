@@ -181,14 +181,14 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/huawei_logo.png" width="400px">
+			<img src="/images/huawei_logo.png" width="500px">
 		</center>
 	</div>
-	<div class="col">
+	<!-- <div class="col">
 		<center>
 			<img src="/images/BASF_logo.png" width="250px">
 		</center>
-	</div>	
+	</div>	 -->
 	<div class="col">
 		<center>
 			<img src="/images/netmind_logo.png" width="500px">
