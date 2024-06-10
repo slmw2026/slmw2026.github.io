@@ -169,7 +169,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <p>
 {% include technical_committee.html %}
 </p>
-<br><br>
+<br>
 
 <!-- <h2 class="blackpar_title">Diamond Sponsors</h2> -->
 <!-- <center>
@@ -177,6 +177,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	<img src="/images/BASF_logo.png">	
 </center> -->
 <h2 class="blackpar_title" id="sponsors">Confirmed Sponsors</h2>
+<br>
 <div class="row">
 	<div class="col">
 		<center>
@@ -213,7 +214,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	</div>
 	<div class="col">
 		<center>
-			<img src="/images/Logo-Sanofi.png" width="220px">
+			<img src="/images/Logo-Sanofi.png" width="180px">
 		</center>
 	</div>
 </div>
