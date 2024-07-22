@@ -15,21 +15,32 @@
       photo: yu_cheng.jfif
       scholar_link: https://scholar.google.com/citations?user=ORPxbV4AAAAJ&hl=en
       linkedin_link: https://www.linkedin.com/in/chengyu05/  
+    - name: Soheila Samiee
+      affiliation: BASF
+      photo: soheila.jpg
+      scholar_link: https://scholar.google.ca/citations?user=9aZFWa8AAAAJ&hl=en
+      linkedin_link: https://www.linkedin.com/in/soheila-samiee-3696a858/       
     
 - num_row: 1
   organizers:
-    - name: Vahid Partovi Nia
-      affiliation: Ecole Polytechnique Montreal & Huawei 
-      photo: vahid_partovi.jpg
-      scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
-      linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
     - name: Yue Dong
       affiliation: University of California, Riverside
       photo: Yue_Dong.jpg
       scholar_link: https://scholar.google.ca/citations?user=WYkn4loAAAAJ
       linkedin_link: https://www.linkedin.com/in/yuedongcs/  
+    - name: Vahid Partovi Nia
+      affiliation: Ecole Polytechnique Montreal & Huawei 
+      photo: vahid_partovi.jpg
+      scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
+      linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
+    - name: Qun Liu
+      affiliation: Huawei Noah's Ark Lab
+      photo: qun_liu.png
+      scholar_link: https://scholar.google.com.sg/citations?user=2HhiGzcAAAAJ&hl=en
+      linkedin_link: https://www.linkedin.com/in/qunliu/
     - name: Boxing Chen
       affiliation: Huawei Noah's Ark Lab
       photo: boxing.jpg
       scholar_link: https://scholar.google.ca/citations?user=LiINs3gAAAAJ&hl=en
       linkedin_link: https://www.linkedin.com/in/boxingchen/
+
