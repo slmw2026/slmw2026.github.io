@@ -178,13 +178,14 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </center> -->
 
 
-<h2 class="blackpar_title" id="sponsors"> Sponsors</h2>
-<br>
-<h2 class="blackpar_title">Submission Instructions</h2>
+
+<h2 class="blackpar_title">Sponsors</h2>
 <p>
 We are currently welcoming sponsorship opportunities. If your organization is interested in supporting our conference, please contact us (neurips.ENLSP.2024@gmail.com) for more information on sponsorship packages and benefits. 
 </p>
 
+<!-- <h2 class="blackpar_title" id="sponsors"> Sponsors</h2>
+<br>
 <div class="row">
 	<div class="col">
 		<center>
@@ -217,4 +218,4 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 			<img src="/images/Logo-Sanofi.png" width="160px">
 		</center>
 	</div>
-</div>
+</div> -->
