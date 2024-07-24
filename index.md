@@ -178,7 +178,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </center> -->
 
 
-<h2 class="blackpar_title" id="sponsors"> Sponsors</h2>
+<!-- <h2 class="blackpar_title" id="sponsors"> Sponsors</h2>
 <br>
 <div class="row">
 	<div class="col">
@@ -212,4 +212,4 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 			<img src="/images/Logo-Sanofi.png" width="160px">
 		</center>
 	</div>
-</div>
+</div> -->
