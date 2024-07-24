@@ -75,9 +75,9 @@ To encourage engagement from the NeurIPS community, we present several active re
 
 <h2 class="blackpar_title">Submission Instructions</h2>
 <p>
-You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be longer than 8 pages for long papers and 4 pages for short papers, strictly following the NeurIPS template style <a href= "https://www.overleaf.com/project/66a024fe2c35b7d1efcc894e">(Link)</a>. 
+You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be more than <b>8 pages for Long Papers</b> and <b>4 pages for Short Papers</b>, strictly following the NeurIPS template style <a href= "https://www.overleaf.com/project/66a024fe2c35b7d1efcc894e">(Link)</a>. 
 <br />
-Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission (for example <b> any neurips submissions can be submitted concurrently to workshops </b>). Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Awards to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website. Moreover, we are currently negotiating with a publisher to host opt-in accepted papers in a special issue proceeding for our workshop.
+Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission (for example <b> any NeurIPS submissions can be submitted concurrently to workshops </b>). Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Awards to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website. Moreover, we are currently negotiating with a publisher to host opt-in accepted papers in a special issue proceeding for our workshop.
 </p>
 
 <h2 class="blackpar_title">Important Dates:</h2>
@@ -178,7 +178,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 </center> -->
 
 
-<h2 class="blackpar_title" id="sponsors">Confirmed Sponsors</h2>
+<h2 class="blackpar_title" id="sponsors"> Sponsors</h2>
 <br>
 <div class="row">
 	<div class="col">
@@ -186,11 +186,6 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 			<img src="/images/BASF_logo.png" width="250px">
 		</center>
 	</div>	
-	<!-- <div class="col">
-		<center>
-			<img src="/images/BASF_logo.png" width="250px">
-		</center>
-	</div>	 -->
 	<div class="col">
 		<center>
 			<img src="/images/netmind_logo.png" width="500px">
@@ -198,28 +193,14 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	</div>
 </div>
 <br>
-
 <div class="row">
 	<div class="col">
 		<center>
 			<img src="/images/huawei_logo.png" width="400px">
 		</center>
 	</div>
-
 </div>
-
 <br>
-
-<!-- <h2 class="blackpar_title">Platinum Sponsor</h2> -->
-<!-- <div class="row">
-	<div class="col">
-		<center>
-			<img src="/images/netmind_logo.png" width="450px">
-		</center>
-	</div>
-</div>
-<br><br> -->
-<!-- <h2 class="blackpar_title">Gold Sponsor</h2> -->
 <div class="row">
 	<div class="col">
 		<center>
