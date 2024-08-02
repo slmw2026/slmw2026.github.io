@@ -187,12 +187,10 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <h2 class="blackpar_title" id="sponsors"> Diamond Sponsors</h2>
 <br>
 <div class="row">
-	<div class="row">
-		<div class="col">
-			<center>
-				<img src="/images/huawei_logo.png" width="400px">
-			</center>
-		</div>
+	<div class="col">
+		<center>
+			<img src="/images/huawei_logo.png" width="400px">
+		</center>
 	</div>
 	<div class="col">
 		<center>
@@ -205,7 +203,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/Apple-Logo.jpg" width="200px">
+			<img src="/images/Apple-Logo.jpg" width="250px">
 		</center>
 	</div>
 </div>
@@ -214,17 +212,20 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/netmind_logo.png" width="500px">
-		</center>
-	</div>
-	<div class="col">
-		<center>
 			<img src="/images/shanghai_ai_lab1.png" width="250px">
 		</center>
 	</div>
 	<div class="col">
 		<center>
 			<img src="/images/Logo-Sanofi.png" width="160px">
+		</center>
+	</div>
+</div>
+<br>
+<div class="row">
+	<div class="col">
+		<center>
+			<img src="/images/netmind_logo.png" width="500px">
 		</center>
 	</div>
 </div>
