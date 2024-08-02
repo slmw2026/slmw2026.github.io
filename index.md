@@ -189,14 +189,14 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/huawei_logo.png" width="400px">
+			<img src="/images/Diamond.png" width="400px">
 		</center>
 	</div>
-	<div class="col">
+	<!-- <div class="col">
 		<center>
 			<img src="/images/BASF_logo.png" width="350px">
 		</center>
-	</div>	
+	</div>	 -->
 </div>
 <br>
 <h2 class="blackpar_title">Platinum Sponsor</h2>
