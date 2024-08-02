@@ -194,7 +194,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 	</div>
 	<div class="col">
 		<center>
-			<img src="/images/BASF_logo.png" width="250px">
+			<img src="/images/BASF_logo.png" width="350px">
 		</center>
 	</div>	
 </div>
@@ -207,7 +207,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 		</center>
 	</div>
 </div>
-<h2 class="blackpar_title">Gold Sponsor</h2>
+<h2 class="blackpar_title">Gold Sponsors</h2>
 <br>
 <div class="row">
 	<div class="col">
@@ -217,7 +217,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 	</div>
 	<div class="col">
 		<center>
-			<img src="/images/Logo-Sanofi.png" width="160px">
+			<img src="/images/Logo-Sanofi.png" width="200px">
 		</center>
 	</div>
 </div>
@@ -225,7 +225,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/netmind_logo.png" width="500px">
+			<img src="/images/netmind_logo.png" width="400px">
 		</center>
 	</div>
 </div>
