@@ -83,9 +83,9 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <h2 class="blackpar_title">Important Dates:</h2>
 <p>
 <ul>
-	<li>Submission Deadline: <b>August 30, 2024 Anywhere on Earth (AOE)</b> </li>
-	<li>Acceptance Notification: <b>September 29, 2024 AOE</b> </li>
-	<li>Camera-Ready Submission: <b>October 11, 2024 AOE</b> </li>
+	<li>Submission Deadline: <b>September 15, 2024 Anywhere on Earth (AOE)</b> </li>
+	<li>Acceptance Notification: <b>October 14, 2024 AOE</b> </li>
+	<li>Camera-Ready Submission: <b>October 28, 2024 AOE</b> </li>
 	<li>Workshop Date: <b>TBD </b></li>
 </ul>
 </p>
