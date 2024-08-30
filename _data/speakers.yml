@@ -8,14 +8,15 @@
       title: Dr.
       affiliation: Allen Institute for AI
       photo: peter_clark.jpg
-    - name: Tri Dao
-      title: Prof.
-      affiliation: Princeton/Together AI
-      photo: tri_dao.jpeg
     - name: Weizhu Chen
       title: Dr.
       affiliation: Microsoft
       photo: Weizhu_Chen.jpg
+    - name: Tri Dao
+      title: Prof.
+      affiliation: Princeton/Together AI
+      photo: tri_dao.jpeg
+
 - num_row: 2
   speakers:
     - name: Hananeh Hajishirzi
