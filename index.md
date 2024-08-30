@@ -92,12 +92,12 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 
 
 <!--Confirmed Speakers-->
-<h2 class="blackpar_title" id="speakers">Confirmed Keynote Speakers</h2>
+<h2 class="blackpar_title" id="speakers">Keynote Speakers</h2>
 <p>
 {% include speakers.html %}
 </p>
 
-<h2 class="blackpar_title" id="speakers">Confirmed Panelists</h2>
+<h2 class="blackpar_title" id="speakers">Panelists</h2>
 <p>
 {% include panelists.html %}
 </p>
@@ -165,7 +165,7 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <br> 
 
 <!-- Technical Committee -->
-<h2 class="blackpar_title" id="technical_committee">Confirmed Technical Committee</h2>
+<h2 class="blackpar_title" id="technical_committee">Technical Committee</h2>
 <p>
 {% include technical_committee.html %}
 </p>
