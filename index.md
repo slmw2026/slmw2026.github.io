@@ -16,7 +16,15 @@ layout: home
   width: 900px; 
   background-color: #f9f9f9;">
   <h2 class="blackpar_title" id="News">📰 Latest News</h2>
-  <p>Your news content goes here.</p>
+    <ul>
+    <li><span class="news-item-icon">📢</span> NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
+	<p>
+    We have added a special fast track for papers reviewed at NeurIPS 2024 that were not accepted. Authors can submit their papers with a link to their OpenReview page, giving our program committee access to the NeurIPS 2024 reviews of their paper.
+  	</p>
+	</li>
+    <li><span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. </li>
+    <!-- Add more news items as needed -->
+  </ul>
 </div>
 
 <div class="news-box">
