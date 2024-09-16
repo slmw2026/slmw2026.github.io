@@ -19,7 +19,7 @@ layout: home
     <ul>
     <span class="news-item-icon">📢</span> <b>NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
 	</b><p>
-    We have added a special fast track for papers reviewed at NeurIPS 2024 that were not accepted. Authors can submit their papers with a link to their (anonymous) OpenReview page, giving our program committee access to the NeurIPS 2024 reviews of their paper.
+    We have added a special fast track for papers reviewed at NeurIPS 2024 that were not accepted. Authors can submit their papers with a link to their (anonymous) OpenReview page, giving our program committee access to the reviews of their paper.
   	</p>
 	<span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. 
     <!-- Add more news items as needed -->
