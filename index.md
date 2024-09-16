@@ -8,8 +8,20 @@
 layout: home
 ---
 <img src="/images/banner2024.png" style="pointer-events: none; user-select: none;">
+
+<div style="
+  border: 1px solid #ccc; 
+  border-radius: 15px; 
+  padding: 20px; 
+  width: 300px; 
+  background-color: #f9f9f9;">
+  <h2 style="margin-top: 0;">Latest News</h2>
+  <p>Your news content goes here.</p>
+</div>
+
 <div class="news-box">
   <h2><span class="news-icon">📰</span> Latest News</h2>
+  <h2 class="blackpar_title" id="call_for_papers">Latest News</h2>
   <ul>
     <li><span class="news-item-icon">📢</span> NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
 	<p>
