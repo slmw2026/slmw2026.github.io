@@ -15,8 +15,8 @@ layout: home
   padding: 20px; 
   width: 980px; 
   background-color: #f9f9f9;">
-  <h2 style="margin-top: -10px;">📰 Latest News</h2>
-  <h3 class="blackpar_title" id="News">📰 Latest News</h3>
+  <h2 style="margin-top: -10px;">📰 <b>Latest News</b></h2>
+  <h3 class="blackpar_title" id="News" style="margin-top: -10px;">📰 Latest Updates</h3>
     <ul>
     <span class="news-item-icon">📢</span> <b>NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
 	</b><p>
@@ -27,19 +27,7 @@ layout: home
   </ul>
 </div>
 
-<div class="news-box">
-  <h2><span class="news-icon">📰</span> Latest News</h2>
-  <h2 class="blackpar_title" id="News">Latest News</h2>
-  <ul>
-    <li><span class="news-item-icon">📢</span> NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
-	<p>
-    We have added a special fast track for papers reviewed at NeurIPS 2024 that were not accepted. Authors can submit their papers with a link to their OpenReview page, giving our program committee access to the NeurIPS 2024 reviews of their paper.
-  	</p>
-	</li>
-    <li><span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. </li>
-    <!-- Add more news items as needed -->
-  </ul>
-</div>
+
 <p>
 The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on how to make large language and foundation models more efficient in terms of <b>Architecture</b>, <b>Training</b>, and <b>Inference</b> in their real-world applications. This year, following the trend of industry and academia, we put more emphasis on investigating new architectures to make future language and foundation models more efficient. Moreover, we highlight the importance of comprehensive evaluation and benchmarking new efficient models from different practical aspects. 
 The workshop program offers an interactive platform for gathering experts and talents from academia and industry through invited talks, panel discussion, paper submission, reviews, interactive poster sessions, oral presentations and a couple of mentorship sessions for new researchers.
