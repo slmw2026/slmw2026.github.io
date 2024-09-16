@@ -16,7 +16,6 @@ layout: home
   width: 980px; 
   background-color: #f9f9f9;">
   <h2 style="margin-top: -10px;">📰 <b>Latest News</b></h2>
-  <h3 class="blackpar_title" id="News" style="margin-top: -10px;">📰 Latest Updates</h3>
     <ul>
     <span class="news-item-icon">📢</span> <b>NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
 	</b><p>
