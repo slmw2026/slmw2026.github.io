@@ -13,7 +13,7 @@ layout: home
   border: 1px solid #ccc; 
   border-radius: 15px; 
   padding: 20px; 
-  width: 980px; 
+  width: 100%; 
   background-color: #f9f9f9;">
   <h2 style="margin-top: -10px;">📰 <b>Latest Updates</b></h2>
     <ul>
