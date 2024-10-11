@@ -9,6 +9,7 @@ layout: home
 ---
 <img src="/images/banner2024.png" style="pointer-events: none; user-select: none;">
 
+<!-- 
 <div style="
   border: 1px solid #ccc; 
   border-radius: 15px; 
@@ -26,8 +27,7 @@ layout: home
 	<span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. 
      Add more news items as needed -->
   </ul>
-</div>
-
+</div> -->
 
 <p>
 The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on how to make large language and foundation models more efficient in terms of <b>Architecture</b>, <b>Training</b>, and <b>Inference</b> in their real-world applications. This year, following the trend of industry and academia, we put more emphasis on investigating new architectures to make future language and foundation models more efficient. Moreover, we highlight the importance of comprehensive evaluation and benchmarking new efficient models from different practical aspects. 
