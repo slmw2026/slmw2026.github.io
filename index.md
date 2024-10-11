@@ -17,12 +17,14 @@ layout: home
   background-color: #f9f9f9;">
   <h2 style="margin-top: -10px;">📰 <b>Latest Updates</b></h2>
     <ul>
-    <span class="news-item-icon">📢</span> <b>NeurIPS Fast Track Submission Added – Deadline: September 30th, AOE
-	</b><p>
+    <span class="news-item-icon">📢</span> <b>author notifications have been released on Oct. 9th. 
+	</b>
+	<!--
+	<p>
     We have added a special fast track for papers reviewed at NeurIPS 2024 that were not accepted. Authors can submit their papers with a link to their (anonymous) OpenReview page, giving our program committee access to the reviews of their paper.
   	</p>
 	<span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. 
-    <!-- Add more news items as needed -->
+     Add more news items as needed -->
   </ul>
 </div>
 
@@ -102,10 +104,10 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <h2 class="blackpar_title">Important Dates:</h2>
 <p>
 <ul>
-	<li>Special NeurIPS Fast Track Submission Deadline: <b>September 30, 2024 Anywhere on Earth (AOE)</b> </li>
+	<li><s>Special NeurIPS Fast Track Submission Deadline: <b>September 30, 2024 Anywhere on Earth (AOE)</b></s></li>
 	<li><s>Submission Deadline: September 15, 2024 Anywhere on Earth (AOE)</s> </li>
-	<li>Acceptance Notification: <b>October 09, 2024 AOE</b> </li>
-	<li>Camera-Ready Submission: <b>October 28, 2024 AOE</b> </li>
+	<li><s>Acceptance Notification: <b>October 09, 2024 AOE</b></s></li>
+	<li>Camera-Ready Submission: <b>October 25, 2024 AOE</b> </li>
 	<li>Workshop Date: <b>December 14, 2024 </b></li>
 </ul>
 </p>
