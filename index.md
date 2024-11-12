@@ -252,3 +252,12 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 		</center>
 	</div>
 </div>
+<br>
+<div class="row">
+	<div class="col">
+		<center>
+			<img src="/images/CUHK.png" width="400px">
+		</center>
+	</div>
+</div>
+
