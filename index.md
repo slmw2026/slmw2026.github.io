@@ -251,6 +251,10 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 			<img src="/images/netmind_logo.png" width="400px">
 		</center>
 	</div>
+	<div class="col">
+		<center>
+			<img src="/images/CUHK.png" width="400px">
+	</center>
 </div>
 <br>
 <div class="row">
