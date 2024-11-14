@@ -6,15 +6,15 @@
   Time: 8:10AM - 8:15AM
   Whole_line: true  
 
-- Title: (<b>KeyNote Talk</b>) Title Multi-Teacher Distillation&#58; An Ensemble-Then-Distill Approach
+- Title: (<b>KeyNote Talk</b>) Multi-Teacher Distillation&#58; An Ensemble-Then-Distill Approach
   Time: 8:15AM - 8:45AM
   Presenter: Prof. Lili Mou
   Is_paper: false
   Whole_line: false
-  Bio: <b> Lili Mou</b> leads research on efficient computations for large language models and graphs at ETH Zurich, with a background in high-performance computing and a passion for irregular data structures.
-  Abstract: Abstract TBD
+  Bio: <b> Dr. Lili Mou</b> is an Assistant Professor at the Department of Computing Science, University of Alberta. He is also an Alberta Machine Intelligence Institute (Amii) Fellow and a Canada CIFAR AI (CCAI) Chair. Lili received his BS and PhD degrees in 2012 and 2017, respectively, from School of EECS, Peking University. After that, he worked as a postdoctoral fellow at the University of Waterloo. His research interests mainly lie in designing novel machine learning algorithms and frameworks for NLP. He has publications at top conferences and journals, including ACL, EMNLP, TACL, ICML, ICLR, and NeurIPS. He also presented tutorials at EMNLP'19 and ACL'20. He received a AAAI New Faculty Highlight Award in 2021.
+  Abstract: Abstract Knowledge distillation (KD) aims to transfer the knowledge in a large model (called a teacher) into a small one (called a student), and has become an emerging research topic as the sizes of deep learning models keep growing. Today, there are abundant readily available large models, such as ChatGPT, LLaMa, and T5. It then becomes natural to ask&#58; Can we distill the knowledge from multiple teachers? At first glance, it appears easy to perform multi-teacher KD, as we can simply train the student from the union of teachers’ predictions. However, I would argue that such a naïve attempt may not work well for multi-teacher KD. This is because traditional KD adopts the cross-entropy loss, which tends to yield a smooth distribution. In this talk, I will present a novel ensemble-then-distill approach, which builds an ensemble of teacher models to train the student. I will also discuss applications to text generation and syntactic parsing.  
 
-- Title: (<b>KeyNote Talk</b>) Title Efficiency through Learning from Experience
+- Title: (<b>KeyNote Talk</b>) Efficiency through Learning from Experience
   Time: 8:45AM - 9:15AM
   Presenter: Dr. Peter Clark
   Is_paper: false
