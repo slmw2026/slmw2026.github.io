@@ -6,21 +6,21 @@
   Time: 8:10AM - 8:15AM
   Whole_line: true  
 
-- Title: (<b>KeyNote Talk</b>) Title TBD 
+- Title: (<b>KeyNote Talk</b>) Title Multi-Teacher Distillation&#58; An Ensemble-Then-Distill Approach
   Time: 8:15AM - 8:45AM
-  Presenter: Prof. Maciej Besta
+  Presenter: Prof. Lili Mou
   Is_paper: false
   Whole_line: false
-  Bio: <b> Maciej Besta</b> leads research on efficient computations for large language models and graphs at ETH Zurich, with a background in high-performance computing and a passion for irregular data structures.
+  Bio: <b> Lili Mou</b> leads research on efficient computations for large language models and graphs at ETH Zurich, with a background in high-performance computing and a passion for irregular data structures.
   Abstract: Abstract TBD
 
-- Title: (<b>KeyNote Talk</b>) Title TBD
+- Title: (<b>KeyNote Talk</b>) Title Efficiency through Learning from Experience
   Time: 8:45AM - 9:15AM
   Presenter: Dr. Peter Clark
   Is_paper: false
   Whole_line: false
-  Bio: <b>Peter Clark</b> is a leading AI researcher at the Allen Institute for AI, he currently directs a project to develop AI agents capable of scientific discovery.
-  Abstract: Abstract TBD
+  Bio: <b>Peter Clark</b> is a Senior Research Director and founding member of the Allen Institute for AI (Ai2). He also served as Interim CEO from 2022-2023. He leads Ai2's Aristo Project, developing AI agents that can systematically reason, explain, and continually improve over time. He received his Ph.D. in 1991, has published over 250 papers, and has received several awards, including four Best Paper awards, a Boeing Associate Technical Fellowship, and Senior Membership of AAAI.
+  Abstract: Abstract Despite the physiological limitations of the human brain, humans are remarkably efficient thinkers, in large part because they can learn from experience, allowing them to avoid prior reasoning errors and quickly jump to conclusions that previously took substantial effort. Similarly, language models (LMs) can rapidly improve their inference-time efficiency through inference-time learning, supplementing lower-level methods like fast decoding and caching. I'll describe two agent-based systems (CLIN and SSO) that do this, using an external RAG (retrieval-augmented generation) memory to help the agent navigate a complex, virtual environment. Unlike typical RAG systems, the memory is dynamic and updated after each task (including forgetting unhelpful learnings). In addition, unlike reinforcement-based continual learning techniques, these systems rapidly learn from just a handful of examples by exploiting LMs to conjecture useful generalizations of past experiences.  I'll outline three critical activities in this process - what to remember, how to index those memories, and how to retrieve from that index - and how those choices impact the effectiveness of the resulting agent. While this concept of efficiency is a little different to foundational architectural considerations, I'll show that it is nonetheless powerful, and an important additional tool in the toolbox for efficient future applications.
   
 
 - Title: Accepted Oral Presentations 
