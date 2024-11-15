@@ -199,7 +199,7 @@
 "id": "40",
 "title": "Partially Shared Query-Key for Lightweight Language Models",
 "abstract": "Lightweight language models, such as TinyBERT 14.5M, have emerged as a critical, area of research because of their implementation on resource-constrained hardware., These transformer models include significantly smaller parameter size, reduced, memory and computational requirements. These features make such models highly, suitable for deployment on small devices. We explore the concept of parameter, sharing between the key and query weight matrices of a transformer model. The, full query-key sharing which has already been proposed in the literature intro-, duces a fully-quadratic attention matrix, oversimplifies directional dependencies, and degrades pre-training loss. In contrast, partial parameter sharing balances, complexity reduction and performance retention. Partial parameter sharing effec-, tively addresses over-fitting while maintaining strong performance even with a, high degree of shared parameters up to 95%. This provides a promising strategy, for enhancing language models, specifically targeting small models.",
-"authors": "Kai Yang, Vahid Partovi Nia, Boxing Chen, Masoud Asgharan",
+"authors": "Kai Yang, Vahid Partovi Nia, Boxing Chen, Masoud Asgharian",
 "has_supp": false,
 },
 {
