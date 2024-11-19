@@ -140,6 +140,20 @@
 "has_supp": false,
 },
 {
+"id": "25",
+"title": "An Evolved Universal Transformer Memory",
+"abstract": "We introduce Neural Attention Memory Models (NAMMs) to improve the performance and efficiency of transformer foundation models. NAMMs are evolved atop pre-trained transformers to provide different latent contexts containing the most relevant information for individual layers and attention heads. NAMMs are universally applicable to any model using self-attention as they condition exclusively on the attention matrices produced in each layer. NAMMs learned on a relatively small set of problems substantially improve performance across multiple unseen long-context language tasks while cutting the model’s input contexts up to a fraction of the original sizes, setting them apart from prior hand-designed KV cache eviction strategies that only aim to preserve model behavior. We show the generality of our conditioning enables zero-shot transfer of NAMMs trained only on language to entirely new transformer architectures even across input modalities, with their benefits carrying over to vision and reinforcement learning. Our source code is available at https://github.com/SakanaAI/evo-memory.",
+"authors": "Edoardo Cetin, Qi Sun, Tianyu Zhao, Yujin Tang",
+"has_supp": false,
+},
+{
+"id": "26",
+"title": "Less is Enough: Adapting Pre-trained Vision Transformers for Audio-Visual Speaker Verification",
+"abstract": "peaker Verification has achieved significant progress using advanced deep learning architectures, specialized for speech signals as well as robust loss functions. Recently, fusion of faces and voices received a lot of attention as they offer complementary relationship with each other, outperforming unimodal approaches. In this work, we have investigated the potential of Vision Transformers (ViTs), pre-trained on visual data, for audio-visual speaker verification. To cope with the challenges of large-scale training, we introduce the Latent Audio-Visual Vision Transformer (LAVViT) adapters, where we exploit the existing pre-trained models on visual data by training only the parameters of LAVViT adapters, without fine-tuning the original parameters of the pre-trained models. The LAVViT adapters are injected into every layer of the ViT architecture to effectively fuse the audio and visual modalities using a small set of latent tokens, thereby mitigating the quadratic computational cost of cross-attention across the modalities. The proposed approach further circumvents the need for modality-specific architectures by employing the same ViT architecture with shared pretrained weights for audio and visual modalities. The proposed approach has been evaluated by conducting extensive experiments on the Voxceleb1 dataset and shows promising performance using only a few trainable parameters.",
+"authors": "R. Gnana Praveen, Jahangir Alam",
+"has_supp": false,
+},
+{
 "id": "27",
 "title": "Composite Attention: A Framework for Combining Sequence Mixing Primitives",
 "abstract": "Hybrid attention architectures have shown promising success in both equipping, self attention with inductive bias for long-sequence modelling and reducing the, computational burden of transformers without sacrificing quality. This paper intro-, duces Composite Attention, a theoretical framework for analyzing the combination, of sequence mixing primitives in modern deep learning architectures. Utilizing the, definition of sequence mixers as structured linear maps, we formalize the composi-, tion of sequence mixing primitives as either sequential or recurrent composition.",
@@ -151,6 +165,13 @@
 "title": "Inference-Friendly Models With MixAttention",
 "abstract": "The size of the key-value (KV) cache plays a critical role in determining both the, maximum context length and the number of concurrent requests supported during, inference in modern language models. The KV cache size grows proportionally, with the number of attention heads and the tokens processed, leading to increased, memory consumption and slower inference for long inputs. In this work, we, explore the use of MixAttention, a model architecture modification closely related, to a blog published by Character.AI [Character.AI, 2024]. MixAttention combines, sliding window attention, where only a small subset of recent tokens is stored in, the KV cache, with KV cache sharing across layers. Our experiments demonstrate, that MixAttention significantly reduces memory usage and improves inference, speed without sacrificing model performance in both short and long-context tasks., We also explore various configurations of this architecture, identifying those that, maintain quality across evaluation metrics while optimizing resource efficiency.",
 "authors": "Shashank Rajput, Sean Owen, Ying Sheng, Vitaliy Chiley",
+"has_supp": false,
+},
+{
+"id": "29",
+"title": "S2D: Sorted Speculative Decoding For More Efficient Deployment of Large Language Models",
+"abstract": "Deployment of autoregressive large language models (LLMs) is costly, and as these models increase in size, the associated costs will become even more considerable. Consequently, different methods have been proposed to accelerate the token generation process and reduce costs. Speculative decoding (SD) is among the most promising approaches to speed up the LLM decoding process by verifying multiple tokens in parallel and using an auxiliary smaller draft model to generate the possible tokens. In SD, usually one draft model is used to serve a specific target model; however, in practice, LLMs are diverse, and we might need to deal with many target models or more than one target model simultaneously. In this scenario, it is not clear which draft model should be used for which target model, and searching among different draft models, or training customized draft models, can further increase deployment costs. In this paper, we first introduce a novel multi-target scenario for deployment of draft models for faster inference. Then, we present a novel more efficient sorted speculative decoding mechanism that outperforms regular baselines in multi-target setting. We evaluated our method on Spec-Bench in different settings including base models such as Vicuna 7B, 13B, and LLama Chat 70B. Our results suggest that our draft models perform better than baselines for multiple target models at the same time.",
+"authors": "Parsa Kavehzadeh, Mohammadreza Pourreza, Mojtaba Valipour, Tianshu Zhu, Haoli Bai, Ali Ghodsi, Boxing Chen, Mehdi Rezagholizadeh",
 "has_supp": false,
 },
 {
@@ -308,10 +329,24 @@
 "has_supp": false,
 },
 {
+"id": "56",
+"title": "CROSS-JEM: Accurate and Efficient Cross-encoders for Short-text Ranking Tasks",
+"abstract": "Ranking a set of items based on their relevance to a given query is a core problem in search and recommendation. Transformer-based ranking models are the state-ofthe-art approaches for such tasks, but they score each query-item independently, ignoring the joint context of other relevant items. This leads to sub-optimal ranking accuracy and high computational costs. We address this by proposing Crossencoders with Joint Efficient Modeling (CROSS-JEM), a novel ranking approach that enables transformer-based models to jointly score multiple items for a query, maximizing parameter utilization. CROSS-JEM leverages (a) redundancies and token overlaps to jointly score multiple items, that are typically short-text phrases arising in search and recommendations, and (b) a novel training objective that models ranking probabilities. CROSS-JEM achieves state-of-the-art accuracy and over 4x lower ranking latency over standard cross-encoders. Our contributions are threefold: (i) we highlight the gap between the ranking application’s need for scoring thousands of items per query and the limited capabilities of current crossencoders; (ii) we introduce CROSS-JEM for joint efficient scoring of multiple items per query; and (iii) we demonstrate state-of-the-art accuracy on standard public datasets and a proprietary dataset. CROSS-JEM opens up new directions for designing tailored early-attention-based ranking models that incorporate strict production constraints such as item multiplicity and latency.",
+"authors": "Bhawna Paliwal, Deepak Saini, Mudit Dhawan, Siddarth Asokan, Nagarajan Natarajan, Surbhi Aggarwal, Pankaj Malhotra, Jian Jiao, Manik Varma",
+"has_supp": True,
+},
+{
 "id": "57",
 "title": "Enhanced label noise robustness through early adaptive filtering for the self-supervised speaker verification task",
 "abstract": "Using clustering-driven annotations to train a neural network can be a tricky task, because of label noise. In this paper, we propose a dynamic and adaptive label noise, filtering method, called AdaptiveDrop which combines both label noise cleansing, and correction simultaneously in cascade to combine their advantages. Contrary, to other label noise filtering approaches, our method filters noisy samples on the, fly from an early stage of training. We also provide a variant that incorporates, sub-centers per each class for enhanced robustness to label noise by continuously, tracking the dominant sub-centers via a dictionary table. AdaptiveDrop is a simple, general-purpose method, performed end-to-end in only one stage of training, can, be integrated with any loss function, and does not require training from scratch, on the cleansed dataset. We show through extensive ablation studies for the self-, supervised speaker verification task that our method is effective, benefits from, long epochs of iterative filtering and provides consistent performance gains across, various loss functions and real-world pseudo-labels.",
 "authors": "Abderrahim Fathan, Xiaolin Zhu, Jahangir Alam",
+"has_supp": false,
+},
+{
+"id": "58",
+"title": "Speculative Streaming: Fast LLM Inference without Auxiliary Models",
+"abstract": "Speculative decoding is a prominent technique to accelerate large language model inference by leveraging predictions from an auxiliary draft model. While effective, in application-specific settings, it often involves fine-tuning both draft and target models to achieve high acceptance rates. As the number of downstream tasks grows, draft models add significant complexity to inference systems. Recently several single model architectures viz. Medusa have been proposed to speculate tokens in non-autoregressive manner, however, their effectiveness is limited due to lack of dependency between speculated tokens. We introduce a novel speculative decoding method that integrates drafting within the target model by using Multi-stream attention and incorporates future token planning into supervised finetuning objective. To the best of our knowledge, this is the first parameter-efficient approach that scales well with an increasing number of downstream tasks while enhancing downstream metrics and achieving high acceptance rates, attributable to the interdependence among the speculated tokens. Speculative Streaming speeds up decoding by 1.9 - 3X in a diverse set of tasks, such as Summarization, Structured Queries, and Meaning Representation, while improving generation quality and using ∼10000X fewer extra parameters than alternative architectures, making it ideal for resource-constrained devices. Our approach can also be effectively deployed in lossless settings for generic chatbot applications that do not necessitate supervised fine-tuning. In such setups, we achieve 2.9 - 3.2X speedup while maintaining the integrity of the base model’s output.",
+"authors": "Nikhil Bhendawade, Irina Belousova, Qichen Fu, Henry Mason, Mohammad Rastegari, Mahyar Najibi",
 "has_supp": false,
 },
 {
@@ -336,6 +371,20 @@
 "has_supp": false,
 },
 {
+"id": "64",
+"title": "Approximate Top-k for Increased Parallelism",
+"abstract": "We present an evaluation of bucketed approximate top-k algorithms. Computing top-k exactly suffers from limited parallelism, because the k largest values must be aggregated along the vector, thus is not well suited to computation on highlyparallel machine learning accelerators. By relaxing the requirement that the top-k is exact, bucketed algorithms can dramatically increase the parallelism available by independently computing many smaller top-k operations. We explore the design choices of this class of algorithms using both theoretical analysis and empirical evaluation on downstream tasks. Our motivating examples are sparsity algorithms for language models, which often use top-k to select the most important parameters or activations. We also release a fast bucketed top-k implementation for PyTorch",
+"authors": "Oscar Key, Luka Ribar, Alberto Cattaneo, Luke Hudlass-Galley, Douglas Orr",
+"has_supp": false,
+},
+{
+"id": "65",
+"title": "A Simple and Effective L2 Norm-Based Strategy for KV Cache Compression",
+"abstract": "The deployment of large language models (LLMs) is often hindered by the extensive memory requirements of the Key-Value (KV) cache, especially as context lengths increase. Existing approaches to reduce the KV Cache size involve either finetuning the model to learn a compression strategy or leveraging attention scores to reduce the sequence length. We analyse the attention distributions in decoder only Transformers-based models and observe that attention allocation patterns stay consistent across most layers. Surprisingly, we find a clear correlation between the L2 norm and the attention scores over cached KV pairs, where a low L2 norm of a key embedding usually leads to a high attention score during decoding. This finding indicates that the influence of a KV pair is potentially determined by the key embedding itself before being queried. Based on this observation, we compress the KV Cache based on the L2 norm of key embeddings. Our experimental results show that this simple strategy can reduce the KV Cache size by 50% on language modelling and needle-in-a-haystack tasks and 90% on passkey retrieval tasks without losing accuracy. Moreover, without relying on the attention scores, this approach remains compatible with FlashAttention, enabling broader applicability.",
+"authors": "Alessio Devoto, Yu Zhao, Simone Scardapane, Pasquale Minervini",
+"has_supp": false,
+},
+{
 "id": "66",
 "title": "RAEE: A Robust Retrieval-Augmented Early Exiting Framework for Efficient Inference",
 "abstract": "Deploying large language model inference remains challenging due to their high, computational overhead. Early exiting optimizes model inference by adaptively, reducing the number of inference layers. Existing methods typically train internal, classifiers to determine whether to exit at intermediate layers. However, such, classifier-based early exiting frameworks require significant effort to train the, classifiers while can only achieve comparable performance at best. To address, these limitations, this paper proposes RAEE, a robust Retrieval-Augmented Early, Exiting framework for efficient inference. First, this paper demonstrates that the, early exiting problem can be modeled as a distribution prediction problem, where, the distribution is approximated using similar data’s exiting information. Then,, this paper details the process of collecting exiting information to build the retrieval, database. Finally, based on the pre-built retrieval database, RAEE leverages the, retrieved similar data’s exiting information to guide the backbone model to exit, at the layer, which is predicted by the approximated distribution. Experimental, results demonstrate that the proposed RAEE can significantly accelerate inference., More importantly, RAEE can also achieve a robust zero-shot performance on 8, downstream tasks.",
@@ -354,6 +403,13 @@
 "title": "Speculative Diffusion Decoding for Accelerated Language Generation",
 "abstract": "Speculative decoding has emerged as a widely adopted method to accelerate large, language model inference without sacrificing the quality of the model outputs., While this technique has facilitated notable speed improvements by enabling paral-, lel sequence verification, its efficiency remains inherently limited by the reliance on, incremental token generation in existing draft models. To overcome this limitation,, this paper proposes an adaptation of speculative decoding which uses discrete, diffusion models to generate draft sequences. This allows parallelization of both, the drafting and verification steps, providing significant speedups to the inference, process. Our proposed approach, Speculative Diffusion Decoding (SpecDiff), is val-, idated on standard language generation benchmarks and empirically demonstrated, to provide up to 7.2x speedups over standard generation processes and up to, 1.75x speedups over existing speculative decoding approaches.",
 "authors": "Jacob K. Christopher, Brian R. Bartoldson, Tal Ben-Nun, Michael Cardei, Bhavya Kailkhura, Ferdinando Fioretto",
+"has_supp": false,
+},
+{
+"id": "70",
+"title": "Duo-LLM: A Framework for Studying Adaptive Computation in Large Language Models",
+"abstract": "Large Language Models (LLMs) typically generate outputs token by token using a fixed compute budget, leading to inefficient resource utilization. To address this shortcoming, recent advancements in mixture of expert (MoE) models, speculative decoding, and early exit strategies leverage the insight that computational demands can vary significantly based on the complexity and nature of the input. However, identifying optimal routing patterns for dynamic execution remains an open challenge, limiting the full potential of these adaptive methods. To address this need, we study adaptive computation in LLMs more systematically. We propose a novel framework that integrates smaller auxiliary modules within each Feed-Forward Network layer of the LLM. This design enables dynamic routing of tokens based on task complexity: tokens can be processed by either the small or big modules at each layer, or even bypass certain layers entirely. This allows us to introduce a novel notion of a token’s difficulty, defined by its potential to benefit from additional computational resources. Importantly, by employing oracles to identify optimal patterns of adaptive computations, we gain valuable insights into the internal workings of LLMs and the routing processes in a simplified heterogeneous MoE setup. We show that trained routers operate differently from oracles and often yield suboptimal solutions. Notably, activating a large module in just one layer outperforms models that use large modules across all layers, underscoring the gap between practical implementations of routing in MoE models and theoretical optima for adaptive computation.",
+"authors": "Keivan Alizadeh, Iman Mirzadeh, Hooman Shahrokhi, Dmitry Belenko, Chenfan Sun, Minsik Cho, Mohammad Sekhavat, Moin Nabi, Mehrdad Farajtabar",
 "has_supp": false,
 },
 {
@@ -473,6 +529,13 @@
 "title": "Dynamic Vocabulary Pruning in Early-Exit LLMs",
 "abstract": "Increasing the size of large language models (LLMs) has been shown to lead to, better performance. However, this comes at the cost of slower and more expensive, inference. Early-exiting is a promising approach for improving the efficiency of, LLM inference by enabling next token prediction at intermediate layers. Yet, the, large vocabulary size in modern LLMs makes the confidence estimation required, for exit decisions computationally expensive, diminishing the efficiency gains., To address this, we propose dynamically pruning the vocabulary at test time for, each token. Specifically, the vocabulary is pruned at one of the initial layers, and, the smaller vocabulary is then used throughout the rest of the forward pass. Our, experiments demonstrate that such post-hoc dynamic vocabulary pruning improves, the efficiency of confidence estimation in early-exit LLMs while maintaining, competitive performance.",
 "authors": "Jort Vincenti, Karim Abdel Sadek, Joan Velja, Matteo Nulli, Metod Jazbec",
+"has_supp": false,
+},
+{
+"id": "96",
+"title": "FastDraft: How to Train Your Draft",
+"abstract": "Speculative Decoding has gained popularity as an effective technique for accelerating the auto-regressive inference process of Large Language Models (LLMs). However, Speculative Decoding entirely relies on the availability of efficient draft models, which are often lacking for many existing language models due to a stringent constraint of vocabulary incompatibility. In this work we introduce FastDraft, a novel and efficient approach for pre-training and aligning a draft model to any large language model by incorporating efficient pre-training, followed by finetuning over synthetic datasets generated by the target model. We demonstrate FastDraft by training two highly parameter efficient drafts for the popular Phi-3- mini and Llama-3.1-8B models. Using FastDraft, we were able to produce a draft with approximately 10 billion tokens on a single server with 8 accelerators in under 24 hours. Our results show that the draft model achieves impressive results in key metrics of acceptance rate, block efficiency and up to 3x memory bound speed up when evaluated on code completion and up to 2x in summarization, text completion and instruction tasks. Due to its high quality, FastDraft unlocks large language models inference on AI-PC and other edge-devices.",
+"authors": "Ofir Zafrir, Igor Margulis, Dorin Shteyman, Guy Boudoukh",
 "has_supp": false,
 },
 {
