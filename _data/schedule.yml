@@ -110,19 +110,19 @@
   Whole_line: false
   Authors: Niklas Schmidinger (Johannes Kepler University Linz)*,Lisa Schneckenreiter (Johannes Kepler University, Linz),Philipp Seidl (JKU Linz),Johannes Schimunek (Johannes Kepler University Linz),Pieter-Jan Hoedt (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria),Johannes Brandstetter (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria),Andreas Mayr (Johannes Kepler University Linz),Sohvi Luukkonen (Johannes Kepler University),Sepp Hochreiter (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University, NXAI GmbH, Linz, Austria),Guenter Klambauer (LIT AI Lab)
   Abstract: Language models for biological and chemical sequences enable crucial applications such as drug discovery, protein engineering, and precision medicine. Currently, these language models are predominantly based on Transformer architectures. While Transformers have yielded impressive results, their quadratic runtime dependency on sequence length complicates their use for long genomic sequences and in-context learning on proteins and chemical sequences. Recently, the recurrent xLSTM architecture has been shown to perform favorably compared to Transformers and modern state-space models (SSMs) in the natural language domain. Similar to SSMs, xLSTMs have linear runtime dependency and allow for constant-memory decoding at inference time, which makes them prime candidates for modeling long-range dependencies in biological and chemical sequences. In this work, we tailor xLSTM towards these domains and we propose a suite of language models called Bio-xLSTM. Extensive experiments in three large domains, genomics, proteins, and chemistry, were performed to assess xLSTM's ability to model biological and chemical sequences. The results show that Bio-xLSTM is a highly proficient generative model for DNA, protein, and chemical sequences, learns rich representations, and can perform in-context learning for proteins and small molecules.
-- Title: (<b>Spotlight 9</b>) Title TBD
+- Title: (<b>Spotlight 9</b>) Inference-Friendly Models With MixAttention
   Time: 1:48PM - 1:54PM
-  Presenter: Michael Zhang
+  Presenter: Shashank Rajput
   Is_paper: true
   Whole_line: false
-  Authors: Michael Zhang · Kush Bhatia · Hermann Kumbong · Christopher Ré
-  Abstract: Abstract TBD
+  Authors: Shashank Rajput (Databricks)*,Ying Sheng (NA),Sean Owen (Databricks),Vitaliy Chiley (Cerebras)
+  Abstract: The size of the key-value (KV) cache plays a critical role in determining both the maximum context length and the number of concurrent requests supported during inference in modern language models. The KV cache size grows proportionally with the number of attention heads and the tokens processed, leading to increased memory consumption and slower inference for long inputs. In this work, we explore the use of MixAttention, a model architecture modification closely related to a blog published by Character.AI. MixAttention combines sliding window attention, where only a small subset of recent tokens is stored in the KV cache, with KV cache sharing across layers. Our experiments demonstrate that MixAttention significantly reduces memory usage and improves inference speed without sacrificing model performance in both short and long-context tasks. We also explore various configurations of this architecture, identifying those that maintain quality across evaluation metrics while optimizing resource efficiency.
 - Title: (<b>Spotlight 10</b>) Title TBD
   Time: 1:54PM - 2:00PM
-  Presenter: Giovanni Monea
+  Presenter: TBD
   Is_paper: true
   Whole_line: false
-  Authors: Giovanni Monea · Armand Joulin · Edouard Grave
+  Authors: TBD
   Abstract: Abstract TBD
 - Title: (<b>KeyNote Talk</b>)  The LoRA Journey and Learnings&#58 from Creation to Industrial-Scale Adoption
   Time: 2:00PM - 2:30PM
