@@ -48,32 +48,21 @@
   Whole_line: false
   Bio: <b>Danqi Chen</b> co-leads Princeton's NLP Group, researches large language models, and emphasizes practicality and accessibility in AI development.
   Abstract: Abstract TBD
-
-
-# - Title: Accepted Oral Presentations 
-#   Time: 9:15AM - 10:00AM
-#   Presenter: TBD
-#   Is_paper: true
-#   Whole_line: false
-#   Authors: TBD
-#   Abstract: Abstract TBD
 - Title: (<b>Spotlight 1</b>) Sparsified State-Space Models are Efficient Highway Networks
   Time: 11:30AM - 11:36AM
   Presenter: Woomin Song
   Is_paper: true
   Whole_line: false
-  Authors: Woomin Song (KAIST), Jihoon Tack (KAIST),Sangwoo Mo (University of Michigan),Seunghyuk Oh (KAIST),Jinwoo Shin (KAIST)
+  Authors: Woomin Song (KAIST),Jihoon Tack (KAIST),Sangwoo Mo (University of Michigan),Seunghyuk Oh (KAIST),Jinwoo Shin (KAIST)
   Abstract: State-space models (SSMs) offer a promising architecture for sequence modeling, providing an alternative to Transformers by replacing expensive self-attention with linear recurrences. In this paper, we propose a simple yet effective trick to enhance SSMs within given computational budgets by sparsifying them. Our intuition is that tokens in SSMs are highly redundant due to gradual recurrent updates, and dense recurrence operations block the delivery of past information. In particular, we observe that upper layers of SSMs tend to be more redundant as they encode global information, while lower layers encode local information. Motivated by this, we introduce Simba, a hierarchical sparsification method for SSMs based on token pruning. Simba sparsifies upper layers more than lower layers, encouraging the upper layers to behave like highways. To achieve this, we propose a novel token pruning criterion for SSMs, measuring the global impact of tokens on the final output by accumulating local recurrences. We demonstrate that Simba outperforms the baseline model, Mamba, with the same FLOPS in various natural language tasks. Moreover, we illustrate the effect of highways, showing that Simba not only enhances efficiency but also improves the information flow across long sequences.
-
-- Title: (<b>Spotlight 1</b>) Longhorn&#58; State Space Models are Amortized Online Learners
+- Title: (<b>Spotlight 2</b>) Longhorn&#58; State Space Models are Amortized Online Learners
   Time: 9:36AM - 9:42AM
   Presenter: Bo Liu
   Is_paper: true
   Whole_line: false
   Authors: Bo Liu (University of Texas, Austin), Rui Wang (Helixon),Lemeng Wu (University of Texas, Austin),Yihao Feng (University of Texas, Austin ),Peter Stone (University of Texas at Austin and Sony AI),Qiang Liu (UT Austin)
-  Abstract: Modern large language models are built on sequence modeling via next-token prediction.<br/>While the Transformer remains the dominant architecture for sequence modeling, its quadratic decoding complexity in sequence length poses a major limitation. State-space models (SSMs) present a competitive alternative, offering linear decoding efficiency while maintaining parallelism during training. However, most existing SSMs rely on linear recurrence designs that appear somewhat ad hoc.<br/>In this work, we explore SSM design through the lens of online learning, conceptualizing SSMs as meta-modules for specific online learning problems. This approach links SSM design to formulating precise online learning objectives, with state transition rules derived from solving these objectives.<br/>Based on this insight, we introduce a novel deep SSM architecture, Longhorn, whose update resembles the closed-form solution for solving the online associative recall problem. Our experimental results show that Longhorn outperforms state-of-the-art SSMs, including the Mamba model, on standard sequence modeling benchmarks, language modeling, and vision tasks. Specifically, Longhorn achieves a 1.8x improvement in sample efficiency compared to Mamba, and can extrapolate over contexts that are up to 16x longer during inference. The code is provided at https://github.com/Cranial-XIX/Longhorn.
-- 
-Title: (<b>Spotlight 3</b>) Title TBD
+  Abstract: Modern large language models are built on sequence modeling via next-token prediction.<br/>While the Transformer remains the dominant architecture for sequence modeling, its quadratic decoding complexity in sequence length poses a major limitation. State-space models (SSMs) present a competitive alternative, offering linear decoding efficiency while maintaining parallelism during training. However, most existing SSMs rely on linear recurrence designs that appear somewhat ad hoc.<br/>In this work, we explore SSM design through the lens of online learning, conceptualizing SSMs as meta-modules for specific online learning problems. This approach links SSM design to formulating precise online learning objectives, with state transition rules derived from solving these objectives.<br/>Based on this insight, we introduce a novel deep SSM architecture, Longhorn, whose update resembles the closed-form solution for solving the online associative recall problem. Our experimental results show that Longhorn outperforms state-of-the-art SSMs, including the Mamba model, on standard sequence modeling benchmarks, language modeling, and vision tasks. Specifically, Longhorn achieves a 1.8x improvement in sample efficiency compared to Mamba, and can extrapolate over contexts that are up to 16x longer during inference. 
+- Title: (<b>Spotlight 3</b>) Title TBD
   Time: 9:42AM - 9:48AM
   Presenter: Yu Yang
   Is_paper: true
