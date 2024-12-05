@@ -76,13 +76,13 @@
   Whole_line: false
   Authors: Edoardo Cetin (Sakana AI)*,Qi Sun (tokyo institute of technology),Tianyu Zhao (Sakana AI),Yujin Tang (Sakana AI)
   Abstract: We introduce Neural Attention Memory Models (NAMMs) to improve the performance and efficiency of transformer foundation models. NAMMs are evolved atop pre-trained transformers to provide different latent contexts containing the most relevant information for individual layers and attention heads. NAMMs are universally applicable to any model using self-attention as they condition exclusively on the attention matrices produced in each layer. NAMMs learned on a relatively small set of problems substantially improve performance across multiple unseen long-context language tasks while cutting the model's input contexts up to a fraction of the original sizes, setting them apart from prior hand-designed KV cache eviction strategies that only aim to preserve model behavior. We show the generality of our conditioning enables zero-shot transfer of NAMMs trained only on language to entirely new transformer architectures even across input modalities, with their benefits carrying over to vision and reinforcement learning.
-- Title: (<b>Spotlight 5</b>) Title TBD
-  Time: 9:54AM - 10:00AM
-  Presenter: Xi Wang
+- Title: (<b>Spotlight 5</b>) OLMoE&#58; Open Mixture-of-Experts Language Models
+  Time: 11:54AM - 12:00PM
+  Presenter: Luca Soldaini
   Is_paper: true
   Whole_line: false
-  Authors: Xi Wang · Laurence Aitchison · Maja Rudolph
-  Abstract: Abstract TBD
+  Authors: Niklas Muennighoff (Contextual AI/Allen Institute for Artificial Intelligence)*,Luca Soldaini (Allen Institute for Artificial Intelligence),Dirk Groeneveld (Allen Institute for Artificial Intelligence),Kyle Lo (Allen Institute for Artificial Intelligence),Jacob Morrison (Allen Institute for AI),Sewon Min (University of Washington),Weijia Shi (University of Washington),Pete Walsh (Allen Institute for Artificial Intelligence),Oyvind Tafjord (AI2),Nathan Lambert (Allen Institute for Artificial Intelligence),Yuling Gu (Allen Institute for Artificial Intelligence),Shane Arora (Allen Institute for Artificial Intelligence),Akshita Bhagia (Allen Institute for Artificial Intelligence),Dustin Schwenk (Allen Institute for Artificial Intelligence),David Wadden (Allen Institute for Artificial Intelligence),Alexander Wettig (Princeton University),Binyuan Hui (Alibaba Group),Tim Dettmers (Allen Institute for Artificial Intelligence),Douwe Kiela (Contextual AI),Noah Smith (Allen Institute for AI, University of Washington),Pang Wei Koh (Allen Institute for AI, University of Washington),Amanpreet Singh (Contextual AI),Hannaneh Hajishirzi (Allen Institute for AI, University of Washington)
+  Abstract: We introduce OLMoE, a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). OLMoE-1B-7B has 7 billion (B) parameters but uses only 1B per input token. We pretrain it on 5 trillion tokens and further adapt it to create OLMoE-1B-7B-Instruct. Our models outperform all available models with similar active parameters, even surpassing larger ones like Llama2- 13B-Chat and DeepSeekMoE-16B. We present novel findings on MoE training, define and analyze new routing properties showing high specialization in our model, and open-source all our work&#58; model weights, training data, code, and logs.
 
 
 
