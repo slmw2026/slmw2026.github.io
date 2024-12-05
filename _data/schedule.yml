@@ -103,13 +103,13 @@
   Whole_line: false
   Authors: Vui Seng Chua (Intel Corporation),Yujie Pan (Intel)*,Nilesh Jain (Intel)
   Abstract: We present Statistical Calibrated Activation Pruning (SCAP), a post-training activation pruning framework that (1) generalizes sparsification by input activations of Fully-Connected layers for generic and flexible application across Transformers, and (2) features a simple Mode-Centering technique to pre-calibrate activation distributions for maximizing post-training sparsity. Our results demonstrate robust Pareto efficiency compared to prior methods, translating to a 1.5× additional LLM decoding speedup against CATS[12] at iso model quality. SCAP effectiveness is empirically verified across a wide range of models, including recent Transformer Decoders, MoE, Mamba2, Encoding Transformer, and pre-quantized models, highlighting its practicality and scalability. The code is available at https://github.com/IntelLabs/SCAP.
-- Title: (<b>Spotlight 8</b>) Title TBD
+- Title: (<b>Spotlight 8</b>) Bio-xLSTM&#58; Generative modeling, representation and in-context learning of biological and chemical sequences
   Time: 1:42PM - 1:48PM
-  Presenter: Yixiao Li
+  Presenter: Niklas Schmidinger
   Is_paper: true
   Whole_line: false
-  Authors: Yixiao Li · Yifan Yu · Chen Liang · Nikos Karampatziakis · Pengcheng He · Weizhu Chen · Tuo Zhao
-  Abstract: Abstract TBD
+  Authors: Niklas Schmidinger (Johannes Kepler University Linz)*,Lisa Schneckenreiter (Johannes Kepler University, Linz),Philipp Seidl (JKU Linz),Johannes Schimunek (Johannes Kepler University Linz),Pieter-Jan Hoedt (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria),Johannes Brandstetter (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria),Andreas Mayr (Johannes Kepler University Linz),Sohvi Luukkonen (Johannes Kepler University),Sepp Hochreiter (LIT AI Lab, Institute for Machine Learning, Johannes Kepler University, NXAI GmbH, Linz, Austria),Guenter Klambauer (LIT AI Lab)
+  Abstract: Language models for biological and chemical sequences enable crucial applications such as drug discovery, protein engineering, and precision medicine. Currently, these language models are predominantly based on Transformer architectures. While Transformers have yielded impressive results, their quadratic runtime dependency on sequence length complicates their use for long genomic sequences and in-context learning on proteins and chemical sequences. Recently, the recurrent xLSTM architecture has been shown to perform favorably compared to Transformers and modern state-space models (SSMs) in the natural language domain. Similar to SSMs, xLSTMs have linear runtime dependency and allow for constant-memory decoding at inference time, which makes them prime candidates for modeling long-range dependencies in biological and chemical sequences. In this work, we tailor xLSTM towards these domains and we propose a suite of language models called Bio-xLSTM. Extensive experiments in three large domains, genomics, proteins, and chemistry, were performed to assess xLSTM's ability to model biological and chemical sequences. The results show that Bio-xLSTM is a highly proficient generative model for DNA, protein, and chemical sequences, learns rich representations, and can perform in-context learning for proteins and small molecules.
 - Title: (<b>Spotlight 9</b>) Title TBD
   Time: 1:48PM - 1:54PM
   Presenter: Michael Zhang
