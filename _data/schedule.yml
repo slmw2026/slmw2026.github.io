@@ -83,58 +83,47 @@
   Whole_line: false
   Authors: Niklas Muennighoff (Contextual AI/Allen Institute for Artificial Intelligence)*,Luca Soldaini (Allen Institute for Artificial Intelligence),Dirk Groeneveld (Allen Institute for Artificial Intelligence),Kyle Lo (Allen Institute for Artificial Intelligence),Jacob Morrison (Allen Institute for AI),Sewon Min (University of Washington),Weijia Shi (University of Washington),Pete Walsh (Allen Institute for Artificial Intelligence),Oyvind Tafjord (AI2),Nathan Lambert (Allen Institute for Artificial Intelligence),Yuling Gu (Allen Institute for Artificial Intelligence),Shane Arora (Allen Institute for Artificial Intelligence),Akshita Bhagia (Allen Institute for Artificial Intelligence),Dustin Schwenk (Allen Institute for Artificial Intelligence),David Wadden (Allen Institute for Artificial Intelligence),Alexander Wettig (Princeton University),Binyuan Hui (Alibaba Group),Tim Dettmers (Allen Institute for Artificial Intelligence),Douwe Kiela (Contextual AI),Noah Smith (Allen Institute for AI, University of Washington),Pang Wei Koh (Allen Institute for AI, University of Washington),Amanpreet Singh (Contextual AI),Hannaneh Hajishirzi (Allen Institute for AI, University of Washington)
   Abstract: We introduce OLMoE, a fully open, state-of-the-art language model leveraging sparse Mixture-of-Experts (MoE). OLMoE-1B-7B has 7 billion (B) parameters but uses only 1B per input token. We pretrain it on 5 trillion tokens and further adapt it to create OLMoE-1B-7B-Instruct. Our models outperform all available models with similar active parameters, even surpassing larger ones like Llama2- 13B-Chat and DeepSeekMoE-16B. We present novel findings on MoE training, define and analyze new routing properties showing high specialization in our model, and open-source all our work&#58; model weights, training data, code, and logs.
-
-
-
-
-
-  
-
-- Title: Accepted Oral Presentations
-  Time: 12:00PM - 12:30PM
-  Presenter: TBD
+- Title: Lunch Break
+  Time: 12:00PM - 1:30PM
+  Whole_line: true
+- Title: <b>Poster Session I </b> & Free Discussion
+  Time: 12:30PM - 1:30PM
+  Whole_line: true  
+- Title: (<b>Spotlight 6</b>) Title TBD
+  Time: 1:30PM - 1:36PM
+  Presenter: Dong-Ki Kim
   Is_paper: true
   Whole_line: false
-  Authors: TBD
+  Authors: Dong-Ki Kim · Sungryull Sohn · Lajanugen Logeswaran · Dongsub Shim · Honglak Lee
   Abstract: Abstract TBD
-# - Title: (<b>Spotlight 7</b>) Title TBD
-#   Time: 11:36AM - 11:42AM
-#   Presenter: Dong-Ki Kim
-#   Is_paper: true
-#   Whole_line: false
-#   Authors: Dong-Ki Kim · Sungryull Sohn · Lajanugen Logeswaran · Dongsub Shim · Honglak Lee
-#   Abstract: Abstract TBD
-# - Title: (<b>Spotlight 8</b>) Title TBD
-#   Time: 11:42AM - 11:48PM
-#   Presenter: Yixiao Li
-#   Is_paper: true
-#   Whole_line: false
-#   Authors: Yixiao Li · Yifan Yu · Chen Liang · Nikos Karampatziakis · Pengcheng He · Weizhu Chen · Tuo Zhao
-#   Abstract: Abstract TBD
-# - Title: (<b>Spotlight 9</b>) Title TBD
-#   Time: 11:48AM - 11:54PM
-#   Presenter: Michael Zhang
-#   Is_paper: true
-#   Whole_line: false
-#   Authors: Michael Zhang · Kush Bhatia · Hermann Kumbong · Christopher Ré
-#   Abstract: Abstract TBD
-# - Title: (<b>Spotlight 10</b>) Title TBD
-#   Time: 11:54AM - 12:00PM
-#   Presenter: Giovanni Monea
-#   Is_paper: true
-#   Whole_line: false
-#   Authors: Giovanni Monea · Armand Joulin · Edouard Grave
-#   Abstract: Abstract TBD
-
-- Title: Lunch Break
-  Time: 12:30PM - 1:15PM
-  Whole_line: true
-
- 
-- Title: <b>Poster Session I </b> & Free Discussion
-  Time: 1:15PM - 2:00PM
-  Whole_line: true
-
+- Title: (<b>Spotlight 7</b>) Title TBD
+  Time: 1:36PM - 1:42PM
+  Presenter: Dong-Ki Kim
+  Is_paper: true
+  Whole_line: false
+  Authors: Dong-Ki Kim · Sungryull Sohn · Lajanugen Logeswaran · Dongsub Shim · Honglak Lee
+  Abstract: Abstract TBD
+- Title: (<b>Spotlight 8</b>) Title TBD
+  Time: 1:42PM - 1:48PM
+  Presenter: Yixiao Li
+  Is_paper: true
+  Whole_line: false
+  Authors: Yixiao Li · Yifan Yu · Chen Liang · Nikos Karampatziakis · Pengcheng He · Weizhu Chen · Tuo Zhao
+  Abstract: Abstract TBD
+- Title: (<b>Spotlight 9</b>) Title TBD
+  Time: 1:48PM - 1:54PM
+  Presenter: Michael Zhang
+  Is_paper: true
+  Whole_line: false
+  Authors: Michael Zhang · Kush Bhatia · Hermann Kumbong · Christopher Ré
+  Abstract: Abstract TBD
+- Title: (<b>Spotlight 10</b>) Title TBD
+  Time: 1:54PM - 2:00PM
+  Presenter: Giovanni Monea
+  Is_paper: true
+  Whole_line: false
+  Authors: Giovanni Monea · Armand Joulin · Edouard Grave
+  Abstract: Abstract TBD
 - Title: (<b>KeyNote Talk</b>)  The LoRA Journey and Learnings&#58 from Creation to Industrial-Scale Adoption
   Time: 2:00PM - 2:30PM
   Presenter: Dr. Weizhu Chen
@@ -152,23 +141,22 @@
   Abstract: Abstract TBD
 
 
-
 - Title: Afternoon Break
-  Time: 03:00PM - 03:15PM
+  Time: 03:00PM - 03:30PM
   Whole_line: true
 
 - Title: <b>Interactive Panel Discussion</b>
-  Time: 3:20PM - 4:10PM
+  Time: 3:30PM - 4:20PM
   Presenter: <ul><li> Marjan Ghazvini Nejad</li><li> Joel Hestness</li><li> Katie Derthick</li><li> Lu Hou</li></ul>
   Is_paper: false
   Whole_line: false
   
 - Title: Best Paper and Poster Awards 
-  Time: 4:10PM-4:15PM
+  Time: 4:20PM-4:30PM
   Whole_line: true  
   
 - Title: <b>Poster Session II </b> & Free Discussion
-  Time: 4:15PM - 5:00PM
+  Time: 4:30PM - 5:30PM
   Whole_line: true
 
 
