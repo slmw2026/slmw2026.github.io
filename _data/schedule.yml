@@ -117,13 +117,13 @@
   Whole_line: false
   Authors: Shashank Rajput (Databricks)*,Ying Sheng (NA),Sean Owen (Databricks),Vitaliy Chiley (Cerebras)
   Abstract: The size of the key-value (KV) cache plays a critical role in determining both the maximum context length and the number of concurrent requests supported during inference in modern language models. The KV cache size grows proportionally with the number of attention heads and the tokens processed, leading to increased memory consumption and slower inference for long inputs. In this work, we explore the use of MixAttention, a model architecture modification closely related to a blog published by Character.AI. MixAttention combines sliding window attention, where only a small subset of recent tokens is stored in the KV cache, with KV cache sharing across layers. Our experiments demonstrate that MixAttention significantly reduces memory usage and improves inference speed without sacrificing model performance in both short and long-context tasks. We also explore various configurations of this architecture, identifying those that maintain quality across evaluation metrics while optimizing resource efficiency.
-- Title: (<b>Spotlight 10</b>) Title TBD
+- Title: (<b>Spotlight 10</b>) One Initialization to Rule them All&#58; Fine-tuning via Explained Variance Adaptation
   Time: 1:54PM - 2:00PM
-  Presenter: TBD
+  Presenter: Fabian Paischer
   Is_paper: true
   Whole_line: false
-  Authors: TBD
-  Abstract: Abstract TBD
+  Authors: Fabian Paischer (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria)*,Lukas Hauzenberger (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz),Thomas Schmied (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz),Benedikt Alkin (Institute for Machine Learning),Marc Deisenroth (University College London),Sepp Hochreiter (LIT AI Lab, In
+  Abstract: Foundation models (FMs) are pre-trained on large-scale datasets and then fine-tuned on a downstream task for a specific application. The most successful and most commonly used fine-tuning method is to modulate the pre-trained weights via a low-rank adaptation (LoRA) of newly introduced weights. These weight matrices are usually initialized at random with the same rank for each layer across the FM, which results in suboptimal performance. We propose to enhance LoRA by initializing the new weights in a data-driven manner, by computing singular value decomposition on activation vectors. Then, we initialize the new LoRA matrices with the obtained right-singular vectors. Finally, we re-distribute the ranks among layers to explain the maximal amount of variance across all layers. This assignment results in an adaptive allocation of ranks per weight matrix, and inherits all benefits of LoRA. We apply our new method, Explained Variance Adaptation (EVA), to a variety of fine-tuning tasks comprising language understanding and generation, image classification, and reinforcement learning. EVA consistently attains the highest average score across a multitude of tasks per domain.
 - Title: (<b>KeyNote Talk</b>)  The LoRA Journey and Learnings&#58 from Creation to Industrial-Scale Adoption
   Time: 2:00PM - 2:30PM
   Presenter: Dr. Weizhu Chen
