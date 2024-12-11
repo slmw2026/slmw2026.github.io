@@ -124,7 +124,7 @@
   Whole_line: false
   Authors: Fabian Paischer (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz, Austria)*,Lukas Hauzenberger (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz),Thomas Schmied (ELLIS Unit Linz, LIT AI Lab, Institute for Machine Learning, Johannes Kepler University Linz),Benedikt Alkin (Institute for Machine Learning),Marc Deisenroth (University College London),Sepp Hochreiter (LIT AI Lab, In
   Abstract: Abstract TBD
-- Title: (<b>KeyNote Talk</b>)  The LoRA Journey and Learnings&#58 from Creation to Industrial-Scale Adoption
+- Title: (<b>KeyNote Talk</b>)  The LoRA Journey and Learnings&#58; from Creation to Industrial-Scale Adoption
   Time: 2:00PM - 2:30PM
   Presenter: Dr. Weizhu Chen
   Is_paper: false
@@ -147,7 +147,7 @@
 
 - Title: <b>Interactive Panel Discussion</b>
   Time: 3:30PM - 4:20PM
-  Presenter: <ul><li> Marjan Ghazvini Nejad</li><li> Joel Hestness</li><li> Katie Derthick</li></ul>
+  Presenter: <ul><li> Marjan Ghazvini Nejad</li><li> Joel Hestness</li><li>Navdeep Jaitly</li><li> Katie Derthick</li></ul>
   Is_paper: false
   Whole_line: false
   
