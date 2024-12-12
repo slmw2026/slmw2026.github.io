@@ -86,7 +86,7 @@
 - Title: Lunch Break
   Time: 12:00PM - 1:30PM
   Whole_line: true
-- Title: <b>Poster Session I </b> & Free Discussion
+- Title: <b>Poster Session I-(Paper IDs &#35;1 - &#35;50) </b> & Free Discussion
   Time: 12:30PM - 1:30PM
   Whole_line: true  
 - Title: (<b>Spotlight 6</b>) RetrievalAttention&#58; Accelerating Long-Context LLM Inference via Vector Retrieval
@@ -157,7 +157,7 @@
   Time: 4:20PM-4:30PM
   Whole_line: true  
   
-- Title: <b>Poster Session II </b> & Free Discussion
+- Title: <b>Poster Session II-(Paper IDs &#35;51 - &#35;105) </b> & Free Discussion
   Time: 4:30PM - 5:30PM
   Whole_line: true
 
