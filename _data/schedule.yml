@@ -132,13 +132,15 @@
   Bio: <b>Weizhu Chen</b> Weizhu Chen is the Vice President leading the Microsoft GenAI modeling team, driving innovation in large-scale AI model training, including pre-training, post-training, and evaluation for both Microsoft and OpenAI. Under his leadership, the team has pioneered groundbreaking advancements such as LoRA, DeBERTa, and Phi-3 models. With over 19 years at Microsoft, Weizhu has held pivotal roles in shaping AI and machine learning technologies. Previously, he served as Partner Science Manager at Microsoft Azure AI and led teams in the Business Applications Group and Research divisions, focusing on deep learning, NLP, and distributed machine learning at cloud scale. Before joining Microsoft, he contributed to research on information retrieval at IBM Research. Weizhu’s career reflects a deep commitment to advancing the state of AI, making a significant impact on the field and enabling transformative technologies.
   Abstract: Abstract TBD
   
-- Title: (<b>KeyNote Talk</b>) Title TBD
+- Title: (<b>KeyNote Talk</b>) How to build fully open language models&#58; from pre-training to post-training
   Time: 2:30PM - 3:00PM
   Presenter: Prof. Hananeh Hajishirzi
   Is_paper: false
   Whole_line: false
-  Bio: <b>Hananeh Hajishirzi</b>, a leading NLP expert focusing on large language models, explores how AI can reason and understand complex information from various sources.
-  Abstract: Abstract TBD
+  Bio: <b>Hananeh Hajishirzi</b>, Hanna Hajishirzi is the Torode Family Associate Professor in the Allen School of Computer Science and Engineering at the University of Washington and a Senior Director of NLP at AI2. Her current research delves into various domains within Natural Language Processing (NLP) and Artificial Intelligence (AI), with a particular emphasis on accelerating the science of language modeling, broadening their scope, and enhancing their applicability and usefulness for human lives. She has published over 140 scientific articles in prestigious journals and conferences across ML, AI, NLP, and Computer Vision. She is the recipient of numerous awards, including the Sloan Fellowship, NSF CAREER Award, Intel Rising Star Award, Allen Distinguished Investigator Award, Academic Achievement UIUC Alumni Award, and Innovator of the Year Award by GeekWire. The work from her lab has been nominated for or has received best paper awards at various conferences and has been featured in numerous magazines and newspapers.
+  Abstract: Language models (LMs) have become ubiquitous in both AI research and commercial product offerings. As their commercial importance has surged, the most powerful models have become closed off, gated behind proprietary interfaces, with important details of their training data, architectures, and development undisclosed. In this talk, I present our OLMo project aimed at building strong language models and making them fully accessible to researchers along with open-source code for data, training, and inference. Training language models are expensive, therefore we optimize for quality vs. compute cost. I focus on how data, architecture, and training improvements advance models at pre-training and post-training stages with less compute cost.
+
+
 
 
 - Title: Afternoon Break
