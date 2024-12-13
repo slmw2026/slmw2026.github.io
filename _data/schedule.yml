@@ -86,7 +86,7 @@
 - Title: Lunch Break
   Time: 12:00PM - 1:30PM
   Whole_line: true
-- Title: <b>Poster Session I-(Paper IDs &#35;1 - &#35;50 <a href="https://drive.google.com/drive/folders/1xnuRixS8p8LvBOzj2rc5B8R2QdVAez82?usp=sharing" target="_blank">[Link to Posters]</a>) </b> & Free Discussion
+- Title: <b>Poster Session I-(Paper IDs &#35;1 - &#35;50 <a href="https://drive.google.com/drive/folders/1xnuRixS8p8LvBOzj2rc5B8R2QdVAez82?usp=sharing" target="_blank">[Link to Posters]</a>) </b>
   Time: 12:30PM - 1:30PM
   Whole_line: true  
 - Title: (<b>Spotlight 6</b>) RetrievalAttention&#58; Accelerating Long-Context LLM Inference via Vector Retrieval
