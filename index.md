@@ -139,12 +139,12 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <!-- Organizers -->
 <h2 class="blackpar_title" id="organizers">Organizers</h2>
 <p>
-<!-- {% include organizers.html %} -->
+{% include organizers.html %}
 </p>
 
 <h2 class="blackpar_title" id="Organizers">Volunteers</h2>
 <p>
-<!-- {% include volunteers.html %} -->
+{% include volunteers.html %}
 </p>
 <!-- <div class="row_perso">
 	<div class="card_perso column_perso justify-content-center" id="volunteer_card">
