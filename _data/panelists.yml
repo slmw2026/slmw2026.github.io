@@ -1,18 +1,14 @@
 - num_row: 1
   speakers:
     - title: Dr.
-      name: Marjan Ghazvini Nejad
-      affiliation: Meta
-      photo: MarjanGhazvininejad.jpg
+      name: Elnaz Ansari
+      affiliation: AMD
+      photo: elnaz_ansari.jpg
+    - title: Prof.
+      name: Daniele Jahier Pagliari
+      affiliation: Politecnico di Torino
+      photo: daniele_jahier_pagliari.png
     - title: Dr.
-      name: Joel Hestness
-      affiliation: Cerebras
-      photo: joelhestness.jpg
-    - title: Dr.
-      name: Navdeep Jaitly
-      affiliation: Apple
-      photo: navdeep-jaitly.jpg
-    - title: Dr.
-      name: Katie Derthick
-      affiliation: Microsoft
-      photo: katie_d.jpg
+      name: Natalia Vassilieva
+      affiliation: Cerebras Systems
+      photo: natalia_vassilieva.jpg

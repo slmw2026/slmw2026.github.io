@@ -112,14 +112,14 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 
 
 <!--Confirmed Speakers-->
-<h2 class="blackpar_title" id="speakers">Keynote Speakers</h2>
+<h2 class="blackpar_title" id="speakers">Invited Speakers</h2>
 <p>
-<!-- {% include speakers.html %} -->
+{% include speakers.html %}
 </p>
 
-<h2 class="blackpar_title" id="speakers">Panelists</h2>
+<h2 class="blackpar_title" id="speakers">Invited Panelists</h2>
 <p>
-<!-- {% include panelists.html %} -->
+{% include panelists.html %}
 </p>
 
 <!-- Schedule -->

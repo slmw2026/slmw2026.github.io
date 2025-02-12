@@ -1,33 +1,29 @@
 - num_row: 1
   speakers:
-    - name: Danqi Chen
+    - name: Dan Alistarh
       title: Prof.
-      affiliation: Princeton 
-      photo: danqi_2019.jpg
-    - name: Bhavana Dalvi
-      title: Dr.
-      affiliation: Allen Institute for AI
-      photo: bhavana.jpg
-    - name: Weizhu Chen
-      title: Dr.
-      affiliation: Microsoft
-      photo: Weizhu_Chen.jpg
-    - name: Tri Dao
+      affiliation: IST Austria 
+      photo: DanAlistarh.jpg
+    - name: Warren Gross
       title: Prof.
-      affiliation: Princeton/Together AI
-      photo: tri_dao.jpeg
+      affiliation: McGill University
+      photo: warren.jpg
+    - name: Deniz Gunduz
+      title: Prof.
+      affiliation: Imperial College London
+      photo: Deniz-Gunduz.jpg
 
 - num_row: 2
   speakers:
-    - name: Hananeh Hajishirzi
-      title: Prof.
-      affiliation: University of Washington
-      photo: Hananeh_Hajishirzi.jpg
-    - name: Navdeep Jaitly
+    - name: Lu Hou
       title: Dr.
-      affiliation: Apple
-      photo: navdeep-jaitly.jpg
-    - name: Lili Mou
+      affiliation: Huawei Noah's Ark Lab
+      photo: luhou.jpg
+    - name: Andrea Lodi
       title: Prof.
-      affiliation: University of Alberta
-      photo: lili_mou.jpg
+      affiliation: Cornell and Technion
+      photo: lodi.jpg
+    - name: Shahrokh Valaee
+      title: Prof.
+      affiliation: University of Toronto
+      photo: shahrokh_valaee.jpg
