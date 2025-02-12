@@ -7,11 +7,11 @@
 #
 layout: home
 ---
-<!-- <img src="/images/banner2024.png" style="pointer-events: none; user-select: none;"> -->
+<img src="/images/EIW2025_Banner.png" style="pointer-events: none; user-select: none;">
 
  
-<!-- 
-<div style="
+<!-- Latest Updates at the top of the main page! -->
+<!-- <div style="
   border: 1px solid #ccc; 
   border-radius: 15px; 
   padding: 20px; 
@@ -27,29 +27,21 @@ layout: home
 	<span class="news-item-icon">📢</span> Our Submission Portal will remain open until September 18th, AOE, for editing existing submitted papers. 
      Add more news items as needed 
   </ul>
-</div> 
--->
+</div>  -->
+
 
 <p>
-This is the first version of website for EIW 2025!
-<!-- The fourth version of the Efficient Natural Language and Speech Processing (ENLSP-IV) workshop will focus on how to make large language and foundation models more efficient in terms of <b>Architecture</b>, <b>Training</b>, and <b>Inference</b> in their real-world applications. This year, following the trend of industry and academia, we put more emphasis on investigating new architectures to make future language and foundation models more efficient. Moreover, we highlight the importance of comprehensive evaluation and benchmarking new efficient models from different practical aspects. 
-The workshop program offers an interactive platform for gathering experts and talents from academia and industry through invited talks, panel discussion, paper submission, reviews, interactive poster sessions, oral presentations and a couple of mentorship sessions for new researchers.
-This will be a unique opportunity to discuss and share challenging problems, build connections,  exchange ideas and brainstorm, and foster future collaborations. The topics of this workshop can be of interest for people working on general machine learning, deep learning, hardware, optimization, theory and applications.  -->
+The one-day <b>Edge Intelligence Workshop</b> focuses on the deployment of large language and vision models on edge devices such as IoT (AIoT) gadgets, smartphones, and autonomous vehicles. This workshop addresses key challenges in optimizing AI for edge environments, including lightweight model development, efficient training and inference, energy-efficient architectures, and ensuring privacy and security in decentralized systems. As AI models grow larger, deploying them efficiently at the edge becomes critical, offering opportunities for real-time decision-making, cost reduction, and democratization of AI technologies. Given ICML’s emphasis on scalable, efficient, and impactful machine learning research, this workshop will resonate with a broad audience in bridging the gap between AI research and practical deployment.
 </p>
 
 
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-<!-- This is some random text from Hamed adding a template text here to check whether the new website for EIW is built correctly. -->
-<!-- As large language models (e.g. <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf">GPT-3</a>, <a href="http://arxiv.org/abs/2303.08774"> GPT-4</a>, <a href="https://llama.meta.com/llama3/"> Llama 3</a>, <a href="https://arxiv.org/pdf/2305.10403">PALM</a>, <a href="https://arxiv.org/pdf/2312.11805">Gemini</a>, and <a href="https://arxiv.org/pdf/2303.10845">Pangu-∑</a>), pre-trained speech models (e.g. <a href="https://arxiv.org/pdf/2202.05993">wav2vec</a>, <a href="https://arxiv.org/pdf/2106.07447">Hubert</a>, <a href="https://arxiv.org/pdf/2110.13900">wavLM</a>, <a href="https://proceedings.mlr.press/v202/radford23a/radford23a.pdf">Whisper</a>, <a href="https://www.assemblyai.com/blog/conformer-1/">Conformer-1</a> and <a href="https://www.assemblyai.com/blog/conformer-2/">Conformer-2</a> ) and other foundation models (e.g. <a href="https://openai.com/index/hello-gpt-4o/">GPT-4o</a>, and <a href="https://stability.ai/stable-image">Stable Diffusion</a>) have advanced rapidly and become more prominent and widespread, improving their efficiency would be more crucial. 
-While it is true that the computational power and GPU resources have played a significant role in the success of these models, we need to also be aware that using more computational resources can result in: (a) increasing the cost of training and deploying such models, (b) making the models less accessible, (c) less contribution from the research community, and (d) increasing the environmental costs of the models. Moreover, it is evident that most of these pre-trained models are largely over-parameterized and their efficiency is under question. Lack of efficiency can largely limit the application of these advanced models in practice.</p> -->
-<!-- Pangu-&sum; -->
-<!-- <p>
-Building upon the framework of our previous three editions, this workshop remains dedicated to investigating solutions for enhancing the efficiency of pre-trained language and foundation models but with introducing some fresh and important new topics to the community and encouraging their contributions.
-Just to highlight a few: <b>(1)</b> Despite the ubiquitous usage of Transformers, they suffer from quadratic computational complexity which limits their efficiency especially for longer sequence lengths. Should we improve the efficiency of Transformers (e.g. in <a href="https://openreview.net/forum?id=4g02l2N2Nx">Hedgehog</a>, <a href="http://arxiv.org/abs/2312.06635">Gated Linear Attention</a>) or look for other architectures (e.g. <a href="https://arxiv.org/abs/2312.00752">Mamba</a>, <a href="http://arxiv.org/abs/2403.19887">Jamba</a>, <a href="http://arxiv.org/abs/2305.13048">RVKW</a>, <a href="http://arxiv.org/abs/2405.04517">xLSTM</a>, and <a href="http://arxiv.org/abs/2111.00396">SSMs</a>)? <b>(2)</b> For accelerating training, we have seen the significant impact of designing hardware efficient implementations such as in <a href = "http://arxiv.org/abs/2205.14135">Flash Attention</a>. Should we focus more on these hardware-aware solutions or more on new/improved architectures?
-<b>(3)</b> For efficient inference, there are solutions such as: Speculative Decoding <a href="http://arxiv.org/abs/2302.01318">[Link1]</a> <a href="http://arxiv.org/abs/2211.17192">[Link2]</a> where the performance is strongly model and task-dependent and the draft and target models should have the same vocabulary (tokenizer); improved KV-caching (e.g. <a href="http://arxiv.org/abs/2306.14048">[Link]</a>) which has a limited speed-up; and many-in-one models such as <a href="http://arxiv.org/abs/2309.00255">SortedNet</a>, <a href="http://arxiv.org/abs/2310.07707">MatFormer</a>, and <a href="http://arxiv.org/abs/2404.16710">LayerSkip</a> but the performance of sub-models drops compared to their corresponding individual models.
-<b>(4)</b> While there are many so-called efficient solutions in the literature, there is no fair, comprehensive and practical evaluation of these models and their comparison to each other. For example, we do not know the hallucination extent of the new architectures vs. the transformer model (e.g. in <a href="http://arxiv.org/abs/2402.01032">[Link]</a>). 
-</p> -->
+Embedded devices face challenges due to limited memory and computing power, making advanced AI deployment difficult. The field is shifting from passive inference to embodied AI and AIoT, though many edge devices still struggle with training and inference. Innovations like <a href="https://arxiv.org/abs/2412.19437">DeepSeek</a>'s models improve efficiency without performance loss, enabling responsive, on-device AI with reduced cloud dependency.
+</p>
+<p>
+The Edge Intelligence Workshop aims to make a significant impact by fostering collaborations between experts in computing hardware, AI algorithms, telecommunications, and optimization from academia and industry. It will highlight the benefits of training and inference using low-precision formats on both edge and cloud devices, which improve efficiency and reduce computational demands. By integrating edge and cloud systems, the workshop will explore hybrid models that balance performance, data privacy, and real-time responsiveness. Edge devices become central to AI applications—offering advantages like increased privacy and lower latency, the workshop will address the growing need for scalable and energy-efficient AI solutions. This focus aligns with emerging communities like <a href="https://www.edgeaifoundation.org/">Edge AI</a> (TinyML) foundation, reflecting the industry's and consumers' shared interest in edge computing for cost reduction and enhanced data control.
+</p>
 
 <!-- Call for Papers -->
 <h2 class="blackpar_title" id="call_for_papers">Call for Papers</h2>
@@ -98,7 +90,7 @@ To encourage engagement from the NeurIPS community, we present several active re
 	<li>Efficient graph and LLM joint learning</li>
 </ul> -->
 
-</p>
+<!-- </p> -->
 
 <h2 class="blackpar_title">Submission Instructions</h2>
 <p>
@@ -146,58 +138,15 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 <p>
 {% include volunteers.html %}
 </p>
-<!-- <div class="row_perso">
-	<div class="card_perso column_perso justify-content-center" id="volunteer_card">
-	  <img src="/images/khalil_bibi.png" alt="Khalil Bibi" class="img_card_perso">
-	  <div class="container_perso" >
-		<center>
-		<h6>
-			<b>Khalil Bibi</b>
-			<br>
-			Huawei Noah's Ark Lab
-			<br>
-			<a href="https://scholar.google.ca/citations?user=feQAvxoAAAAJ&hl=en">
-				<i class="bi bi-mortarboard-fill" style="font-size: 2rem;"></i>
-			</a>
-			&nbsp;
-			<a href="https://www.linkedin.com/in/khalilbibi/">
-				<i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-			</a>
-		</h6>
-		</center>
-	  </div>
-	</div>
-	<div class="card_perso column_perso justify-content-center" id="volunteer_card">
-	  <img src="/images/dav.jpg" alt="Khalil Bibi" class="img_card_perso">
-	  <div class="container_perso" >
-		<center>
-		<h6>
-			<b>David Alfonso-Hermelo</b>
-			<br>
-			Huawei Noah's Ark Lab
-			<br>
-			<a href="https://scholar.google.ca/citations?user=g6GccGAAAAAJ&hl=en&oi=ao">
-				<i class="da da-mortarboard-fill" style="font-size: 2rem;"></i>
-			</a>
-			&nbsp;
-			<a href="https://www.linkedin.com/in/david-alfonso-hermelo-6646a1b1/">
-				<i class="bi bi-linkedin" style="font-size: 2rem;"></i>
-			</a>
-		</h6>
-		</center>
-	  </div>
-	</div>
-</div> -->
-
 
 <br> 
 
 <!-- Technical Committee -->
-<h2 class="blackpar_title" id="technical_committee">Technical Committee</h2>
-<p>
+<!-- <h2 class="blackpar_title" id="technical_committee">Technical Committee</h2> -->
+<!-- <p> -->
 <!-- {% include technical_committee.html %} -->
-</p>
-<br>
+<!-- </p> -->
+<!-- <br> -->
 
 <!-- <h2 class="blackpar_title">Diamond Sponsors</h2> -->
 <!-- <center>
@@ -213,11 +162,11 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 </p> -->
 
 <h2 class="blackpar_title" id="sponsors"> Diamond Sponsors</h2>
-<!-- <br>
+<br>
 <div class="row">
 	<div class="col">
 		<center>
-			<img src="/images/Diamond.png" width="800px">
+			<img src="/images/huawei_logo.png" width="500px">
 		</center>
 	</div>
 	<!-- <div class="col">
@@ -225,19 +174,19 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 			<img src="/images/BASF_logo.png" width="350px">
 		</center>
 	</div>	 -->
-<!-- </div>
-<br> -->
-<!-- <h2 class="blackpar_title">Platinum Sponsor</h2>
-<div class="row">
+</div>
+<!-- <br> -->
+<!-- <h2 class="blackpar_title">Platinum Sponsor</h2> -->
+<!-- <div class="row">
 	<div class="col">
 		<center>
 			<img src="/images/Apple-Logo.jpg" width="250px">
 		</center>
 	</div>
-</div>
-<h2 class="blackpar_title">Gold Sponsors</h2>
-<br>
-<div class="row">
+</div> -->
+<!-- <h2 class="blackpar_title">Gold Sponsors</h2> -->
+<!-- <br> -->
+<!-- <div class="row">
 	<div class="col">
 		<center>
 			<img src="/images/shanghai_ai_lab1.png" width="200px">
@@ -248,8 +197,8 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 			<img src="/images/Logo-Sanofi.png" width="150px">
 		</center>
 	</div>
-</div>
-<br> -->
+</div> -->
+<!-- <br> -->
 <!-- <div class="row">
 	<div class="col">
 		<center>
@@ -260,6 +209,5 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 		<center>
 			<img src="/images/CUHK.png" width="400px">
 	</center>
-</div>
-<br>
--->
+</div> -->
+<!-- <br> -->
