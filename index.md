@@ -38,13 +38,12 @@ The one-day <b>Edge Intelligence Workshop</b> focuses on the deployment of large
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
 Embedded devices face challenges due to limited memory and computing power, making advanced AI deployment difficult. The field is shifting from passive inference to embodied AI and AIoT, though many edge devices still struggle with training and inference. Innovations like <a href="https://arxiv.org/abs/2412.19437">DeepSeek</a>'s models improve efficiency without performance loss, enabling responsive, on-device AI with reduced cloud dependency.
-</p>
-<p>
 The Edge Intelligence Workshop aims to make a significant impact by fostering collaborations between experts in computing hardware, AI algorithms, telecommunications, and optimization from academia and industry. It will highlight the benefits of training and inference using low-precision formats on both edge and cloud devices, which improve efficiency and reduce computational demands. By integrating edge and cloud systems, the workshop will explore hybrid models that balance performance, data privacy, and real-time responsiveness. Edge devices become central to AI applications—offering advantages like increased privacy and lower latency, the workshop will address the growing need for scalable and energy-efficient AI solutions. This focus aligns with emerging communities like <a href="https://www.edgeaifoundation.org/">EDGE AI</a> (formerly tinyML) foundation, reflecting the industry's and consumers' shared interest in edge computing for cost reduction and enhanced data control.
 </p>
 
 <!-- Call for Papers -->
 <h2 class="blackpar_title" id="call_for_papers">Call for Papers</h2>
+<p>---</p>
 <!-- <p> -->
 <!-- <p>
 hkjashdljajlkdja;lksalk;djaslkfjlskdj;kfs
@@ -94,6 +93,7 @@ To encourage engagement from the NeurIPS community, we present several active re
 
 <h2 class="blackpar_title">Submission Instructions</h2>
 <p>
+---
 <!-- You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be more than <b>8 pages for Long Papers</b> and <b>4 pages for Short Papers</b>, strictly following the NeurIPS template style <a href= "https://www.overleaf.com/latex/templates/neurips-2024/tpsbbrdqcmsh">(Link)</a>. Please be advised that the NeurIPS submission checklist is not needed for our workshop submissions. 
 <br />
 Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission (for example <b> any NeurIPS submissions can be submitted concurrently to workshops </b>). Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Awards to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website. Moreover, we are currently negotiating with a publisher to host opt-in accepted papers in a special issue proceeding for our workshop. -->
@@ -101,13 +101,15 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 
 <h2 class="blackpar_title">Important Dates</h2>
 <p>
-<!-- <ul> -->
+<ul>
 	<!-- <li><s>Special NeurIPS Fast Track Submission Deadline: <b>September 30, 2024 Anywhere on Earth (AOE)</b></s></li>
 	<li><s>Submission Deadline: September 15, 2024 Anywhere on Earth (AOE)</s> </li>
 	<li><s>Acceptance Notification: <b>October 09, 2024 AOE</b></s></li>
 	<li>Camera-Ready Submission: <b>October 25, 2024 AOE</b> </li>
-	<li>Workshop Date: <b>December 14, 2024 </b></li>
-</ul> -->
+	<li>Workshop Date: <b>December 14, 2024 </b></li> -->
+	<li>Submission Deadline: <b>May 26, 2025 Anywhere on Earth (AOE)</b></li>
+	<li>Acceptance Notification: <b>June 09, 2025 AOE</b></li>
+</ul>
 </p>
 
 
@@ -143,11 +145,12 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 <br> 
 
 <!-- Technical Committee -->
-<!-- <h2 class="blackpar_title" id="technical_committee">Technical Committee</h2> -->
-<!-- <p> -->
+<h2 class="blackpar_title" id="technical_committee">Scientific Committee</h2>
+<p>
+	** TBD
 <!-- {% include technical_committee.html %} -->
-<!-- </p> -->
-<!-- <br> -->
+</p>
+<br>
 
 <!-- <h2 class="blackpar_title">Diamond Sponsors</h2> -->
 <!-- <center>
@@ -162,7 +165,9 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 We are currently welcoming sponsorship opportunities. If your organization is interested in supporting our conference, please contact us (neurips.ENLSP.2024@gmail.com) for more information on sponsorship packages and benefits. 
 </p> -->
 
-<h2 class="blackpar_title" id="sponsors"> Diamond Sponsors</h2>
+<!-- <h2 class="blackpar_title" id="sponsors"> Diamond Sponsors</h2> -->
+
+<h2 class="blackpar_title" id="sponsors">Sponsors</h2>
 <br>
 <div class="row">
 	<div class="col">
