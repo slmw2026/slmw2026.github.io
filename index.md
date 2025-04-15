@@ -31,7 +31,7 @@ layout: home
 
 
 <p>
-The one-day <b>Edge Intelligence Workshop</b> focuses on the deployment of large language and vision models on edge devices such as IoT (AIoT) gadgets, smartphones, and autonomous vehicles. This workshop addresses key challenges in optimizing AI for edge environments, including lightweight model development, efficient training and inference, energy-efficient architectures, and ensuring privacy and security in decentralized systems. As AI models grow larger, deploying them efficiently at the edge becomes critical, offering opportunities for real-time decision-making, cost reduction, and democratization of AI technologies. Given ICML’s emphasis on scalable, efficient, and impactful machine learning research, this workshop will resonate with a broad audience in bridging the gap between AI research and practical deployment.
+The one-day <b>Edge Intelligence Workshop</b> focuses on the deployment of large language and vision models on edge devices such as IoT (AIoT) gadgets, smartphones, and autonomous vehicles. This workshop addresses key challenges in optimizing AI for edge environments, including lightweight model development, efficient training and inference, energy-efficient architectures, and ensuring privacy and security in decentralized systems. As AI models grow larger, deploying them efficiently at the edge becomes critical, offering opportunities for real-time decision-making, cost reduction, and democratization of AI technologies. Given COLM’s emphasis on scalable, efficient, and impactful machine learning research, this workshop will resonate with a broad audience in bridging the gap between AI research and practical deployment.
 </p>
 
 
@@ -107,8 +107,8 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	<li><s>Acceptance Notification: <b>October 09, 2024 AOE</b></s></li>
 	<li>Camera-Ready Submission: <b>October 25, 2024 AOE</b> </li>
 	<li>Workshop Date: <b>December 14, 2024 </b></li> -->
-	<li>Submission Deadline: <b>May 26, 2025 Anywhere on Earth (AOE)</b></li>
-	<li>Acceptance Notification: <b>June 09, 2025 AOE</b></li>
+	<li>Submission Deadline: <b>---, 2025 Anywhere on Earth (AOE)</b></li>
+	<li>Acceptance Notification: <b>---, 2025 AOE</b></li>
 </ul>
 </p>
 
@@ -145,7 +145,7 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 <br> 
 
 <!-- Technical Committee -->
-<h2 class="blackpar_title" id="technical_committee">Scientific Committee</h2>
+<h2 class="blackpar_title" id="technical_committee">Technical Committee</h2>
 <p>
 	** TBD
 <!-- {% include technical_committee.html %} -->
