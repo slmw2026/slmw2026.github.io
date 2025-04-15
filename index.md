@@ -7,7 +7,7 @@
 #
 layout: home
 ---
-<img src="/images/EIW2025_Banner.png" style="pointer-events: none; user-select: none;">
+<img src="/images/EIW2025_COLM.png" style="pointer-events: none; user-select: none;">
 
  
 <!-- Latest Updates at the top of the main page! -->
