@@ -170,11 +170,11 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <h2 class="blackpar_title" id="sponsors">Sponsors</h2>
 <br>
 <div class="row">
-	<div class="col">
+	<!-- <div class="col">
 		<center>
 			<img src="/images/huawei_logo.png" width="500px">
 		</center>
-	</div>
+	</div> -->
 	<!-- <div class="col">
 		<center>
 			<img src="/images/BASF_logo.png" width="350px">
