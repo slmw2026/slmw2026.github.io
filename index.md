@@ -149,7 +149,8 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 <!-- Technical Committee -->
 <h2 class="blackpar_title" id="technical_committee">Technical Committee</h2>
 <p>
-{% include technical_committee.html %}
+<!-- {% include technical_committee.html %} -->
+<b>To Be Announced</b>
 </p>
 <br>
 
