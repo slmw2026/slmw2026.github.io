@@ -7,7 +7,7 @@
 #
 layout: home
 ---
-<img src="/images/EIW2025_COLM.png" style="pointer-events: none; user-select: none;">
+<img src="/images/EAW2026_ICML.png" style="pointer-events: none; user-select: none;">
 
  
 <!-- Latest Updates at the top of the main page! -->
@@ -31,19 +31,21 @@ layout: home
 
 
 <p>
-The one-day <b>Edge Intelligence Workshop</b> focuses on the deployment of large language and vision models on edge devices such as IoT (AIoT) gadgets, smartphones, and autonomous vehicles. This workshop addresses key challenges in optimizing AI for edge environments, including lightweight model development, efficient training and inference, energy-efficient architectures, and ensuring privacy and security in decentralized systems. As AI models grow larger, deploying them efficiently at the edge becomes critical, offering opportunities for real-time decision-making, cost reduction, and democratization of AI technologies. Given COLM’s emphasis on scalable, efficient, and impactful machine learning research, this workshop will resonate with a broad audience in bridging the gap between AI research and practical deployment.
+The <b>Edge Agents Workshop (EAW)</b> explores the design and deployment of autonomous AI agents on resource-constrained edge devices such as AIoT hardware, smartphones, wearables, and autonomous systems. As foundation models continue to grow in scale, enabling agents to perceive, reason, plan, and coordinate efficiently at the edge introduces new challenges in lightweight model design. Challenges include on-device training and inference, energy-aware execution, and secure decentralized communication, and low-power secure orchestration. This workshop focuses on advancing real-time, privacy-preserving, and cost-efficient edge intelligence, bridging cutting-edge machine learning research with practical deployment constraints. It will attract ICML researchers and practitioners interested in agent learning, efficient model adaptation, distributed autonomy, and the next generation of agentic AI operating beyond the cloud.
 </p>
 
 
 <h2 class="blackpar_title" id="overview">Overview</h2>
 <p>
-Embedded devices face challenges due to limited memory and computing power, making advanced AI deployment difficult. The field is shifting from passive inference to embodied AI and AIoT, though many edge devices still struggle with training and inference. Innovations like <a href="https://arxiv.org/abs/2412.19437">DeepSeek</a>'s models improve efficiency without performance loss, enabling responsive, on-device AI with reduced cloud dependency.
-The Edge Intelligence Workshop aims to make a significant impact by fostering collaborations between experts in computing hardware, AI algorithms, telecommunications, and optimization from academia and industry. It will highlight the benefits of training and inference using low-precision formats on both edge and cloud devices, which improve efficiency and reduce computational demands. By integrating edge and cloud systems, the workshop will explore hybrid models that balance performance, data privacy, and real-time responsiveness. Edge devices become central to AI applications—offering advantages like increased privacy and lower latency, the workshop will address the growing need for scalable and energy-efficient AI solutions. This focus aligns with emerging communities like <a href="https://www.edgeaifoundation.org/">EDGE AI</a> (formerly tinyML) foundation, reflecting the industry's and consumers' shared interest in edge computing for cost reduction and enhanced data control.
+Agentic AI is moving beyond cloud-only deployment toward systems that must operate locally, respond in real time, and preserve user privacy. Doing this on edge platforms introduces a different set of constraints than typical server-scale settings: limited compute, memory, and energy budgets, plus tight latency requirements. The Edge Agents Workshop (EAW) focuses on what it takes to run the full agent loop, perception, reasoning, planning, and action, directly on resource-constrained devices such as AIoT hardware, smartphones, wearables, and autonomous systems.
+</p>
+<p>
+EAW emphasizes practical deployment of agentic, multimodal systems under real-world constraints, including on-device training and inference, energy-aware execution, adaptive compression and efficient model adaptation, cross-device coordination, and secure decentralized communication and low-power orchestration. It also considers hybrid edge and cloud agent architectures that balance performance, privacy, and responsiveness. The workshop aims to catalyze collaboration across machine learning, embedded and edge hardware, telecommunications, and optimization, and will feature rigorously reviewed contributed papers presented as talks and posters, plus a concluding panel on open problems, with best paper and best poster awards.
 </p>
 
 <!-- Call for Papers -->
 <h2 class="blackpar_title" id="call_for_papers">Call for Papers</h2>
-<p>---</p>
+<p><b>To Be Announced</b></p>
 <!-- <p> -->
 <!-- <p>
 hkjashdljajlkdja;lksalk;djaslkfjlskdj;kfs
@@ -93,7 +95,7 @@ To encourage engagement from the NeurIPS community, we present several active re
 
 <h2 class="blackpar_title">Submission Instructions</h2>
 <p>
----
+<b>To Be Announced</b>
 <!-- You are invited to submit your papers in our CMT submission portal <a href="https://cmt3.research.microsoft.com/ENLSP2024">(Link)</a>. All the submitted papers have to be anonymous for double-blind review. We expect each paper will be reviewed by at least three reviewers. The content of the paper (excluding the references and supplementary materials) should not be more than <b>8 pages for Long Papers</b> and <b>4 pages for Short Papers</b>, strictly following the NeurIPS template style <a href= "https://www.overleaf.com/latex/templates/neurips-2024/tpsbbrdqcmsh">(Link)</a>. Please be advised that the NeurIPS submission checklist is not needed for our workshop submissions. 
 <br />
 Authors can submit up to 100 MB of supplementary materials separately. Authors are highly encouraged to submit their codes for reproducibility purposes. According to the guideline of the NeurIPS workshops, already published papers are not encouraged for submission, but you are allowed to submit your ArXiv papers or the ones which are under submission (for example <b> any NeurIPS submissions can be submitted concurrently to workshops </b>). Moreover, a work that is presented at the main NeurIPS conference should not appear in a workshop. Please make sure to indicate the complete list of conflict of interests for all the authors of your paper. To encourage higher quality submissions, our sponsors are offering the <b>Best Paper</b> and the <b>Best Poster</b> Awards to qualified outstanding original oral and poster presentations (upon nomination of the reviewers). Bear in mind that our workshop is not archival, but the accepted papers will be hosted on the workshop website. Moreover, we are currently negotiating with a publisher to host opt-in accepted papers in a special issue proceeding for our workshop. -->
@@ -107,8 +109,8 @@ Authors can submit up to 100 MB of supplementary materials separately. Authors a
 	<li><s>Acceptance Notification: <b>October 09, 2024 AOE</b></s></li>
 	<li>Camera-Ready Submission: <b>October 25, 2024 AOE</b> </li>
 	<li>Workshop Date: <b>December 14, 2024 </b></li> -->
-	<li>Submission Deadline: <b>---, 2025 Anywhere on Earth (AOE)</b></li>
-	<li>Acceptance Notification: <b>---, 2025 AOE</b></li>
+	<li>Submission Deadline: <b>TBD, 2026 Anywhere on Earth (AOE)</b></li>
+	<li>Acceptance Notification: <b>TBD, 2026 AOE</b></li>
 </ul>
 </p>
 
@@ -137,7 +139,7 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 {% include organizers.html %}
 </p>
 
-<h2 class="blackpar_title" id="Organizers">Volunteers</h2>
+<h2 class="blackpar_title" id="volunteers">Volunteers</h2>
 <p>
 {% include volunteers.html %}
 </p>
@@ -147,8 +149,7 @@ The workshop will feature a mix of invited talks, contributed paper presentation
 <!-- Technical Committee -->
 <h2 class="blackpar_title" id="technical_committee">Technical Committee</h2>
 <p>
-	** TBD
-<!-- {% include technical_committee.html %} -->
+{% include technical_committee.html %}
 </p>
 <br>
 
@@ -168,6 +169,7 @@ We are currently welcoming sponsorship opportunities. If your organization is in
 <!-- <h2 class="blackpar_title" id="sponsors"> Diamond Sponsors</h2> -->
 
 <h2 class="blackpar_title" id="sponsors">Sponsors</h2>
+<b>To Be Announced</b>
 <br>
 <div class="row">
 	<!-- <div class="col">

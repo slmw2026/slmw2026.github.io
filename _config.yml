@@ -1,11 +1,11 @@
-title: Edge Intelligence Workshop 2025
+title: Edge Agents Workshop 2026
 author:
-  name: Edge Intelligence Workshop 2025
-  email: edge.intelligence.workshop@gmail.com
+  name: Edge Agents Workshop 2026
+  email: EMAIL@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  The Edge Intelligence Workshop (EIW) will focus on distributed processing, lightweight models, energy efficiency, and security in decentralized systems. It aims to advance edge AI by addressing unique challenges, differentiating from traditional cloud-focused workshops, and fostering new research and technological contributions.
+  The Edge Agents Workshop (EAW) explores the design and deployment of autonomous AI agents on resource-constrained edge devices such as AIoT hardware, smartphones, wearables, and autonomous systems.
 baseurl: "" # Leave this empty if it's a user/organization site
-url: "https://eiw2025.github.io"
+url: "https://eaw2026.github.io"
 
 # Customized links for main menu
 header_menu:

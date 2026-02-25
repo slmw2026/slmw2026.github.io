@@ -1,35 +1,40 @@
 - num_row: 0
   organizers:
-    - name: Luca Benini
-      affiliation: ETH Zurich
-      photo: luca_benini.jpg
-      scholar_link: https://scholar.google.com/citations?user=8riq3sYAAAAJ
-      linkedin_link: https://www.linkedin.com/in/lubenini/
-    - name: Lukas Cavigelli
-      affiliation: Huawei Von Neumann Laboratory
-      photo: Lukas_Cavigelli.jpg
-      scholar_link: https://scholar.google.com/citations?user=15o2H4cAAAAJ
-      linkedin_link: https://www.linkedin.com/in/lcavigelli/
+    - name: Franziska Boenisch
+      affiliation: CISPA Helmholtz Center for Information Security
+      photo: franziska_boenisch.jpg
+      scholar_link: https://scholar.google.com/citations?user=jKY0y8gAAAAJ&hl=en
+      linkedin_link: https://www.linkedin.com/in/fraboeni/
     - name: Katherine Heller
       affiliation: Google Responsible AI
       photo: kheller.jpg
       scholar_link: https://scholar.google.com/citations?user=WOAlvmoAAAAJ
       linkedin_link: https://www.linkedin.com/in/katherine-heller-b289b43/
-        
-- num_row: 1
-  organizers:
-    - name: Vahid Partovi Nia
-      affiliation: Ecole Polytechnique Montreal & Huawei Noah's Ark Lab
-      photo: vahid_partovi.jpg
-      scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
-      linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
-    - name: Mehdi Rezagholizadeh
-      affiliation: AMD
-      photo: Mehdi_Rezagholizadeh.jpg
-      scholar_link: https://scholar.google.com/citations?user=MvXlF6kAAAAJ&hl=en
-      linkedin_link: https://www.linkedin.com/in/mehdi-rezagholizadeh-61212346/
     - name: Habib Hajimolahoseini
       affiliation: AMD
       photo: Habib-Hajimolahoseini.png
       scholar_link: https://scholar.google.com/citations?user=ECIUuhoAAAAJ
       linkedin_link: https://www.linkedin.com/in/habib-h-669710a7/
+    # - name: Luca Benini
+    #   affiliation: ETH Zurich
+    #   photo: luca_benini.jpg
+    #   scholar_link: https://scholar.google.com/citations?user=8riq3sYAAAAJ
+    #   linkedin_link: https://www.linkedin.com/in/lubenini/
+    # - name: Lukas Cavigelli
+    #   affiliation: Huawei Von Neumann Laboratory
+    #   photo: Lukas_Cavigelli.jpg
+    #   scholar_link: https://scholar.google.com/citations?user=15o2H4cAAAAJ
+    #   linkedin_link: https://www.linkedin.com/in/lcavigelli/
+        
+- num_row: 1
+  organizers:
+    - name: Mehdi Rezagholizadeh
+      affiliation: AMD
+      photo: Mehdi_Rezagholizadeh_high.jpg
+      scholar_link: https://scholar.google.com/citations?user=MvXlF6kAAAAJ&hl=en
+      linkedin_link: https://www.linkedin.com/in/mehdi-rezagholizadeh-61212346/
+    - name: Vahid Partovi Nia
+      affiliation: Ecole Polytechnique Montreal & Huawei Canada Noah's Ark Lab
+      photo: vahid_partovi.jpg
+      scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
+      linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385

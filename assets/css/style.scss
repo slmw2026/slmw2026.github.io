@@ -5,3 +5,5 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+.row_perso{ display: flex !important; justify-content: center !important; }
