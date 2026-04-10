@@ -1,11 +1,11 @@
-title: Edge Agents Workshop 2026
+title: Small Language Models for On-Device Agentic Systems Workshop (SLMW) 2026
 author:
-  name: Edge Agents Workshop 2026
-  email: EMAIL@gmail.com
+  name: SLM Workshop 2026
+  email: WORKSHOP_EMAIL@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  The Edge Agents Workshop (EAW) explores the design and deployment of autonomous AI agents on resource-constrained edge devices such as AIoT hardware, smartphones, wearables, and autonomous systems.
+  This workshop addresses one of the most pressing challenges in modern AI deployment: enabling sophisticated language model capabilities on resource-constrained edge devices.
 baseurl: "" # Leave this empty if it's a user/organization site
-url: "https://eaw2026.github.io"
+url: "https://slmw2026.github.io"
 
 # Customized links for main menu
 header_menu:

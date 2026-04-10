@@ -10,8 +10,8 @@
   url: /index.html#schedule 
 - title: Technical committee
   url: /index.html#technical_committee
-- title: Accepted papers
-  url: /accepted_papers.html
+# - title: Accepted papers
+#   url: /accepted_papers.html
 # - title: EIW 2024
 #   url: https://eiw2024.github.io/
 # - title: EIW 2022
