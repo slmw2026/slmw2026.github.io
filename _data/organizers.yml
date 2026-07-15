@@ -1,40 +1,41 @@
-# - num_row: 0
-#   organizers:
-#     - name: Franziska Boenisch
-#       affiliation: CISPA Helmholtz Center for Information Security
-#       photo: franziska_boenisch.jpg
-#       scholar_link: https://scholar.google.com/citations?user=jKY0y8gAAAAJ&hl=en
-#       linkedin_link: https://www.linkedin.com/in/fraboeni/
-#     - name: Katherine Heller
-#       affiliation: Google Responsible AI
-#       photo: kheller.jpg
-#       scholar_link: https://scholar.google.com/citations?user=WOAlvmoAAAAJ
-#       linkedin_link: https://www.linkedin.com/in/katherine-heller-b289b43/
-#     - name: Habib Hajimolahoseini
-#       affiliation: AMD
-#       photo: Habib-Hajimolahoseini.png
-#       scholar_link: https://scholar.google.com/citations?user=ECIUuhoAAAAJ
-#       linkedin_link: https://www.linkedin.com/in/habib-h-669710a7/
-#     # - name: Luca Benini
-#     #   affiliation: ETH Zurich
-#     #   photo: luca_benini.jpg
-#     #   scholar_link: https://scholar.google.com/citations?user=8riq3sYAAAAJ
-#     #   linkedin_link: https://www.linkedin.com/in/lubenini/
-#     # - name: Lukas Cavigelli
-#     #   affiliation: Huawei Von Neumann Laboratory
-#     #   photo: Lukas_Cavigelli.jpg
-#     #   scholar_link: https://scholar.google.com/citations?user=15o2H4cAAAAJ
-#     #   linkedin_link: https://www.linkedin.com/in/lcavigelli/
-        
-# - num_row: 1
-#   organizers:
-#     - name: Mehdi Rezagholizadeh
-#       affiliation: AMD
-#       photo: Mehdi_Rezagholizadeh_high.jpg
-#       scholar_link: https://scholar.google.com/citations?user=MvXlF6kAAAAJ&hl=en
-#       linkedin_link: https://www.linkedin.com/in/mehdi-rezagholizadeh-61212346/
-#     - name: Vahid Partovi Nia
-#       affiliation: Ecole Polytechnique Montreal & Huawei Canada Noah's Ark Lab
-#       photo: vahid_partovi.jpg
-#       scholar_link: https://scholar.google.ca/citations?user=onMDIN4AAAAJ&hl=en&oi=ao
-#       linkedin_link: https://ca.linkedin.com/in/vahid-partovi-nia-29811385
+- id: habib-hajimolahoseini
+  name: Habib Hajimolahoseini
+  affiliation: AMD
+  role: Organizer
+  image: /images/people/habib-hajimolahoseini.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=ECIUuhoAAAAJ
+  linkedin: https://www.linkedin.com/in/habib-h-669710a7
+
+- id: yue-dong
+  name: Yue Dong
+  affiliation: University of California, Riverside
+  role: Organizer
+  image: /images/people/yue-dong.webp
+  image_width: 400
+  image_height: 500
+  profile: https://yuedong.us/
+  scholar: https://scholar.google.com/citations?user=WYkn4loAAAAJ
+  linkedin: https://www.linkedin.com/in/yuedongcs
+
+- id: shahrzad-kianidehkordi
+  name: Shahrzad Kianidehkordi
+  affiliation: RBC Borealis
+  role: Organizer
+  image: /images/people/shahrzad-kianidehkordi.webp
+  image_width: 400
+  image_height: 500
+  profile: https://shkiani.github.io/
+  scholar: https://scholar.google.com/citations?user=XWLJxfAAAAAJ
+  linkedin: https://www.linkedin.com/in/shahrzad-kianidehkordi-b922944b
+
+- id: mouloud-belbahri
+  name: Mouloud Belbahri
+  affiliation: TD Insurance
+  role: Organizer
+  image: /images/people/mouloud-belbahri.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=F-I7bhYAAAAJ
+  linkedin: https://www.linkedin.com/in/mouloud-belbahri-b6baa38a

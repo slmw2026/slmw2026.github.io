@@ -1,72 +1,28 @@
-title: Small Language Models for On-Device Agentic Systems Workshop (SLMW) 2026
+title: "SLM-Agents: 1st Workshop on SLMs for Agentic Systems"
+tagline: "NeurIPS 2026 · Paris, France"
 author:
-  name: SLM Workshop 2026
-  email: WORKSHOP_EMAIL@gmail.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  This workshop addresses one of the most pressing challenges in modern AI deployment: enabling sophisticated language model capabilities on resource-constrained edge devices.
-baseurl: "" # Leave this empty if it's a user/organization site
+  name: SLM-Agents Organizing Committee
+description: >-
+  The first workshop on small language models as the foundation of autonomous,
+  efficient, deployable agentic AI, accepted at NeurIPS 2026 in Paris, France.
+lang: en
+baseurl: ""
 url: "https://slmw2026.github.io"
+google_analytics: G-95HXS679NK
 
-# Customized links for main menu
-header_menu:
-#  - title:Call for papers
- #   url: call_for_papers
-  Call for Papers:
-  Organizers:
-  Confirmed Spearkers:
-  Schedule:
-  Technical Committee:
-  Previous Editions:
-    
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: true
 
-# Minima date format
-# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   skin: classic_khalil_v1
   date_format: "%b %-d, %Y"
+  social_links: {}
 
-  # generate social links in footer
-  social_links:
-    # twitter: jekyllrb
-    # github:  jekyll
-    # devto: jekyll
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-    # GitLab instances
-    # gitlab:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
-
-# Build settings
 theme: minima
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - FACT_CHECK.md
+  - images/people/SOURCES.md

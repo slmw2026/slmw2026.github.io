@@ -1,0 +1,46 @@
+<div class="people-grid people-grid--{{ include.variant | default: 'standard' }}">
+  {% for person in include.people %}
+    <article class="person-card" id="{{ person.id }}">
+      <div class="person-card__media">
+        <img
+          src="{{ person.image | relative_url }}"
+          width="{{ person.image_width }}"
+          height="{{ person.image_height }}"
+          loading="lazy"
+          decoding="async"
+          alt="{% if person.image_placeholder %}Initials placeholder for {{ person.name }}{% else %}Portrait of {{ person.name }}{% endif %}">
+      </div>
+      <div class="person-card__body">
+        {% if person.role %}<p class="person-card__role">{{ person.role }}</p>{% endif %}
+        <h3>{{ person.name }}</h3>
+        <p class="person-card__affiliation">{{ person.affiliation }}</p>
+        {% if person.topic %}<p class="person-card__topic">{{ person.topic }}</p>{% endif %}
+        {% if person.scholar or person.linkedin or person.profile %}
+          <ul class="person-card__links" aria-label="Profiles for {{ person.name }}">
+            {% if person.scholar %}
+              <li>
+                <a href="{{ person.scholar }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile for {{ person.name }}" title="Google Scholar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 8.25 12 3l10 5.25L12 13.5 2 8.25Zm3.5 2.9v4.6c0 1.4 2.9 3.25 6.5 3.25s6.5-1.85 6.5-3.25v-4.6L12 14.55l-6.5-3.4Zm15-1.05v6.15h1.5V9.3l-1.5.8Z"/></svg>
+                </a>
+              </li>
+            {% endif %}
+            {% if person.linkedin %}
+              <li>
+                <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile for {{ person.name }}" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12Zm1.78 13.04H3.54V8.98H7.1v11.47Z"/></svg>
+                </a>
+              </li>
+            {% endif %}
+            {% if person.profile %}
+              <li>
+                <a href="{{ person.profile }}" target="_blank" rel="noopener noreferrer" aria-label="Personal or institutional webpage for {{ person.name }}" title="Personal or institutional webpage">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3.5 12h17M12 3c2.35 2.45 3.5 5.45 3.5 9S14.35 18.55 12 21M12 3C9.65 5.45 8.5 8.45 8.5 12s1.15 6.55 3.5 9"/></svg>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

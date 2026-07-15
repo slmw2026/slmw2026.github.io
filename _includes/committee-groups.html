@@ -1,0 +1,15 @@
+<div class="committee-groups">
+  {% for group in site.data.technical_committee %}
+    <section class="committee-group" aria-labelledby="committee-group-{{ forloop.index }}">
+      <h3 id="committee-group-{{ forloop.index }}">{{ group.role }}</h3>
+      <ul>
+        {% for member in group.members %}
+          <li>
+            <strong>{{ member.name }}</strong>
+            <span>{{ member.affiliation }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>

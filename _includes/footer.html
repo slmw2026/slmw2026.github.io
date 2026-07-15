@@ -1,30 +1,18 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
+  <div class="wrapper footer-inner">
+    <div>
+      <p class="footer-title">{{ site.data.workshop.short_title }}</p>
+      <p>{{ site.data.workshop.title }}</p>
+      <p class="footer-meta">Last updated {{ site.data.workshop.last_updated }}</p>
     </div>
-
-    <div class="social-links">
-      {%- include sponsors.html -%}
+    <div>
+      <p>{{ site.data.workshop.conference }} · {{ site.data.workshop.location }}</p>
+      <ul class="footer-links">
+        <li><a href="{{ site.data.workshop.conference_url }}">NeurIPS 2026</a></li>
+        <li><a href="{{ site.data.workshop.code_of_conduct_url }}">Code of Conduct</a></li>
+        <li><a href="{{ site.data.workshop.accessibility_url }}">Accessibility and Inclusion</a></li>
+      </ul>
     </div>
-
   </div>
-
 </footer>

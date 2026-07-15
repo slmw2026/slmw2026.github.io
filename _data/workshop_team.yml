@@ -1,0 +1,19 @@
+- id: vahid-partovi-nia
+  name: Vahid Partovi Nia
+  affiliation: École Polytechnique de Montréal and Huawei Canada Noah’s Ark Lab
+  role: Community and Scientific Advisor
+  image: /images/people/vahid-partovi-nia.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=onMDIN4AAAAJ
+  linkedin: https://www.linkedin.com/in/vahidpartovinia/
+
+- id: mirhamed-jafarzadeh-asl
+  name: MirHamed Jafarzadeh Asl
+  affiliation: Huawei Noah’s Ark Lab
+  role: Web and Communications Chair
+  image: /images/people/mirhamed-jafarzadeh-asl.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=M9ZC4mwAAAAJ
+  linkedin: https://www.linkedin.com/in/mirhamed-jafarzadeh/

@@ -1,33 +1,71 @@
-- Alejandro Murua (Université de Montreal)
-- Ali Ghodsi (University of Waterloo)
-- Bang Liu (Université de Montreal)
-- Brett Meyer (McGill University)
-- Charles Audet (Polytechnique Montreal)
-- Francois Leduc-Primeau (Polytechnique Montreal)
-- James J. Clark (McGill University)
-- Linglong Kong (University of Alberta)
-- Lili Mou (University of Alberta)
-- Masoud Asgharian (McGill University)
-- Philippe Langlais (Université de Montreal)
-- Sebastien LeDigabel (Polytechnique Montreal)
-- Tiago Falk (INRS University)
-- Vincent Gripon (IMT Atlantique)
-- Yunhe Wang (Huawei Noah's Ark Lab)
-- Abbas Ghaddar (Huawei Noah's Ark Lab)
-- Alireza Ghaffari (Cerebras)
-- Didier Chételat (Huawei Noah's Ark Lab)
-- Ghouthi Boukli-Hacene (Sony)
-- Gonçalo Mordido (Huawei Ireland Research Centre)
-- Ehsan Kamalloo (University of Alberta)
-- Hassan Mozafari (McGill University)
-- Marzieh Tahaei (AutoDesk)
-- Michael Metel (Huawei Noah's Ark Lab)
-- Mohammadreza Tayaranian (McGill University)
-- Mojtaba Valipour (University of Waterloo)
-- Peng Lu (Université de Montreal)
-- Sharareh Younesian (AMD)
-- Ramchalam Ramakrishnan (Qualcomm)
-- Ritam Haldar (Qualcomm)
-- Vanessa Courville (NVIDIA)
-- Walid Ahmed (Huawei Toronto Research Centre)
-- Xinlin Li (Microsoft)
+- role: Meta-reviewers
+  members:
+    - name: Alireza Ghaffari
+      affiliation: Cerebras
+    - name: Hamed Mousazadeh
+      affiliation: AMD
+    - name: Hojat Yeganeh
+      affiliation: IMAX
+    - name: Bang Liu
+      affiliation: Université de Montréal
+    - name: Brett Meyer
+      affiliation: McGill University
+    - name: Charles Audet
+      affiliation: Polytechnique Montréal
+    - name: Francois Leduc-Primeau
+      affiliation: Polytechnique Montréal
+    - name: James J. Clark
+      affiliation: McGill University
+    - name: Linglong Kong
+      affiliation: University of Alberta
+    - name: Lili Mou
+      affiliation: University of Alberta
+    - name: Masoud Asgharian
+      affiliation: McGill University
+    - name: Philippe Langlais
+      affiliation: Université de Montréal
+    - name: Sebastien LeDigabel
+      affiliation: Polytechnique Montréal
+    - name: Tiago Falk
+      affiliation: INRS University
+    - name: Vincent Gripon
+      affiliation: IMT Atlantique
+    - name: Yunhe Wang
+      affiliation: Huawei Noah’s Ark Lab
+
+- role: Reviewers
+  members:
+    - name: Mohammadreza Sadeghi
+      affiliation: AMD
+    - name: Bhushan Mahajan
+      affiliation: AMD India
+    - name: Ghouthi Boukli-Hacene
+      affiliation: Sony
+    - name: Gonçalo Mordido
+      affiliation: Huawei Ireland Research Centre
+    - name: Ehsan Kamalloo
+      affiliation: University of Alberta
+    - name: Saurabh Bodhi
+      affiliation: AMD
+    - name: Hassan Mozafari
+      affiliation: McGill University
+    - name: Marzieh Tahaei
+      affiliation: Autodesk
+    - name: Ian Colbert
+      affiliation: AMD USA
+    - name: Mohammadreza Tayaranian
+      affiliation: McGill University
+    - name: Mojtaba Valipour
+      affiliation: University of Waterloo
+    - name: Peng Lu
+      affiliation: Université de Montréal
+    - name: Sharareh Younesian
+      affiliation: AMD
+    - name: Ramchalam Ramakrishnan
+      affiliation: Qualcomm
+    - name: Ritam Haldar
+      affiliation: Qualcomm
+    - name: Vanessa Courville
+      affiliation: NVIDIA
+    - name: Xinlin Li
+      affiliation: Microsoft

@@ -1,14 +1,37 @@
-- num_row: 0
-  speakers:
-    - name: Bang Liu
-      title:
-      affiliation: MILA
-      photo: bang_liu.jpg
-    - name: Kasra Rezaee
-      title:
-      affiliation: Waabi
-      photo: kasra_rezaee.jpg
-    - name: Olivier Bachem
-      title:
-      affiliation: Google DeepMind
-      photo: olivier_bachem.jpg
+- id: tanya-roosta
+  name: Tanya Roosta
+  affiliation: Amazon
+  image: /images/people/tanya-roosta.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=KwjvGLUAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/tanyaroosta/
+
+- id: jesse-cresswell
+  name: Jesse Cresswell
+  affiliation: Layer 6 / TD
+  image: /images/people/jesse-cresswell.webp
+  image_width: 400
+  image_height: 500
+  profile: https://jescresswell.github.io/
+  scholar: https://scholar.google.com/citations?user=7CwOlvoAAAAJ
+  linkedin: https://www.linkedin.com/in/jesse-cresswell
+
+- id: walid-ahmed
+  name: Walid Ahmed
+  affiliation: Workday
+  image: /images/people/walid-ahmed.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=fyO3QUUAAAAJ
+  linkedin: https://ca.linkedin.com/in/walid-a-6ab009a5
+
+- id: gurpreet-gosal
+  name: Gurpreet Gosal
+  affiliation: Cerebras
+  image: /images/people/gurpreet-gosal.webp
+  image_width: 400
+  image_height: 500
+  image_placeholder: true
+  scholar: https://scholar.google.com/citations?user=-EJfS9UAAAAJ
+  linkedin: https://ca.linkedin.com/in/gurpreetgosal

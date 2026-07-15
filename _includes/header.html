@@ -1,36 +1,30 @@
+<header class="site-header workshop-header" data-workshop-header>
+  <div class="wrapper header-inner">
+    <a class="workshop-brand" href="{{ '/' | relative_url }}" aria-label="SLM-Agents workshop homepage">
+      <span class="workshop-brand__name">SLM-Agents</span>
+      <span class="workshop-brand__year">NeurIPS 2026</span>
+    </a>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">SLMW 2026</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="workshop-navigation">
+      <span class="nav-toggle__label">Menu</span>
+      <span class="nav-toggle__icon" aria-hidden="true"><span></span><span></span><span></span></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		{% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'active' %}
-            {% endif %}
-            {% if link.sublinks %}
-                <li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					{{ link.title }}
-				  </a>
-				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					{% for sublink in link.sublinks %}
-						<li><a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a></li>
-					{% endfor %}
-				  </ul>
-				</li>
-            {% else %}
-				<li class="nav-item">
-				  <a class="nav-link text-nowrap {{ class }}" aria-current="page" href="{{ link.url }}">{{ link.title }}</a>
-				</li>
-            {% endif %}
-        {% endfor %} 
+
+    <nav id="workshop-navigation" class="workshop-nav" aria-label="Workshop navigation">
+      <ul class="nav-primary">
+        {% for link in site.data.navigation.primary %}
+          <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+        {% endfor %}
       </ul>
-    </div>
+
+      <details class="nav-more">
+        <summary>More <span aria-hidden="true">▾</span></summary>
+        <ul>
+          {% for link in site.data.navigation.secondary %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+    </nav>
   </div>
-</nav>
+</header>

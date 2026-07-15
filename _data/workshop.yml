@@ -1,0 +1,37 @@
+short_title: SLM-Agents
+title: "SLM-Agents: 1st Workshop on SLMs for Agentic Systems"
+subtitle: 1st Workshop on SLMs for Agentic Systems
+tagline: Small language models for capable, efficient, and deployable agentic AI.
+conference: NeurIPS 2026
+conference_url: https://neurips.cc/Conferences/2026
+workshop_guidance_url: https://neurips.cc/Conferences/2026/WorkshopsGuidance
+code_of_conduct_url: https://neurips.cc/public/CodeOfConduct
+accessibility_url: https://neurips.cc/public/DiversityInclusion
+location: Paris, France
+workshop_window: December 12–13, 2026
+workshop_day_status: Exact workshop day to be announced
+acceptance_status: Accepted at NeurIPS 2026
+submission_status: Submission portal coming soon
+contact_status: Contact information coming soon.
+non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
+last_updated: July 14, 2026
+hero:
+  image: /images/branding/slm-agents-banner.webp
+  width: 2172
+  height: 724
+  alt: SLM-Agents workshop banner with the Paris skyline and NeurIPS 2026 event details
+important_dates:
+  - label: Call for Papers released
+    date: July 18, 2026
+  - label: Submission portal opens
+    date: July 25, 2026
+  - label: Paper submission deadline
+    date: August 29, 2026 (AoE)
+  - label: Reviewing period
+    date: August 30–September 19, 2026
+  - label: Acceptance notification
+    date: September 22, 2026
+  - label: Camera-ready deadline
+    date: October 13, 2026
+  - label: Workshop
+    date: December 12 or 13, 2026
