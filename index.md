@@ -103,8 +103,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Featured talks</p>
       <h2 id="speakers-title">Invited Speakers</h2>
     </div>
-    <p class="section-intro">Five invited speakers will address efficient architectures, compression, agentic reasoning, privacy, and edge acceleration.</p>
+    <p class="status-box">Invited speakers will be announced once confirmed.</p>
+    {% comment %} Speaker cards are hidden until participation is confirmed.
     {% include people-cards.html people=site.data.speakers variant='speakers' %}
+    {% endcomment %}
   </section>
 
   <section class="content-section content-section--tinted" id="panelists" aria-labelledby="panelists-title">
@@ -112,8 +114,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Community discussion</p>
       <h2 id="panelists-title">Invited Panelists</h2>
     </div>
-    <p class="section-intro">The panel brings perspectives from trustworthy ML, deployment, agentic AI, and accelerator systems.</p>
+    <p class="status-box">Invited panelists will be announced once confirmed.</p>
+    {% comment %} Panelist cards are hidden until participation is confirmed.
     {% include people-cards.html people=site.data.panelists variant='panelists' %}
+    {% endcomment %}
   </section>
 
   <section class="content-section schedule-section" id="program" aria-labelledby="schedule-title">
@@ -129,7 +133,7 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Companion activity</p>
       <h2 id="challenge-title">Edge Agent Efficiency Challenge</h2>
     </div>
-    <p class="section-intro">The challenge focuses on running a multi-step agent task on consumer-class hardware—such as a laptop GPU, mobile NPU, or single-board computer—under fixed memory, latency, and energy budgets.</p>
+    <p class="section-intro">The challenge focuses on running a multi-step agent task on consumer-class hardware, such as a laptop GPU, mobile NPU, or single-board computer, under fixed memory, latency, and energy budgets.</p>
     <p>Entries will be evaluated using a cost-adjusted task-success metric and will release reusable model checkpoints and inference recipes. Challenge winners will present their systems during the workshop’s live-demo session.</p>
   </section>
 
@@ -138,13 +142,19 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Workshop leadership</p>
       <h2 id="organizers-title">Organizers</h2>
     </div>
+    <p class="status-box">The organizing team will be announced once confirmed.</p>
+    {% comment %} Organizer cards are hidden until the full organizing team is confirmed.
     {% include people-cards.html people=site.data.organizers variant='organizers' %}
+    {% endcomment %}
 
+    {% comment %}
+    The former Workshop Team section is retained in source but is no longer displayed.
     <div class="subsection-heading">
       <p class="section-kicker">Supporting roles</p>
       <h2 id="workshop-team">Workshop Team</h2>
     </div>
     {% include people-cards.html people=site.data.workshop_team variant='team' %}
+    {% endcomment %}
   </section>
 
   <section class="content-section content-section--tinted" id="scientific-committee" aria-labelledby="committee-title">
@@ -152,7 +162,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Peer review</p>
       <h2 id="committee-title">Scientific Committee</h2>
     </div>
+    <p class="status-box">The scientific committee will be announced once confirmed.</p>
+    {% comment %} Committee members are hidden until membership is confirmed.
     {% include committee-groups.html %}
+    {% endcomment %}
   </section>
 
   <section class="content-section accepted-papers-callout" id="accepted-papers" aria-labelledby="accepted-papers-title">
