@@ -125,7 +125,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">One day · In person · Paris</p>
       <h2 id="schedule-title">Workshop Schedule</h2>
     </div>
+    <p class="status-box">Workshop schedule: TBD.</p>
+    {% comment %} Schedule details are hidden until the program is confirmed.
     {% include schedule.html %}
+    {% endcomment %}
   </section>
 
   <section class="content-section content-section--tinted" id="challenge" aria-labelledby="challenge-title">
