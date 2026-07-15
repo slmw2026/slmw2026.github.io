@@ -1,29 +1,51 @@
-- num_row: 1
-  speakers:
-    - name: Amin Karbasi
-      # title: Prof.
-      affiliation: Cisco Foundation AI
-      photo: amin_karbasi.jpg
-    - name: Armand Joulin
-      # title: Prof.
-      affiliation: Google DeepMind
-      photo: armand_joulin.jpg
-    - name: Diana Marculescu
-      # title: Prof.
-      affiliation: UTexas at Austin
-      photo: diana_marculescu.jpg
+- id: ali-ghodsi
+  name: Ali Ghodsi
+  affiliation: University of Waterloo
+  topic: Efficient architectures for edge LMs
+  image: /images/people/ali-ghodsi.webp
+  image_width: 400
+  image_height: 500
+  profile: https://aghodsib.github.io/
+  scholar: https://scholar.google.com/citations?user=WXbhp_4AAAAJ
+  linkedin: https://www.linkedin.com/in/ali-ghodsi-525b0a61/
 
-- num_row: 2
-  speakers:
-    - name: Michaela Blott
-      # title: Dr.
-      affiliation: AMD
-      photo: michaela_blott.jpg
-    - name: Pavlo Molchanov
-      # title: Prof.
-      affiliation: NVIDIA
-      photo: pavlo_Molchanov.jpg
-    - name: Song Han
-      # title: Prof.
-      affiliation: MIT
-      photo: song_han.jpg
+- id: amir-gholami
+  name: Amir Gholami
+  affiliation: University of California, Berkeley
+  topic: Compression and distillation at scale
+  image: /images/people/amir-gholami.webp
+  image_width: 400
+  image_height: 500
+  profile: https://amirgholami.org/
+  scholar: https://scholar.google.com/citations?user=b0ehAgIAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/a-gholami
+
+- id: marzena-karpinska
+  name: Marzena Karpinska
+  affiliation: Simon Fraser University
+  topic: Agentic reasoning under constraints
+  image: /images/people/marzena-karpinska.webp
+  image_width: 400
+  image_height: 500
+  profile: https://marzenakrp.github.io/
+  scholar: https://scholar.google.com/citations?user=-sWY5igAAAAJ
+  linkedin: https://ca.linkedin.com/in/marzena-karpinska-93049487
+
+- id: fredrick-tung
+  name: Fredrick Tung
+  affiliation: RBC Borealis
+  topic: Privacy-preserving on-device AI
+  image: /images/people/fredrick-tung.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=T4EeZ9gAAAAJ&hl=en
+
+- id: michaela-blott
+  name: Michaela Blott
+  affiliation: AMD Ireland
+  topic: Edge AI accelerators
+  image: /images/people/michaela-blott.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=Ny8sOl8AAAAJ&hl=en
+  linkedin: https://ie.linkedin.com/in/michaelablott

@@ -1,104 +1,34 @@
-{% assign schedule = site.data.schedule %}
-{% assign size = schedule.size %}
-{% if size == False %}
-TBD
-{% else %}
-	{% for event in schedule %}
-		{% if event.Abstract %}
-			<div class="modal fade" id="talk_{{ forloop.index }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-body">
-							<b>Title:</b> {{ event.Title }}
-							<br>
-							<b>Presenter:</b> {{ event.Presenter }}
-							<br>
-							{% if event.Is_paper == false %}
-								<b>Bio</b><p class="par_panel_perso">{{ event.Bio }} </p>
-							{% else %}
-								<b>Authors</b><p class="par_panel_perso">{{ event.Authors }} </p>
-							{% endif %}
-							<b>Abstract</b><p class="par_panel_perso">{{ event.Abstract }} </p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		{% endif %}
-	{% endfor %}
-	<div class="row">
-		<table id="customers">
-			<tr>
-				<th style="width: 18%;">Time</th>
-				<th colspan="2">Title</th>
-				<th>Presenter</th>
-			</tr>
-			<!-- insert table here -->
-			{% for event in schedule %}
-				<tr>
-					<td>{{ event.Time }}</td>
-					{% if event.Title == "break" %}
-						<td colspan='3'>Break</td>
-					{% elsif event.Whole_line %}
-						<td colspan='3'>{{ event.Title }}</td>
-					{% else %}
-						{% if event.Abstract %}
-							<td>{{ event.Title }}</td>
-							<td>
-								<center>
-									<a href="" data-bs-toggle="modal" data-bs-target="#talk_{{ forloop.index }}">
-										<i class="bi bi-info-circle" style="font-size: 1.4rem;"></i>
-									</a>
-								</center>
-							</td>
-						{% else %}
-							<td colspan='2'>{{ event.Title }}</td>
-						{% endif %}
-						<td><b>{{ event.Presenter }}</b></td>
-					{% endif %}
-				</tr>
-			{% endfor %}
-			<!-- -->
-		</table>
-	</div>
-{% endif %}
-<!-- <div class="our24_timeline">
-  <div class="our24_container our24_left">
-    <div class="our24_date">15 Dec</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#talk_3">
-		<i class="icon bi bi-info-circle" style="font-size: 1.8rem;"></i>
-	</a>
-    <div class="our24_content">
-      <h2 class="our24_h2">Lorem ipsum dolor sit amet</h2>
-      <p class="our24_p">
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-  <div class="our24_container our24_right">
-    <div class="our24_date">15 Dec</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#talk_3">
-		<i class="icon bi bi-info-circle" style="font-size: 1.8rem;"></i>
-	</a>
-    <div class="our24_content">
-      <h2 class="our24_h2">Lorem ipsum dolor sit amet</h2>
-      <p class="our24_p">
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium. 
-      </p>
-    </div>
-  </div>
-  <div class="our24_container our24_left">
-    <div class="our24_date">15 Dec</div>
-    <a href="" data-bs-toggle="modal" data-bs-target="#talk_3">
-		<i class="icon bi bi-info-circle" style="font-size: 1.8rem;"></i>
-	</a>
-    <div class="our24_content">
-      <h2 class="our24_h2">Lorem ipsum dolor sit amet</h2>
-      <p class="our24_p">
-        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-      </p>
-    </div>
-  </div>
-</div> -->
+<div class="schedule-table-wrap">
+  <table class="schedule-table">
+    <caption class="visually-hidden">SLM-Agents workshop schedule</caption>
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Session</th>
+        <th scope="col">Speaker</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in site.data.schedule %}
+        <tr class="schedule-row schedule-row--{{ item.type }}">
+          <th scope="row"><time>{{ item.time }}</time></th>
+          <td><strong>{{ item.title }}</strong></td>
+          <td>{% if item.speaker %}<a href="#{{ item.speaker_id }}">{{ item.speaker }}</a>{% endif %}</td>
+          <td>{% if item.detail %}{{ item.detail }}{% endif %}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="schedule-cards" aria-label="Workshop schedule">
+  {% for item in site.data.schedule %}
+    <article class="schedule-card schedule-card--{{ item.type }}">
+      <time>{{ item.time }}</time>
+      <h3>{{ item.title }}</h3>
+      {% if item.speaker %}<p class="schedule-card__speaker"><a href="#{{ item.speaker_id }}">{{ item.speaker }}</a></p>{% endif %}
+      {% if item.detail %}<p>{{ item.detail }}</p>{% endif %}
+    </article>
+  {% endfor %}
+</div>

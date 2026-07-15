@@ -1,18 +1,14 @@
 ---
 layout: page
-title: About
+title: About SLM-Agents
+description: About the SLM-Agents workshop at NeurIPS 2026 in Paris, France.
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+SLM-Agents is the first workshop dedicated to small language models as the foundation of autonomous, efficient, deployable agentic AI. The workshop brings together research on efficient language models, agentic systems, and edge or on-device deployment.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+The workshop has been accepted at NeurIPS 2026 in Paris, France. Paris workshops take place December 12–13, 2026; the exact SLM-Agents workshop day will be announced.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+SLM-Agents is non-archival. Accepted papers may be hosted on OpenReview with author opt-in and will not appear in the NeurIPS proceedings.
 
-
-[jekyll-organization]: https://github.com/jekyll
+[Return to the workshop homepage]({{ '/' | relative_url }}).
