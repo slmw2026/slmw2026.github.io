@@ -49,6 +49,17 @@
   scholar: https://scholar.google.com/citations?user=F-I7bhYAAAAJ
   linkedin: https://www.linkedin.com/in/mouloud-belbahri-b6baa38a
 
+- id: pavlo-molchanov
+  name: Pavlo Molchanov
+  affiliation: NVIDIA Research
+  role: Organizer
+  image: /images/pavlo_Molchanov.jpg
+  image_width: 600
+  image_height: 600
+  profile: https://pmolchanov.com/
+  scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ
+  linkedin: https://www.linkedin.com/in/pavlo-molchanov-08738a63/
+
 # The following organizers are retained but not currently displayed.
 # - id: yue-dong
 #   name: Yue Dong
