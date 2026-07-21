@@ -14,9 +14,9 @@ acceptance_status: Accepted at NeurIPS 2026
 submission_status: Submission portal coming soon
 # Submission portal (not open yet — kept here to enable once submissions open):
 # submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
-contact_status: Contact information coming soon.
+contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
-last_updated: July 15, 2026
+last_updated: July 21, 2026
 hero:
   image: /images/branding/slm-agents-banner.webp
   width: 2172
