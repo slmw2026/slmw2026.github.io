@@ -1,9 +1,9 @@
 - id: emmanuel-abbe
   name: Emmanuel Abbe
   affiliation: EPFL and Apple
-  image: /images/user.png
-  image_width: 400
-  image_height: 500
+  image: /images/Emmanuel-Abbe.jpg
+  image_width: 240
+  image_height: 320
   profile: https://sma.epfl.ch/~abbe/
 
 - id: ali-ghodsi
