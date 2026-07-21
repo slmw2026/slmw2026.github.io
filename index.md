@@ -33,12 +33,18 @@ description: The first workshop on small language models for agentic systems, ac
   <section class="content-section" id="overview" aria-labelledby="overview-title">
     <div class="section-heading">
       <p class="section-kicker">About the workshop</p>
-      <h2 id="overview-title">Small models for capable, deployable agents</h2>
+      <h2 id="overview-title">Scope and objectives</h2>
     </div>
-    <div class="prose-columns">
-      <p>Cloud-dependent large language models have enabled impressive agentic systems, but they also introduce latency, privacy, connectivity, and computational-cost barriers. These constraints matter when agents must respond continuously, handle sensitive data, or operate without reliable cloud access.</p>
-      <p>Small language models can address the focused, repetitive tasks that make up many practical agent workflows. With appropriate training and system design, SLMs can plan, reason, use tools, and act directly on smartphones, robotics platforms, IoT systems, and embedded devices.</p>
-      <p>SLM-Agents brings together efficient language models, autonomous and tool-using systems, and edge deployment. The workshop will develop shared methods and evaluation practices for agentic AI that is efficient, private, and practical to deploy.</p>
+    <div class="overview-prose">
+      <p>This workshop is dedicated to small language models (SLMs) as the foundation of agentic AI systems. Although large language models (LLMs) have demonstrated remarkable capabilities, their dependence on cloud infrastructure creates fundamental barriers to deployment in agentic pipelines—latency, privacy, connectivity, and substantial computational cost. SLMs offer a compelling alternative: recent NVIDIA work argues that SLMs, not LLMs, are the right option for the repetitive, narrowly scoped sub-tasks that dominate real agentic workloads. SLMs make it possible for autonomous AI agents to plan, reason, and act directly on resource-constrained devices such as smartphones, IoT systems, robotics platforms, and embedded systems. The workshop sits at the intersection of three rapidly evolving fields: (1) efficient language model architectures and compression techniques, (2) agentic AI systems capable of autonomous reasoning and tool use, and (3) edge computing and on-device deployment.</p>
+      <h3 class="overview-subhead">Open problems</h3>
+      <ul class="open-problems">
+        <li><strong>Compression and distillation:</strong> quantization, pruning, knowledge distillation, and architectural innovations for parameter-efficient LMs.</li>
+        <li><strong>Hardware co-design:</strong> on-device inference optimization, NPU/accelerator-aware design, memory-bandwidth-bound serving, and energy-budgeted decoding.</li>
+        <li><strong>Training for cooperation:</strong> fine-tuning SLMs for tool use, planning, multi-step reasoning, and small–large model handoff in heterogeneous agent stacks.</li>
+        <li><strong>Evaluation and benchmarks:</strong> task-success-per-watt, latency- and memory-aware leaderboards, and reproducible on-device evaluation harnesses.</li>
+        <li><strong>Applications and safety:</strong> privacy-preserving local processing, federated learning, and deployment case studies across mobile assistants, robotics, healthcare, automotive, and financial services, with associated safety, robustness, and provenance considerations.</li>
+      </ul>
     </div>
   </section>
 
