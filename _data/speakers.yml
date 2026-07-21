@@ -34,6 +34,16 @@
   scholar: https://scholar.google.com/citations?user=b0ehAgIAAAAJ&hl=en
   linkedin: https://www.linkedin.com/in/a-gholami
 
+- id: pavlo-molchanov
+  name: Pavlo Molchanov
+  affiliation: NVIDIA Research
+  image: /images/pavlo_Molchanov.jpg
+  image_width: 600
+  image_height: 600
+  profile: https://pmolchanov.com/
+  scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ
+  linkedin: https://www.linkedin.com/in/pavlo-molchanov-08738a63/
+
 # The following speakers are retained but not currently displayed.
 # - id: marzena-karpinska
 #   name: Marzena Karpinska
