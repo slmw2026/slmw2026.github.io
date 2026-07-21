@@ -12,6 +12,8 @@ workshop_window: December 12–13, 2026
 workshop_day_status: Exact workshop day to be announced
 acceptance_status: Accepted at NeurIPS 2026
 submission_status: Submission portal coming soon
+# Submission portal (not open yet — kept here to enable once submissions open):
+# submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
 contact_status: Contact information coming soon.
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
 last_updated: July 15, 2026
