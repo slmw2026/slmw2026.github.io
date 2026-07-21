@@ -79,11 +79,11 @@ description: The first workshop on small language models for agentic systems, ac
     <div class="topic-band" aria-labelledby="topics-title">
       <h3 id="topics-title">Topics of interest</h3>
       <ul>
-        <li>Compression, quantization, pruning, and distillation</li>
-        <li>Hardware–model co-design and on-device inference</li>
-        <li>Tool use, planning, reasoning, and multi-agent cooperation</li>
-        <li>Latency-, memory-, energy-, and cost-aware evaluation</li>
-        <li>Privacy, safety, robustness, and edge applications</li>
+        <li>SLM architectures, training and inference</li>
+        <li>Agentic reasoning, planning and tool use</li>
+        <li>Hardware-aware and on-device deployment</li>
+        <li>Evaluation, benchmarks and efficiency</li>
+        <li>Privacy, safety, robustness and applications</li>
       </ul>
     </div>
     <p class="status-box">{{ workshop.submission_status }}</p>
