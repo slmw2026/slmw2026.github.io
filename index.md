@@ -145,10 +145,7 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Workshop leadership</p>
       <h2 id="organizers-title">Organizers</h2>
     </div>
-    <p class="status-box">The organizing team will be announced once confirmed.</p>
-    {% comment %} Organizer cards are hidden until the full organizing team is confirmed.
     {% include people-cards.html people=site.data.organizers variant='organizers' %}
-    {% endcomment %}
 
     {% comment %}
     The former Workshop Team section is retained in source but is no longer displayed.
