@@ -440,6 +440,30 @@ ol {
   color: var(--ink-700);
 }
 
+.overview-prose > p {
+  margin: 0;
+  color: var(--ink-700);
+  max-width: 68ch;
+}
+
+.overview-subhead {
+  margin: var(--space-5) 0 var(--space-3);
+}
+
+.open-problems {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--ink-700);
+}
+
+.open-problems li {
+  margin-bottom: 0.6rem;
+}
+
+.open-problems strong {
+  color: var(--ink-900);
+}
+
 .cfp-grid,
 .policy-grid {
   display: grid;
