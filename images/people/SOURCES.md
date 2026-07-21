@@ -4,7 +4,7 @@ All website copies are local 400 × 500 WebP files. External images are not hotl
 
 | Person | Local asset | Portrait source | Profile-link verification | Notes |
 |---|---|---|---|---|
-| Habib Hajimolahoseini | `habib-hajimolahoseini.webp` | Existing repository asset `images/Habib-Hajimolahoseini.png` | Accepted proposal; [LinkedIn](https://www.linkedin.com/in/habib-h-669710a7) | Original publication URL for the supplied asset is not established. |
+| Habib Hajimolahoseini | `../Habib-Hajimolahoseini.png` | Organizer-supplied portrait | Accepted proposal; [LinkedIn](https://www.linkedin.com/in/habib-h-669710a7) | Original publication URL for the supplied asset is not established. |
 | Yue Dong | `yue-dong.webp` | [Personal academic site image](https://yuedong.us/authors/admin/avatar_hua1dbc1775b4d3ab8ae7efbadb403126e_885304_270x270_fill_q75_lanczos_center.jpg) | [Personal academic site](https://yuedong.us/); [LinkedIn](https://www.linkedin.com/in/yuedongcs) | The academic site establishes her identity; the corrected LinkedIn profile is independently verified. |
 | Shahrzad Kianidehkordi | `shahrzad-kianidehkordi.webp` | [Personal academic site image](https://shkiani.github.io/images/sk.jpg) | [Personal academic site](https://shkiani.github.io/) | Scholar and LinkedIn links are exposed by the personal site. |
 | Mouloud Belbahri | `mouloud-belbahri.webp` | [Google Scholar portrait](https://scholar.googleusercontent.com/citations?view_op=view_photo&user=F-I7bhYAAAAJ&citpid=1) | [Google Scholar](https://scholar.google.com/citations?user=F-I7bhYAAAAJ); [LinkedIn](https://www.linkedin.com/in/mouloud-belbahri-b6baa38a) | Scholar identifies the portrait as Mouloud Belbahri. |
