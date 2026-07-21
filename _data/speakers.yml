@@ -1,7 +1,14 @@
+- id: emmanuel-abbe
+  name: Emmanuel Abbe
+  affiliation: EPFL and Apple
+  image: /images/user.png
+  image_width: 400
+  image_height: 500
+  profile: https://sma.epfl.ch/~abbe/
+
 - id: ali-ghodsi
   name: Ali Ghodsi
   affiliation: University of Waterloo
-  topic: Efficient architectures for edge LMs
   image: /images/people/ali-ghodsi.webp
   image_width: 400
   image_height: 500
@@ -9,10 +16,17 @@
   scholar: https://scholar.google.com/citations?user=WXbhp_4AAAAJ
   linkedin: https://www.linkedin.com/in/ali-ghodsi-525b0a61/
 
+- id: diana-marculescu
+  name: Diana Marculescu
+  affiliation: The University of Texas at Austin
+  image: /images/diana_marculescu.jpg
+  image_width: 477
+  image_height: 477
+  profile: https://users.ece.utexas.edu/~dianam/
+
 - id: amir-gholami
   name: Amir Gholami
   affiliation: University of California, Berkeley
-  topic: Compression and distillation at scale
   image: /images/people/amir-gholami.webp
   image_width: 400
   image_height: 500
@@ -20,32 +34,33 @@
   scholar: https://scholar.google.com/citations?user=b0ehAgIAAAAJ&hl=en
   linkedin: https://www.linkedin.com/in/a-gholami
 
-- id: marzena-karpinska
-  name: Marzena Karpinska
-  affiliation: Simon Fraser University
-  topic: Agentic reasoning under constraints
-  image: /images/people/marzena-karpinska.webp
-  image_width: 400
-  image_height: 500
-  profile: https://marzenakrp.github.io/
-  scholar: https://scholar.google.com/citations?user=-sWY5igAAAAJ
-  linkedin: https://ca.linkedin.com/in/marzena-karpinska-93049487
-
-- id: fredrick-tung
-  name: Fredrick Tung
-  affiliation: RBC Borealis
-  topic: Privacy-preserving on-device AI
-  image: /images/people/fredrick-tung.webp
-  image_width: 400
-  image_height: 500
-  scholar: https://scholar.google.com/citations?user=T4EeZ9gAAAAJ&hl=en
-
-- id: michaela-blott
-  name: Michaela Blott
-  affiliation: AMD Ireland
-  topic: Edge AI accelerators
-  image: /images/people/michaela-blott.webp
-  image_width: 400
-  image_height: 500
-  scholar: https://scholar.google.com/citations?user=Ny8sOl8AAAAJ&hl=en
-  linkedin: https://ie.linkedin.com/in/michaelablott
+# The following speakers are retained but not currently displayed.
+# - id: marzena-karpinska
+#   name: Marzena Karpinska
+#   affiliation: Simon Fraser University
+#   topic: Agentic reasoning under constraints
+#   image: /images/people/marzena-karpinska.webp
+#   image_width: 400
+#   image_height: 500
+#   profile: https://marzenakrp.github.io/
+#   scholar: https://scholar.google.com/citations?user=-sWY5igAAAAJ
+#   linkedin: https://ca.linkedin.com/in/marzena-karpinska-93049487
+#
+# - id: fredrick-tung
+#   name: Fredrick Tung
+#   affiliation: RBC Borealis
+#   topic: Privacy-preserving on-device AI
+#   image: /images/people/fredrick-tung.webp
+#   image_width: 400
+#   image_height: 500
+#   scholar: https://scholar.google.com/citations?user=T4EeZ9gAAAAJ&hl=en
+#
+# - id: michaela-blott
+#   name: Michaela Blott
+#   affiliation: AMD Ireland
+#   topic: Edge AI accelerators
+#   image: /images/people/michaela-blott.webp
+#   image_width: 400
+#   image_height: 500
+#   scholar: https://scholar.google.com/citations?user=Ny8sOl8AAAAJ&hl=en
+#   linkedin: https://ie.linkedin.com/in/michaelablott

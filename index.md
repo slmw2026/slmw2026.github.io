@@ -103,10 +103,7 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Featured talks</p>
       <h2 id="speakers-title">Invited Speakers</h2>
     </div>
-    <p class="status-box">Invited speakers will be announced once confirmed.</p>
-    {% comment %} Speaker cards are hidden until participation is confirmed.
     {% include people-cards.html people=site.data.speakers variant='speakers' %}
-    {% endcomment %}
   </section>
 
   <section class="content-section content-section--tinted" id="panelists" aria-labelledby="panelists-title">
