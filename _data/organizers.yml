@@ -28,6 +28,16 @@
   scholar: https://scholar.google.com/citations?user=onMDIN4AAAAJ
   linkedin: https://www.linkedin.com/in/vahidpartovinia/
 
+- id: mirhamed-jafarzadeh-asl
+  name: MirHamed Jafarzadeh Asl
+  affiliation: Huawei Noah’s Ark Lab
+  role: Organizer
+  image: /images/people/mirhamed-jafarzadeh-asl.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=M9ZC4mwAAAAJ
+  linkedin: https://www.linkedin.com/in/mirhamed-jafarzadeh/
+
 - id: shahrzad-kianidehkordi
   name: Shahrzad Kianidehkordi
   affiliation: RBC Borealis
@@ -71,13 +81,3 @@
 #   profile: https://yuedong.us/
 #   scholar: https://scholar.google.com/citations?user=WYkn4loAAAAJ
 #   linkedin: https://www.linkedin.com/in/yuedongcs
-
-- id: mirhamed-jafarzadeh-asl
-  name: MirHamed Jafarzadeh Asl
-  affiliation: Huawei Noah’s Ark Lab
-  role: Organizer
-  image: /images/people/mirhamed-jafarzadeh-asl.webp
-  image_width: 400
-  image_height: 500
-  scholar: https://scholar.google.com/citations?user=M9ZC4mwAAAAJ
-  linkedin: https://www.linkedin.com/in/mirhamed-jafarzadeh/
