@@ -1,7 +1,6 @@
 - id: habib-hajimolahoseini
   name: Habib Hajimolahoseini
   affiliation: AMD
-  role: Organizer
   image: /images/Habib-Hajimolahoseini.png
   image_width: 2811
   image_height: 3021
@@ -11,7 +10,6 @@
 - id: mehdi-rezagholizadeh
   name: Mehdi Rezagholizadeh
   affiliation: AMD
-  role: Organizer
   image: /images/Mehdi_Rezagholizadeh.jpg
   image_width: 200
   image_height: 200
@@ -21,27 +19,15 @@
 - id: vahid-partovi-nia
   name: Vahid Partovi Nia
   affiliation: École Polytechnique de Montréal and Huawei Canada Noah’s Ark Lab
-  role: Organizer
   image: /images/people/vahid-partovi-nia.webp
   image_width: 400
   image_height: 500
   scholar: https://scholar.google.com/citations?user=onMDIN4AAAAJ
   linkedin: https://www.linkedin.com/in/vahidpartovinia/
 
-- id: mirhamed-jafarzadeh-asl
-  name: MirHamed Jafarzadeh Asl
-  affiliation: Huawei Noah’s Ark Lab
-  role: Organizer
-  image: /images/people/mirhamed-jafarzadeh-asl.webp
-  image_width: 400
-  image_height: 500
-  scholar: https://scholar.google.com/citations?user=M9ZC4mwAAAAJ
-  linkedin: https://www.linkedin.com/in/mirhamed-jafarzadeh/
-
 - id: shahrzad-kianidehkordi
   name: Shahrzad Kianidehkordi
   affiliation: RBC Borealis
-  role: Organizer
   image: /images/people/shahrzad-kianidehkordi.webp
   image_width: 400
   image_height: 500
@@ -52,7 +38,6 @@
 - id: mouloud-belbahri
   name: Mouloud Belbahri
   affiliation: TD Insurance
-  role: Organizer
   image: /images/people/mouloud-belbahri.webp
   image_width: 400
   image_height: 500
@@ -62,7 +47,6 @@
 - id: pavlo-molchanov
   name: Pavlo Molchanov
   affiliation: NVIDIA Research
-  role: Organizer
   image: /images/pavlo_Molchanov.jpg
   image_width: 600
   image_height: 600
