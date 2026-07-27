@@ -146,7 +146,7 @@ description: The first workshop on small language models for agentic systems, ac
   <section class="content-section" id="organizers" aria-labelledby="organizers-title">
     <div class="section-heading">
       <p class="section-kicker">Workshop leadership</p>
-      <h2 id="organizers-title">Organizers</h2>
+      <h2 id="organizers-title">Organizing Committee</h2>
     </div>
     {% include people-cards.html people=site.data.organizers variant='organizers' %}
 
@@ -158,6 +158,14 @@ description: The first workshop on small language models for agentic systems, ac
     </div>
     {% include people-cards.html people=site.data.workshop_team variant='team' %}
     {% endcomment %}
+  </section>
+
+  <section class="content-section content-section--tinted" id="executive-committee" aria-labelledby="executive-committee-title">
+    <div class="section-heading">
+      <p class="section-kicker">Workshop leadership</p>
+      <h2 id="executive-committee-title">Executive Committee</h2>
+    </div>
+    {% include people-cards.html people=site.data.executive_committee variant='executive-committee' %}
   </section>
 
   <section class="content-section content-section--tinted" id="scientific-committee" aria-labelledby="committee-title">

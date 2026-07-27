@@ -9,8 +9,10 @@ primary:
     url: /#program
   - title: Committee
     url: /#scientific-committee
-  - title: Organizers
+  - title: Organizing Committee
     url: /#organizers
+  - title: Executive Committee
+    url: /#executive-committee
 secondary:
   - title: Important Dates
     url: /#important-dates
