@@ -173,10 +173,8 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Peer review</p>
       <h2 id="committee-title">Scientific Committee</h2>
     </div>
-    <p class="status-box">The scientific committee will be announced once confirmed.</p>
-    {% comment %} Committee members are hidden until membership is confirmed.
     {% include committee-groups.html %}
-    {% endcomment %}
+    <p class="status-box">Further committee members will be announced as they are confirmed.</p>
   </section>
 
   <section class="content-section accepted-papers-callout" id="accepted-papers" aria-labelledby="accepted-papers-title">
