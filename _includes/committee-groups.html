@@ -1,3 +1,9 @@
+{% assign revealed_count = 0 %}
+{% for group in site.data.technical_committee %}
+  {% assign confirmed = group.members | where_exp: "member", "member.confirmed" %}
+  {% assign revealed_count = revealed_count | plus: confirmed.size %}
+{% endfor %}
+{% if revealed_count > 0 %}
 <div class="committee-groups">
   {% for group in site.data.technical_committee %}
     {% assign confirmed = group.members | where_exp: "member", "member.confirmed" %}
@@ -16,3 +22,4 @@
     {% endif %}
   {% endfor %}
 </div>
+{% endif %}

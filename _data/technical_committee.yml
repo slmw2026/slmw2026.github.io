@@ -34,9 +34,6 @@
       affiliation: IMT Atlantique
     - name: Yunhe Wang
       affiliation: Huawei Noah’s Ark Lab
-    - name: Walid Ahmed
-      affiliation: Workday AI Research
-      confirmed: true
 
 - role: Reviewers
   members:
