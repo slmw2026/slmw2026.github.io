@@ -11,7 +11,7 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 | Four organizers | Organizer Information | Matched |
 | Fourteen schedule entries | Section 4, Format and schedule | Matched |
 | Submission format and seven timeline entries | Section 8, Logistics | Matched |
-| Sixteen meta-reviewers and seventeen reviewers | Scientific Committee table | Matched |
+| Seventeen meta-reviewers and seventeen reviewers | Scientific Committee table, plus one organizer-supplied addition | Matched, with Walid Ahmed added as a meta-reviewer |
 | Edge Agent Efficiency Challenge description | Section 7 | Matched without unsupported operational details |
 
 ## Proposal-table resolutions
@@ -19,7 +19,12 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 - The committee prose says 32 members and 15 meta-reviewers, while the proposal table contains 33 people and 16 meta-reviewers. The website follows the complete table.
 - The table spelling `Sebastien LeDigabel` is preserved.
 - Tiago Falk’s table affiliation `INRS University` is preserved.
-- Tanya Roosta remains affiliated with `Amazon`, and Walid Ahmed remains affiliated with `Workday`, even where current external profiles differ or are unavailable.
+- Tanya Roosta remains affiliated with `Amazon`, even where current external profiles differ or are unavailable.
+
+## Post-proposal changes
+
+- Walid Ahmed was added as a meta-reviewer on the organizers' instruction. He does not appear in the proposal's Scientific Committee table, so the meta-reviewer count is now seventeen and the committee totals thirty-four people.
+- Walid Ahmed is listed as `Workday AI Research` in both his panelist and meta-reviewer entries. This organizer-supplied affiliation supersedes the proposal affiliation `Workday`.
 
 ## Unresolved profile assets
 

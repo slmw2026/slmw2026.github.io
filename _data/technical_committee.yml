@@ -1,3 +1,5 @@
+# Only members marked `confirmed: true` are rendered on the site. Remove the
+# filter in _includes/committee-groups.html to publish the full roster at once.
 - role: Meta-reviewers
   members:
     - name: Alireza Ghaffari
@@ -32,6 +34,9 @@
       affiliation: IMT Atlantique
     - name: Yunhe Wang
       affiliation: Huawei Noah’s Ark Lab
+    - name: Walid Ahmed
+      affiliation: Workday AI Research
+      confirmed: true
 
 - role: Reviewers
   members:
