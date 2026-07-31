@@ -11,7 +11,7 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 | Four organizers | Organizer Information | Matched |
 | Fourteen schedule entries | Section 4, Format and schedule | Matched |
 | Submission format and seven timeline entries | Section 8, Logistics | Matched |
-| Seventeen meta-reviewers and seventeen reviewers | Scientific Committee table, plus one organizer-supplied addition | Matched, with Walid Ahmed added as a meta-reviewer |
+| Sixteen meta-reviewers and seventeen reviewers | Scientific Committee table | Matched |
 | Edge Agent Efficiency Challenge description | Section 7 | Matched without unsupported operational details |
 
 ## Proposal-table resolutions
@@ -23,8 +23,8 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 
 ## Post-proposal changes
 
-- Walid Ahmed was added as a meta-reviewer on the organizers' instruction. He does not appear in the proposal's Scientific Committee table, so the meta-reviewer count is now seventeen and the committee totals thirty-four people.
-- Walid Ahmed is listed as `Workday AI Research` in both his panelist and meta-reviewer entries. This organizer-supplied affiliation supersedes the proposal affiliation `Workday`.
+- Walid Ahmed was added to the Executive Committee on the organizers' instruction. The proposal lists him as an invited panelist only, and he is not part of the Scientific Committee.
+- Walid Ahmed is listed as `Workday AI Research` in both his panelist and Executive Committee entries. This organizer-supplied affiliation supersedes the proposal affiliation `Workday`.
 
 ## Unresolved profile assets
 
