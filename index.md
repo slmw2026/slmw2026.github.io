@@ -58,8 +58,8 @@ description: The first workshop on small language models for agentic systems, ac
       <div>
         <h3>Submission format</h3>
         <ul class="check-list">
-          <li>Extended abstracts: 4 pages plus references</li>
-          <li>Optional full papers: 8 pages plus references</li>
+          <li>Short paper — up to 4 content pages</li>
+          <li>Long paper — up to 6 content pages</li>
           <li>NeurIPS workshop template</li>
           <li>Double-blind review through OpenReview</li>
           <li>Three reviewers per submission</li>
