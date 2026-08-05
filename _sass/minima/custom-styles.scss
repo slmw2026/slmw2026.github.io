@@ -235,6 +235,17 @@ ol {
   background: var(--surface-blue);
 }
 
+.nav-primary .nav-submit {
+  margin-left: 0.3rem;
+  color: #fff;
+  background: var(--blue-700);
+}
+
+.nav-primary .nav-submit:hover {
+  color: #fff;
+  background: var(--navy-900);
+}
+
 .nav-more {
   position: relative;
 }
@@ -524,6 +535,10 @@ ol {
   background: #e7f4f7;
   border-left: 4px solid var(--cyan-600);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.cfp-submit {
+  margin: var(--space-4) 0 0;
 }
 
 /* Dates */
