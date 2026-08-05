@@ -15,6 +15,9 @@
         {% for link in site.data.navigation.primary %}
           <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
         {% endfor %}
+        {% if site.data.workshop.submission_url %}
+          <li><a class="nav-submit" href="{{ site.data.workshop.submission_url }}">Submit</a></li>
+        {% endif %}
       </ul>
 
       <details class="nav-more">

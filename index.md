@@ -27,7 +27,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div><span>Location</span><strong>{{ workshop.location }}</strong></div>
     <div><span>Dates</span><strong>{{ workshop.workshop_window }}</strong></div>
     <div><span>Workshop day</span><strong>To be announced</strong></div>
-    <div><span>Submissions</span><strong>Portal coming soon</strong></div>
+    <div><span>Submissions</span><strong>{% if workshop.submission_url %}<a href="{{ workshop.submission_url }}">Open on OpenReview</a>{% else %}Portal coming soon{% endif %}</strong></div>
   </aside>
 
   <section class="content-section" id="overview" aria-labelledby="overview-title">
@@ -87,6 +87,9 @@ description: The first workshop on small language models for agentic systems, ac
       </ul>
     </div>
     <p class="status-box">{{ workshop.submission_status }}</p>
+    {% if workshop.submission_url %}
+      <p class="cfp-submit"><a class="button-link" href="{{ workshop.submission_url }}">Submit on OpenReview</a></p>
+    {% endif %}
   </section>
 
   <section class="content-section dates-section" id="important-dates" aria-labelledby="dates-title">
