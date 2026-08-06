@@ -6,8 +6,7 @@
 
   var button = header.querySelector(".nav-toggle");
   var navigation = header.querySelector(".workshop-nav");
-  var moreMenu = header.querySelector(".nav-more");
-  var moreSummary = moreMenu ? moreMenu.querySelector("summary") : null;
+  var dropdowns = header.querySelectorAll(".nav-dropdown");
   var mobileQuery = window.matchMedia("(max-width: 960px)");
 
   header.classList.add("nav-ready");
@@ -15,7 +14,9 @@
   function closeNavigation(returnFocus) {
     navigation.classList.remove("is-open");
     button.setAttribute("aria-expanded", "false");
-    if (moreMenu) moreMenu.open = false;
+    Array.prototype.forEach.call(dropdowns, function (dropdown) {
+      dropdown.open = false;
+    });
     if (returnFocus) button.focus();
   }
 
@@ -31,13 +32,14 @@
     button.click();
   });
 
-  if (moreSummary) {
-    moreSummary.addEventListener("keydown", function (event) {
+  Array.prototype.forEach.call(dropdowns, function (dropdown) {
+    var summary = dropdown.querySelector("summary");
+    summary.addEventListener("keydown", function (event) {
       if (event.key !== "Enter" && event.key !== " " && event.key !== "Spacebar") return;
       event.preventDefault();
-      moreMenu.open = !moreMenu.open;
+      dropdown.open = !dropdown.open;
     });
-  }
+  });
 
   navigation.addEventListener("click", function (event) {
     if (event.target.closest("a") && mobileQuery.matches) closeNavigation(false);
@@ -46,16 +48,24 @@
   document.addEventListener("click", function (event) {
     if (header.contains(event.target)) return;
     if (mobileQuery.matches && navigation.classList.contains("is-open")) closeNavigation(false);
-    if (moreMenu) moreMenu.open = false;
+    Array.prototype.forEach.call(dropdowns, function (dropdown) {
+      dropdown.open = false;
+    });
   });
 
   document.addEventListener("keydown", function (event) {
     if (event.key !== "Escape") return;
     if (mobileQuery.matches && navigation.classList.contains("is-open")) {
       closeNavigation(true);
-    } else if (moreMenu && moreMenu.open) {
-      moreMenu.open = false;
-      moreMenu.querySelector("summary").focus();
+    } else {
+      var openDropdown = null;
+      Array.prototype.forEach.call(dropdowns, function (dropdown) {
+        if (dropdown.open) openDropdown = dropdown;
+      });
+      if (openDropdown) {
+        openDropdown.open = false;
+        openDropdown.querySelector("summary").focus();
+      }
     }
   });
 

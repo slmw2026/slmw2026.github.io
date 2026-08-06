@@ -20,7 +20,16 @@
         {% endif %}
       </ul>
 
-      <details class="nav-more">
+      <details class="nav-dropdown nav-committees">
+        <summary>Committees <span aria-hidden="true">▾</span></summary>
+        <ul>
+          {% for link in site.data.navigation.committees %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </details>
+
+      <details class="nav-dropdown nav-more">
         <summary>More <span aria-hidden="true">▾</span></summary>
         <ul>
           {% for link in site.data.navigation.secondary %}

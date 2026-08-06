@@ -7,19 +7,20 @@ primary:
     url: /#speakers
   - title: Program
     url: /#program
+  - title: Challenge
+    url: /#challenge
+committees:
   - title: Organizing Committee
     url: /#organizers
   - title: Executive Committee
     url: /#executive-committee
-secondary:
   - title: Scientific Committee
     url: /#scientific-committee
+secondary:
   - title: Important Dates
     url: /#important-dates
   - title: Panelists
     url: /#panelists
-  - title: Challenge
-    url: /#challenge
   - title: Accepted Papers
     url: /accepted-papers/
   - title: Policies

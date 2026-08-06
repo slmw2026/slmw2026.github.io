@@ -201,7 +201,7 @@ ol {
 }
 
 .nav-primary,
-.nav-more ul {
+.nav-dropdown ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -213,8 +213,8 @@ ol {
 }
 
 .nav-primary a,
-.nav-more summary,
-.nav-more a {
+.nav-dropdown summary,
+.nav-dropdown a {
   color: var(--navy-800);
   font-size: 0.88rem;
   font-weight: 650;
@@ -222,15 +222,15 @@ ol {
 }
 
 .nav-primary a,
-.nav-more summary {
+.nav-dropdown summary {
   display: block;
   padding: 0.65rem 0.58rem;
   border-radius: var(--radius-sm);
 }
 
 .nav-primary a:hover,
-.nav-more summary:hover,
-.nav-more[open] summary {
+.nav-dropdown summary:hover,
+.nav-dropdown[open] summary {
   color: var(--blue-700);
   background: var(--surface-blue);
 }
@@ -246,31 +246,31 @@ ol {
   background: var(--navy-900);
 }
 
-.nav-more {
+.nav-dropdown {
   position: relative;
 }
 
-.nav-more summary {
+.nav-dropdown summary {
   cursor: pointer;
   list-style: none;
   white-space: nowrap;
 }
 
-.nav-more summary::-webkit-details-marker {
+.nav-dropdown summary::-webkit-details-marker {
   display: none;
 }
 
-.nav-more summary span {
+.nav-dropdown summary span {
   display: inline-block;
   margin-left: 0.2rem;
   transition: transform 160ms ease;
 }
 
-.nav-more[open] summary span {
+.nav-dropdown[open] summary span {
   transform: rotate(180deg);
 }
 
-.nav-more ul {
+.nav-dropdown ul {
   position: absolute;
   top: calc(100% + 0.45rem);
   right: 0;
@@ -282,13 +282,13 @@ ol {
   box-shadow: 0 0.9rem 2.5rem rgba(16, 37, 63, 0.16);
 }
 
-.nav-more a {
+.nav-dropdown a {
   display: block;
   padding: 0.58rem 0.7rem;
   border-radius: 0.4rem;
 }
 
-.nav-more a:hover {
+.nav-dropdown a:hover {
   background: var(--surface-muted);
 }
 
@@ -1014,18 +1014,18 @@ a.button-link:hover {
   }
 
   .nav-primary a,
-  .nav-more summary,
-  .nav-more a {
+  .nav-dropdown summary,
+  .nav-dropdown a {
     padding: 0.7rem;
     font-size: 0.94rem;
   }
 
-  .nav-more {
+  .nav-dropdown {
     margin-top: 0.35rem;
     border-top: 1px solid var(--line);
   }
 
-  .nav-more ul {
+  .nav-dropdown ul {
     position: static;
     width: auto;
     display: grid;
@@ -1169,7 +1169,7 @@ a.button-link:hover {
 
 @media (max-width: 420px) {
   .nav-primary,
-  .nav-more ul {
+  .nav-dropdown ul {
     grid-template-columns: 1fr;
   }
 
