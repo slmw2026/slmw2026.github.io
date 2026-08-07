@@ -235,7 +235,8 @@ ol {
   background: var(--surface-blue);
 }
 
-.nav-submit {
+.workshop-nav .nav-submit,
+.workshop-nav .nav-submit:visited {
   display: block;
   margin-left: 0.3rem;
   padding: 0.65rem 0.75rem;
@@ -248,7 +249,9 @@ ol {
   white-space: nowrap;
 }
 
-.nav-submit:hover {
+.workshop-nav .nav-submit:hover,
+.workshop-nav .nav-submit:focus-visible,
+.workshop-nav .nav-submit:active {
   color: #fff;
   background: var(--navy-900);
 }
@@ -793,7 +796,7 @@ ol {
 /* Committee */
 .committee-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: minmax(15.25rem, 0.72fr) repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: var(--card-gap);
 }
@@ -810,8 +813,6 @@ ol {
 }
 
 .committee-member-list {
-  columns: 2;
-  column-gap: 1.25rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -843,8 +844,35 @@ ol {
   text-align: left;
 }
 
+.people-grid--committee-head {
+  --person-card-width: 10.75rem;
+}
+
+.people-grid--committee-head .person-card__media {
+  aspect-ratio: 1;
+}
+
 .people-grid--committee-head .person-card__body {
-  min-height: 12.8rem;
+  min-height: 9.5rem;
+  padding: 0.85rem;
+}
+
+.people-grid--committee-head .person-card h3,
+.people-grid--committee-head .person-card__affiliation {
+  min-height: auto;
+}
+
+.people-grid--committee-head .person-card h3 {
+  font-size: 0.96rem;
+}
+
+.people-grid--committee-head .person-card__links {
+  padding-top: 0.75rem;
+}
+
+.people-grid--committee-head .person-card__links a {
+  width: 1.85rem;
+  height: 1.85rem;
 }
 
 /* Calls to action, interior pages, and footer */
@@ -1060,7 +1088,12 @@ a.button-link:hover {
   }
 
   .committee-groups {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .committee-group--featured {
+    width: fit-content;
+    grid-column: 1 / -1;
   }
 }
 
@@ -1072,6 +1105,15 @@ a.button-link:hover {
   .cfp-grid,
   .policy-grid {
     grid-template-columns: 1fr;
+  }
+
+  .committee-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .committee-group--featured {
+    width: auto;
+    grid-column: auto;
   }
 
   .topic-band ul {
