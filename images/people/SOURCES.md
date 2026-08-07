@@ -1,6 +1,6 @@
 # Person asset sources
 
-All website copies are local 400 × 500 WebP files. External images are not hotlinked. LinkedIn was used only to verify identities and profile URLs; no LinkedIn photo was downloaded.
+Website portraits are stored locally; external images are not hotlinked. LinkedIn was used only to verify identities and profile URLs; no LinkedIn photo was downloaded.
 
 | Person | Local asset | Portrait source | Profile-link verification | Notes |
 |---|---|---|---|---|
@@ -18,5 +18,6 @@ All website copies are local 400 × 500 WebP files. External images are not hotl
 | Tanya Roosta | `tanya-roosta.webp` | [UC Berkeley profile image](https://www.ischool.berkeley.edu/sites/default/files/styles/profile_photo/public/profile_pictures/tanya.jpeg?itok=bcmp1tOd) | [UC Berkeley](https://www.ischool.berkeley.edu/people/tanya-roosta); [Google Scholar](https://scholar.google.com/citations?user=KwjvGLUAAAAJ&hl=en); [LinkedIn](https://www.linkedin.com/in/tanyaroosta/) | Proposal affiliation is retained; see `FACT_CHECK.md` for a current-affiliation discrepancy. |
 | Jesse Cresswell | `jesse-cresswell.webp` | [Personal academic site image](https://jescresswell.github.io/images/profile.png) | [Personal academic site](https://jescresswell.github.io/) | Personal site exposes the Layer 6 / TD, Scholar, and LinkedIn identities. |
 | Walid Ahmed | `../Walid_Ahmed.jpg` | Organizer-supplied portrait | [Google Scholar](https://scholar.google.com/citations?user=fyO3QUUAAAAJ); [LinkedIn](https://ca.linkedin.com/in/walid-a-6ab009a5) | 192 × 256 JPEG, so it departs from the 400 × 500 WebP convention. Supersedes the earlier Scholar-sourced `walid-ahmed.webp`, which is now unused. Original publication URL for the supplied asset is not established. |
+| Bahareh Nikpour | `bahareh-nikpour.png` | [EAW 2026 organizer portrait](https://eaw2026.github.io/images/bahar_nikpour.png) | [Google Scholar](https://scholar.google.com/citations?user=syH1csIAAAAJ&hl=en); [LinkedIn](https://www.linkedin.com/in/bahar-nikpour/) | Source image retained without alteration as a 1254 × 1254 PNG. |
 | Gurpreet Gosal | `gurpreet-gosal.webp` | Initials placeholder | [Google Scholar](https://scholar.google.com/citations?user=-EJfS9UAAAAJ); [LinkedIn](https://ca.linkedin.com/in/gurpreetgosal) | Cerebras identity is verified; no employer-hosted portrait was found. |
 | Layla El Asri | `layla-el-asri.jpg` | [Personal website profile image](https://images.squarespace-cdn.com/content/v1/5b19efdd36099b1504d7b396/1528511759127-553P6UYV9SDB0EGUCZKV/profile.jpg) | [Personal website](https://speakingmachines.com/); [LinkedIn](https://www.linkedin.com/in/laylaelasri) | Personal website identifies her as Director of Machine Learning Research at RBC Borealis. |

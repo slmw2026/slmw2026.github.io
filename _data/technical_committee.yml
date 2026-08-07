@@ -1,9 +1,24 @@
-# Only members marked `confirmed: true` are rendered on the site. Remove the
-# filter in _includes/committee-groups.html to publish the full roster at once.
-- role: Meta-reviewers
+# All listed members are rendered on the site.
+- role: Head
+  featured: true
+  members:
+    - id: masoud-asgharian
+      name: Masoud Asgharian
+      affiliation: McGill University
+      image: /images/masoud.jpg
+      image_width: 304
+      image_height: 304
+      profile: https://www.mcgill.ca/newsroom/masoud-asgharian
+      linkedin: https://ca.linkedin.com/in/masoud-asgharian-82019017
+      confirmed: true
+
+- role: Meta Reviewers
   members:
     - name: Alireza Ghaffari
       affiliation: Cerebras
+    - name: Amin Edraki
+      affiliation: Huawei Toronto Research Centre
+      confirmed: true
     - name: Hamed Mousazadeh
       affiliation: AMD
     - name: Hojat Yeganeh
@@ -22,8 +37,6 @@
       affiliation: University of Alberta
     - name: Lili Mou
       affiliation: University of Alberta
-    - name: Masoud Asgharian
-      affiliation: McGill University
     - name: Philippe Langlais
       affiliation: Université de Montréal
     - name: Sebastien LeDigabel
@@ -32,6 +45,9 @@
       affiliation: INRS University
     - name: Vincent Gripon
       affiliation: IMT Atlantique
+    - name: Walid Ahmed
+      affiliation: Workday AI Research
+      confirmed: true
     - name: Yunhe Wang
       affiliation: Huawei Noah’s Ark Lab
 

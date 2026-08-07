@@ -177,7 +177,6 @@ description: The first workshop on small language models for agentic systems, ac
       <h2 id="committee-title">Scientific Committee</h2>
     </div>
     {% include committee-groups.html %}
-    <p class="status-box">The scientific committee will be announced once confirmed.</p>
   </section>
 
   <section class="content-section accepted-papers-callout" id="accepted-papers" aria-labelledby="accepted-papers-title">

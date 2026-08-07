@@ -235,13 +235,20 @@ ol {
   background: var(--surface-blue);
 }
 
-.nav-primary .nav-submit {
+.nav-submit {
+  display: block;
   margin-left: 0.3rem;
+  padding: 0.65rem 0.75rem;
   color: #fff;
   background: var(--blue-700);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 650;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
-.nav-primary .nav-submit:hover {
+.nav-submit:hover {
   color: #fff;
   background: var(--navy-900);
 }
@@ -645,6 +652,7 @@ ol {
   color: var(--ink-600);
   font-size: 0.87rem;
   line-height: 1.45;
+  text-align: left;
 }
 
 .person-card__topic {
@@ -786,6 +794,7 @@ ol {
 .committee-groups {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  align-items: start;
   gap: var(--card-gap);
 }
 
@@ -800,7 +809,7 @@ ol {
   margin: 0 0 var(--space-4);
 }
 
-.committee-group ul {
+.committee-member-list {
   columns: 2;
   column-gap: 1.25rem;
   margin: 0;
@@ -808,29 +817,34 @@ ol {
   list-style: none;
 }
 
-.committee-group li {
+.committee-member-list li {
   break-inside: avoid;
   margin: 0 0 0.9rem;
   padding: 0 0 0.9rem;
   border-bottom: 1px solid var(--line);
 }
 
-.committee-group strong,
-.committee-group span {
+.committee-member-list strong,
+.committee-member-list span {
   display: block;
 }
 
-.committee-group strong {
+.committee-member-list strong {
   color: var(--navy-900);
   font-size: 0.91rem;
   line-height: 1.35;
 }
 
-.committee-group span {
+.committee-member-list span {
   margin-top: 0.2rem;
   color: var(--ink-600);
   font-size: 0.78rem;
   line-height: 1.35;
+  text-align: left;
+}
+
+.people-grid--committee-head .person-card__body {
+  min-height: 12.8rem;
 }
 
 /* Calls to action, interior pages, and footer */
@@ -1036,6 +1050,11 @@ a.button-link:hover {
     box-shadow: none;
   }
 
+  .nav-submit {
+    margin: 0.55rem 0 0;
+    text-align: center;
+  }
+
   .prose-columns {
     grid-template-columns: 1fr;
   }
@@ -1157,7 +1176,7 @@ a.button-link:hover {
     border-top: 1px solid var(--line);
   }
 
-  .committee-group ul {
+  .committee-member-list {
     columns: 1;
   }
 
