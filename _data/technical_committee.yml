@@ -25,31 +25,31 @@
       affiliation: IMAX
     - name: Bang Liu
       affiliation: Université de Montréal
-    - name: Brett Meyer
-      affiliation: McGill University
-    - name: Charles Audet
-      affiliation: Polytechnique Montréal
-    - name: Francois Leduc-Primeau
-      affiliation: Polytechnique Montréal
-    - name: James J. Clark
-      affiliation: McGill University
-    - name: Linglong Kong
-      affiliation: University of Alberta
-    - name: Lili Mou
-      affiliation: University of Alberta
-    - name: Philippe Langlais
-      affiliation: Université de Montréal
-    - name: Sebastien LeDigabel
-      affiliation: Polytechnique Montréal
-    - name: Tiago Falk
-      affiliation: INRS University
-    - name: Vincent Gripon
-      affiliation: IMT Atlantique
+    # - name: Brett Meyer
+    #   affiliation: McGill University
+    # - name: Charles Audet
+    #   affiliation: Polytechnique Montréal
+    # - name: Francois Leduc-Primeau
+    #   affiliation: Polytechnique Montréal
+    # - name: James J. Clark
+    #   affiliation: McGill University
+    # - name: Linglong Kong
+    #   affiliation: University of Alberta
+    # - name: Lili Mou
+    #   affiliation: University of Alberta
+    # - name: Philippe Langlais
+    #   affiliation: Université de Montréal
+    # - name: Sebastien LeDigabel
+    #   affiliation: Polytechnique Montréal
+    # - name: Tiago Falk
+    #   affiliation: INRS University
+    # - name: Vincent Gripon
+    #   affiliation: IMT Atlantique
     - name: Walid Ahmed
       affiliation: Workday AI Research
       confirmed: true
-    - name: Yunhe Wang
-      affiliation: Huawei Noah’s Ark Lab
+    # - name: Yunhe Wang
+    #   affiliation: Huawei Noah’s Ark Lab
 
 - role: Reviewers
   members:
@@ -59,14 +59,14 @@
       affiliation: AMD India
     - name: Ghouthi Boukli-Hacene
       affiliation: Sony
-    - name: Gonçalo Mordido
-      affiliation: Huawei Ireland Research Centre
-    - name: Ehsan Kamalloo
-      affiliation: University of Alberta
+    # - name: Gonçalo Mordido
+    #   affiliation: Huawei Ireland Research Centre
+    # - name: Ehsan Kamalloo
+    #   affiliation: University of Alberta
     - name: Saurabh Bodhi
       affiliation: AMD
-    - name: Hassan Mozafari
-      affiliation: McGill University
+    # - name: Hassan Mozafari
+    #   affiliation: McGill University
     - name: Marzieh Tahaei
       affiliation: Autodesk
     - name: Ian Colbert
@@ -75,15 +75,15 @@
       affiliation: McGill University
     - name: Mojtaba Valipour
       affiliation: University of Waterloo
-    - name: Peng Lu
-      affiliation: Université de Montréal
+    # - name: Peng Lu
+    #   affiliation: Université de Montréal
     - name: Sharareh Younesian
       affiliation: AMD
     - name: Ramchalam Ramakrishnan
       affiliation: Qualcomm
     - name: Ritam Haldar
       affiliation: Qualcomm
-    - name: Vanessa Courville
-      affiliation: NVIDIA
+    # - name: Vanessa Courville
+    #   affiliation: NVIDIA
     - name: Xinlin Li
       affiliation: Microsoft
