@@ -16,13 +16,22 @@
   scholar: https://scholar.google.com/citations?user=WXbhp_4AAAAJ
   linkedin: https://www.linkedin.com/in/ali-ghodsi-525b0a61/
 
-- id: diana-marculescu
-  name: Diana Marculescu
-  affiliation: The University of Texas at Austin
-  image: /images/diana_marculescu.jpg
-  image_width: 477
-  image_height: 477
-  profile: https://users.ece.utexas.edu/~dianam/
+# Diana Marculescu is retained but not currently displayed.
+# - id: diana-marculescu
+#   name: Diana Marculescu
+#   affiliation: The University of Texas at Austin
+#   image: /images/diana_marculescu.jpg
+#   image_width: 477
+#   image_height: 477
+#   profile: https://users.ece.utexas.edu/~dianam/
+#
+- id: lukas-cavigelli
+  name: Lukas Cavigelli
+  affiliation: Huawei Technologies, Zurich Research Center
+  image: /images/Lukas_Cavigelli.jpg
+  image_width: 319
+  image_height: 319
+  linkedin: https://ch.linkedin.com/in/lcavigelli
 
 - id: amir-gholami
   name: Amir Gholami
