@@ -1,25 +1,25 @@
-{% assign revealed_count = 0 %}
-{% for group in site.data.technical_committee %}
-  {% assign confirmed = group.members | where_exp: "member", "member.confirmed" %}
-  {% assign revealed_count = revealed_count | plus: confirmed.size %}
-{% endfor %}
-{% if revealed_count > 0 %}
+{% if site.data.technical_committee.size > 0 %}
 <div class="committee-groups">
   {% for group in site.data.technical_committee %}
-    {% assign confirmed = group.members | where_exp: "member", "member.confirmed" %}
-    {% if confirmed.size > 0 %}
-      <section class="committee-group" aria-labelledby="committee-group-{{ forloop.index }}">
+    {% if group.members.size > 0 %}
+      <section class="committee-group{% if group.featured %} committee-group--featured{% endif %}" aria-labelledby="committee-group-{{ forloop.index }}">
         <h3 id="committee-group-{{ forloop.index }}">{{ group.role }}</h3>
-        <ul>
-          {% for member in confirmed %}
-            <li>
-              <strong>{{ member.name }}</strong>
-              <span>{{ member.affiliation }}</span>
-            </li>
-          {% endfor %}
-        </ul>
+        {% if group.featured %}
+          {% include people-cards.html people=group.members variant='committee-head' %}
+        {% else %}
+          <ul class="committee-member-list">
+            {% for member in group.members %}
+              <li>
+                <strong>{{ member.name }}</strong>
+                <span>{{ member.affiliation }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
       </section>
     {% endif %}
   {% endfor %}
 </div>
+{% else %}
+<p class="status-box">The scientific committee will be announced once confirmed.</p>
 {% endif %}
