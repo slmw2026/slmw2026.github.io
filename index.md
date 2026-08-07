@@ -219,6 +219,6 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Stay informed</p>
       <h2 id="contact-title">Contact and updates</h2>
     </div>
-    <p>{{ workshop.contact_status }} Last updated {{ workshop.last_updated }}.</p>
+    <p>{{ workshop.contact_status }} Last updated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %-d, %Y" }}</time>.</p>
   </section>
 </div>

@@ -4,7 +4,7 @@
     <div>
       <p class="footer-title">{{ site.data.workshop.short_title }}</p>
       <p>{{ site.data.workshop.title }}</p>
-      <p class="footer-meta">Last updated {{ site.data.workshop.last_updated }}</p>
+      <p class="footer-meta">Last updated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%B %-d, %Y" }}</time></p>
     </div>
     <div>
       <p>{{ site.data.workshop.conference }} · {{ site.data.workshop.location }}</p>
