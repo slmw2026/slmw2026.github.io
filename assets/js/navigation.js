@@ -20,6 +20,12 @@
     if (returnFocus) button.focus();
   }
 
+  function closeOtherDropdowns(activeDropdown) {
+    Array.prototype.forEach.call(dropdowns, function (dropdown) {
+      if (dropdown !== activeDropdown) dropdown.open = false;
+    });
+  }
+
   button.addEventListener("click", function () {
     var willOpen = !navigation.classList.contains("is-open");
     navigation.classList.toggle("is-open", willOpen);
@@ -34,6 +40,11 @@
 
   Array.prototype.forEach.call(dropdowns, function (dropdown) {
     var summary = dropdown.querySelector("summary");
+
+    dropdown.addEventListener("toggle", function () {
+      if (dropdown.open) closeOtherDropdowns(dropdown);
+    });
+
     summary.addEventListener("keydown", function (event) {
       if (event.key !== "Enter" && event.key !== " " && event.key !== "Spacebar") return;
       event.preventDefault();
