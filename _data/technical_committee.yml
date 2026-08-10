@@ -10,20 +10,28 @@
       image_height: 304
       profile: https://www.mcgill.ca/newsroom/masoud-asgharian
       linkedin: https://ca.linkedin.com/in/masoud-asgharian-82019017
+      scholar: https://scholar.google.com/citations?user=WRlXfagAAAAJ
       confirmed: true
 
 - role: Meta Reviewers
   members:
     - name: Alireza Ghaffari
       affiliation: Cerebras
+      scholar: https://scholar.google.com/citations?user=MxSEXaYAAAAJ&hl=en
     - name: Amin Edraki
       affiliation: Huawei Toronto Research Centre
+      scholar: https://scholar.google.com/citations?user=rXBVdWQAAAAJ&hl=en
       confirmed: true
+    - name: Amin Nikanjam
+      affiliation: Huawei Canada
+      scholar: https://scholar.google.com/citations?user=mGF6p48AAAAJ
     - name: Hamed Mousazadeh
       affiliation: AMD
     - name: Hojat Yeganeh
       affiliation: IMAX
+      scholar: https://scholar.google.com/citations?user=nYtM13QAAAAJ
     - name: Bang Liu
+      scholar: https://scholar.google.com/citations?hl=en&user=lmfAnP4AAAAJ
       affiliation: Université de Montréal
     # - name: Brett Meyer
     #   affiliation: McGill University
@@ -47,6 +55,7 @@
     #   affiliation: IMT Atlantique
     - name: Walid Ahmed
       affiliation: Workday AI Research
+      scholar: https://scholar.google.com/citations?user=fyO3QUUAAAAJ&hl=en
       confirmed: true
     # - name: Yunhe Wang
     #   affiliation: Huawei Noah’s Ark Lab
@@ -55,12 +64,15 @@
   members:
     - name: Mohammadreza Sadeghi
       affiliation: AMD
+      scholar: https://scholar.google.com/citations?user=mD5pps0AAAAJ
     - name: Bhushan Mahajan
       affiliation: AMD India
     - name: Ghouthi Boukli-Hacene
       affiliation: Sony
+      scholar: https://scholar.google.com/citations?user=FwjpGsgAAAAJ
     - name: Mohammad Hossein Moslemi
       affiliation: Huawei Noah's Ark Lab
+      scholar: https://scholar.google.com/citations?user=vfufSS0AAAAJ&hl=en
     # - name: Gonçalo Mordido
     #   affiliation: Huawei Ireland Research Centre
     # - name: Ehsan Kamalloo
@@ -71,21 +83,28 @@
     #   affiliation: McGill University
     - name: Marzieh Tahaei
       affiliation: Autodesk
+      scholar: https://scholar.google.com/citations?user=i1ZWWjEAAAAJ
     - name: Ian Colbert
       affiliation: AMD USA
+      scholar: https://scholar.google.com/citations?user=D8oaB1AAAAAJ&hl=en
     - name: Mohammadreza Tayaranian
       affiliation: McGill University
+      scholar: https://scholar.google.ca/citations?hl=en&user=UW7g4BsAAAAJ
     - name: Mojtaba Valipour
       affiliation: University of Waterloo
+      scholar: https://scholar.google.com/citations?user=h-4duM0AAAAJ&hl=en
     # - name: Peng Lu
     #   affiliation: Université de Montréal
     - name: Sharareh Younesian
       affiliation: AMD
+      scholar: https://scholar.google.com/citations?user=-KFAllQAAAAJ&hl=en
     - name: Ramchalam Ramakrishnan
       affiliation: Qualcomm
+      scholar: https://scholar.google.com/citations?user=JgscZTcAAAAJ
     - name: Ritam Haldar
       affiliation: Qualcomm
     # - name: Vanessa Courville
     #   affiliation: NVIDIA
     - name: Xinlin Li
       affiliation: Microsoft
+      scholar: https://scholar.google.com/citations?user=rUYeHb0AAAAJ

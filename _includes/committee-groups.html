@@ -10,7 +10,13 @@
           <ul class="committee-member-list">
             {% for member in group.members %}
               <li>
-                <strong>{{ member.name }}</strong>
+                <strong>
+                  {% if member.scholar %}
+                    <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar profile for {{ member.name }}">{{ member.name }}</a>
+                  {% else %}
+                    {{ member.name }}
+                  {% endif %}
+                </strong>
                 <span>{{ member.affiliation }}</span>
               </li>
             {% endfor %}
