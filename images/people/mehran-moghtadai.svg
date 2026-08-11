@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="title description">
-  <title id="title">Portrait pending for Mehran Moghtadai</title>
-  <desc id="description">Initials MM shown while a portrait is pending.</desc>
-  <rect width="400" height="500" fill="#0b1d33"/>
-  <circle cx="200" cy="205" r="112" fill="#244785" stroke="#65c8f2" stroke-width="4"/>
-  <text x="200" y="238" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="700" text-anchor="middle">MM</text>
-  <text x="200" y="390" fill="#c9d4e3" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" text-anchor="middle">Portrait pending</text>
-</svg>
