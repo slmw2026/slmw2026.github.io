@@ -23,7 +23,7 @@
       scholar: https://scholar.google.com/citations?user=rXBVdWQAAAAJ&hl=en
       confirmed: true
     - name: Amin Nikanjam
-      affiliation: Huawei Canada
+      affiliation: Huawei Toronto Research Centre
       scholar: https://scholar.google.com/citations?user=mGF6p48AAAAJ
     - name: Hamed Mousazadeh
       affiliation: AMD
@@ -108,3 +108,5 @@
     - name: Xinlin Li
       affiliation: Microsoft
       scholar: https://scholar.google.com/citations?user=rUYeHb0AAAAJ
+    - name: Shiyuan Feng
+      affiliation: Huawei Toronto Research Centre
