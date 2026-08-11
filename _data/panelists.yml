@@ -1,37 +1,9 @@
-- id: tanya-roosta
-  name: Tanya Roosta
-  affiliation: Amazon
-  image: /images/people/tanya-roosta.webp
-  image_width: 400
-  image_height: 500
-  scholar: https://scholar.google.com/citations?user=KwjvGLUAAAAJ&hl=en
-  linkedin: https://www.linkedin.com/in/tanyaroosta/
-
-- id: jesse-cresswell
-  name: Jesse Cresswell
-  affiliation: Layer 6 / TD
-  image: /images/people/jesse-cresswell.webp
-  image_width: 400
-  image_height: 500
-  profile: https://jescresswell.github.io/
-  scholar: https://scholar.google.com/citations?user=7CwOlvoAAAAJ
-  linkedin: https://www.linkedin.com/in/jesse-cresswell
-
-- id: walid-ahmed
-  name: Walid Ahmed
-  affiliation: Workday AI Research
-  image: /images/Walid_Ahmed.jpg
-  image_width: 192
-  image_height: 256
-  scholar: https://scholar.google.com/citations?user=fyO3QUUAAAAJ
-  linkedin: https://ca.linkedin.com/in/walid-a-6ab009a5
-
-- id: gurpreet-gosal
-  name: Gurpreet Gosal
-  affiliation: Cerebras
-  image: /images/people/gurpreet-gosal.webp
+- id: mehran-moghtadai
+  name: Mehran Moghtadai
+  role: Senior Manager, AI/ML Accelerator & Enablement
+  affiliation: TD Bank Group
+  image: /images/people/mehran-moghtadai.svg
   image_width: 400
   image_height: 500
   image_placeholder: true
-  scholar: https://scholar.google.com/citations?user=-EJfS9UAAAAJ
-  linkedin: https://ca.linkedin.com/in/gurpreetgosal
+  linkedin: https://ca.linkedin.com/in/mehranmo

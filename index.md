@@ -120,10 +120,7 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Community discussion</p>
       <h2 id="panelists-title">Invited Panelists</h2>
     </div>
-    <p class="status-box">Invited panelists will be announced once confirmed.</p>
-    {% comment %} Panelist cards are hidden until participation is confirmed.
     {% include people-cards.html people=site.data.panelists variant='panelists' %}
-    {% endcomment %}
   </section>
 
   <section class="content-section schedule-section" id="program" aria-labelledby="schedule-title">
