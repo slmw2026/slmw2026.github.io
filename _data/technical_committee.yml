@@ -57,6 +57,12 @@
       affiliation: Workday AI Research
       scholar: https://scholar.google.com/citations?user=fyO3QUUAAAAJ&hl=en
       confirmed: true
+    - name: Ghouthi Boukli-Hacene
+      affiliation: Sony
+      scholar: https://scholar.google.com/citations?user=FwjpGsgAAAAJ
+    - name: Sobhan Hemati
+      affiliation: Huawei Noah's Ark Lab
+      scholar: https://scholar.google.com/citations?user=5qtzx8cAAAAJ&hl=en
     # - name: Yunhe Wang
     #   affiliation: Huawei Noah’s Ark Lab
 
@@ -67,9 +73,6 @@
       scholar: https://scholar.google.com/citations?user=mD5pps0AAAAJ
     - name: Bhushan Mahajan
       affiliation: AMD India
-    - name: Ghouthi Boukli-Hacene
-      affiliation: Sony
-      scholar: https://scholar.google.com/citations?user=FwjpGsgAAAAJ
     - name: Mohammad Hossein Moslemi
       affiliation: Huawei Noah's Ark Lab
       scholar: https://scholar.google.com/citations?user=vfufSS0AAAAJ&hl=en
@@ -110,3 +113,15 @@
       scholar: https://scholar.google.com/citations?user=rUYeHb0AAAAJ
     - name: Shiyuan Feng
       affiliation: Huawei Toronto Research Centre
+    - name: Asiye Baghbani
+      affiliation: Huawei Montreal Research Center
+      scholar: https://scholar.google.com/citations?user=iSBLoZYAAAAJ&hl=en
+    - name: Mehdi Rahimifar
+      affiliation: Huawei Noah's Ark Lab
+      scholar: https://scholar.google.com/citations?user=9-BVREIAAAAJ&hl=en
+    - name: Ali Bahri
+      affiliation: Huawei Noah's Ark Lab
+      scholar: https://scholar.google.com/citations?user=0gSvAv8AAAAJ&hl=en
+    - name: Mehrdad Noori
+      affiliation: Huawei Montreal Research Center
+      scholar: https://scholar.google.com/citations?user=01l47WEAAAAJ&hl=en

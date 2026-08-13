@@ -1,0 +1,7 @@
+- name: Huawei
+  logo: /images/huawei_logo.png
+  url: https://www.huawei.com/
+
+- name: Cerebras
+  logo: /images/cerebras_logo.svg
+  url: https://www.cerebras.ai/

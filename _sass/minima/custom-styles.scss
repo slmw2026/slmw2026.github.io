@@ -875,6 +875,53 @@ ol {
   height: 1.85rem;
 }
 
+/* Sponsors */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--card-gap);
+}
+
+.sponsor-card {
+  min-height: 12rem;
+  padding: var(--component-padding);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.sponsor-card a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sponsor-card img {
+  display: block;
+  width: auto;
+  max-width: 16rem;
+  max-height: 5.25rem;
+  object-fit: contain;
+}
+
+.sponsor-card__name {
+  color: var(--navy-900);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sponsor-card a:hover .sponsor-card__name,
+.sponsor-card a:focus-visible .sponsor-card__name {
+  color: var(--cyan-600);
+}
+
 /* Calls to action, interior pages, and footer */
 .accepted-papers-callout,
 .contact-section {
