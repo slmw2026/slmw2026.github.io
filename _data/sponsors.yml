@@ -26,3 +26,11 @@
 # - name: Workday
 #   logo: /images/workday_logo.svg
 #   url: https://www.workday.com/
+#
+# - name: BASF
+#   logo: /images/basf_logo.svg
+#   url: https://www.basf.com/
+#
+# - name: NVIDIA
+#   logo: /images/nvidia_logo.svg
+#   url: https://www.nvidia.com/
