@@ -7,8 +7,10 @@ primary:
     url: /#speakers
   - title: Program
     url: /#program
-  - title: Challenge
-    url: /#challenge
+  # - title: Challenge
+  #   url: /#challenge
+  - title: Sponsors
+    url: /#sponsors
 committees:
   - title: Organizing Committee
     url: /#organizers

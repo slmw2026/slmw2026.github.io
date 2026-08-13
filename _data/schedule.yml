@@ -51,10 +51,10 @@
   title: Contributed Talks II
   detail: Two papers, with a 12-minute talk and 3-minute discussion for each
   type: contributed
-- time: 16:30–17:00
-  title: Live Demos and Challenge Results
-  detail: Four seven-minute on-device-agent demonstrations and challenge winners
-  type: demo
+# - time: 16:30–17:00
+#   title: Live Demos and Challenge Results
+#   detail: Four seven-minute on-device-agent demonstrations and challenge winners
+#   type: demo
 - time: 17:00–17:30
   title: Panel Discussion
   detail: Future of edge agentic AI

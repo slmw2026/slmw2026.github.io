@@ -134,6 +134,7 @@ description: The first workshop on small language models for agentic systems, ac
     {% endcomment %}
   </section>
 
+  {% comment %}
   <section class="content-section content-section--tinted" id="challenge" aria-labelledby="challenge-title">
     <div class="section-heading">
       <p class="section-kicker">Companion activity</p>
@@ -142,6 +143,7 @@ description: The first workshop on small language models for agentic systems, ac
     <p class="section-intro">The challenge focuses on running a multi-step agent task on consumer-class hardware, such as a laptop GPU, mobile NPU, or single-board computer, under fixed memory, latency, and energy budgets.</p>
     <p>Entries will be evaluated using a cost-adjusted task-success metric and will release reusable model checkpoints and inference recipes. Challenge winners will present their systems during the workshop’s live-demo session.</p>
   </section>
+  {% endcomment %}
 
   <section class="content-section" id="organizers" aria-labelledby="organizers-title">
     <div class="section-heading">
@@ -209,6 +211,15 @@ description: The first workshop on small language models for agentic systems, ac
         </ul>
       </article>
     </div>
+  </section>
+
+  <section class="content-section content-section--tinted" id="sponsors" aria-labelledby="sponsors-title">
+    <div class="section-heading">
+      <p class="section-kicker">With thanks to our supporters</p>
+      <h2 id="sponsors-title">Sponsors</h2>
+    </div>
+    <p class="section-intro">We thank the organizations supporting the SLM-Agents workshop.</p>
+    {% include sponsors.html %}
   </section>
 
   <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
