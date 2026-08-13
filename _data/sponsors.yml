@@ -2,10 +2,6 @@
   logo: /images/huawei_logo.png
   url: https://www.huawei.com/
 
-- name: Cerebras
-  logo: /images/cerebras_logo.svg
-  url: https://www.cerebras.ai/
-
 - name: RBC
   logo: /images/rbc_logo.svg
   url: https://www.rbc.com/
@@ -15,10 +11,18 @@
   url: https://www.amd.com/
 
 # Pending confirmation: uncomment these entries when the sponsorships are confirmed.
+# - name: Cerebras
+#   logo: /images/cerebras_logo.svg
+#   url: https://www.cerebras.ai/
+#
 # - name: TD
 #   logo: /images/td_logo.svg
 #   url: https://www.td.com/
 #
-# - name: RBC Borealis
+# - name: RBC Borealis AI
 #   logo: /images/rbc_borealis_logo.svg
 #   url: https://rbcborealis.com/
+#
+# - name: Workday
+#   logo: /images/workday_logo.svg
+#   url: https://www.workday.com/
