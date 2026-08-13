@@ -5,3 +5,20 @@
 - name: Cerebras
   logo: /images/cerebras_logo.svg
   url: https://www.cerebras.ai/
+
+- name: RBC
+  logo: /images/rbc_logo.svg
+  url: https://www.rbc.com/
+
+- name: AMD
+  logo: /images/amd_logo.svg
+  url: https://www.amd.com/
+
+# Pending confirmation: uncomment these entries when the sponsorships are confirmed.
+# - name: TD
+#   logo: /images/td_logo.svg
+#   url: https://www.td.com/
+#
+# - name: RBC Borealis
+#   logo: /images/rbc_borealis_logo.svg
+#   url: https://rbcborealis.com/
