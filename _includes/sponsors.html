@@ -1,12 +1,37 @@
 {% if site.data.sponsors.size > 0 %}
-  <div class="sponsors-grid" aria-label="Confirmed sponsors">
-    {% for sponsor in site.data.sponsors %}
-      <article class="sponsor-card">
-        {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visit {{ sponsor.name }}">{% endif %}
-          <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" loading="lazy" decoding="async">
-          <span class="sponsor-card__name">{{ sponsor.name }}</span>
-        {% if sponsor.url %}</a>{% endif %}
-      </article>
+  {% assign sponsor_tiers = "Diamond|Platinum|Gold" | split: "|" %}
+  <div class="sponsors-tiers" aria-label="Sponsors by tier">
+    {% for tier in sponsor_tiers %}
+      {% assign tier_sponsors = site.data.sponsors | where: "tier", tier %}
+      {% if tier_sponsors.size > 0 %}
+        {% assign tier_id = tier | downcase %}
+        {% case tier %}
+          {% when "Diamond" %}
+            {% assign tier_symbol = "💎" %}
+          {% when "Platinum" %}
+            {% assign tier_symbol = "✨" %}
+          {% when "Gold" %}
+            {% assign tier_symbol = "🥇" %}
+        {% endcase %}
+        <section class="sponsor-tier sponsor-tier--{{ tier_id }}" aria-labelledby="sponsors-{{ tier_id }}-title">
+          <div class="sponsor-tier__heading">
+            <div class="sponsor-tier__label">
+              <span class="sponsor-tier__mark" aria-hidden="true">{{ tier_symbol }}</span>
+              <h3 class="sponsor-tier__title" id="sponsors-{{ tier_id }}-title">{{ tier }}</h3>
+            </div>
+          </div>
+          <div class="sponsors-grid" aria-label="{{ tier }} sponsors">
+            {% for sponsor in tier_sponsors %}
+              <article class="sponsor-card">
+                {% if sponsor.url %}<a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" aria-label="Visit {{ sponsor.name }}">{% endif %}
+                  <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }} logo" loading="lazy" decoding="async">
+                  <span class="sponsor-card__name">{{ sponsor.name }}</span>
+                {% if sponsor.url %}</a>{% endif %}
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
     {% endfor %}
   </div>
 {% endif %}

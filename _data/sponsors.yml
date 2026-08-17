@@ -1,20 +1,24 @@
 - name: Huawei
+  tier: Diamond
   logo: /images/huawei_logo.png
   url: https://www.huawei.com/
 
 - name: RBC Borealis AI
+  tier: Gold
   logo: /images/rbc_borealis_logo.svg
   url: https://rbcborealis.com/
 
 - name: AMD
+  tier: Diamond
   logo: /images/amd_logo.svg
   url: https://www.amd.com/
 
+- name: Cerebras
+  tier: Platinum
+  logo: /images/cerebras_logo.svg
+  url: https://www.cerebras.ai/
+
 # Pending confirmation: uncomment these entries when the sponsorships are confirmed.
-# - name: Cerebras
-#   logo: /images/cerebras_logo.svg
-#   url: https://www.cerebras.ai/
-#
 # - name: RBC
 #   logo: /images/rbc_logo.svg
 #   url: https://www.rbc.com/

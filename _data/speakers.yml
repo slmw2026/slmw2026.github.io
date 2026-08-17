@@ -1,3 +1,11 @@
+- id: amin-karbasi
+  name: Amin Karbasi
+  affiliation: Cisco Foundation AI
+  image: /images/amin_karbasi.jpg
+  image_width: 400
+  image_height: 400
+  profile: https://aminkarbasi.github.io/
+
 - id: emmanuel-abbe
   name: Emmanuel Abbe
   affiliation: EPFL and Apple
