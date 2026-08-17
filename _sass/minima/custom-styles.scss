@@ -876,6 +876,98 @@ ol {
 }
 
 /* Sponsors */
+.sponsors-tiers {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.sponsor-tier {
+  --tier-accent: var(--blue-700);
+  --tier-accent-strong: var(--navy-900);
+  --tier-surface: var(--surface);
+  --tier-border: var(--line-strong);
+  --tier-mark-surface: var(--surface-blue);
+  position: relative;
+  padding: clamp(1.15rem, 2.4vw, 1.5rem);
+  overflow: hidden;
+  background: var(--tier-surface);
+  border: 1px solid var(--tier-border);
+  border-radius: var(--radius-lg);
+}
+
+.sponsor-tier::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.35rem;
+  background: var(--tier-accent);
+}
+
+.sponsor-tier--diamond {
+  --tier-accent: #2f6fb4;
+  --tier-accent-strong: #174b80;
+  --tier-surface: linear-gradient(135deg, #f8fbff 0%, #eaf3fc 100%);
+  --tier-border: #bfd2e6;
+  --tier-mark-surface: #dcecfb;
+}
+
+.sponsor-tier--platinum {
+  --tier-accent: #657f98;
+  --tier-accent-strong: #4a637b;
+  --tier-surface: linear-gradient(135deg, #fbfcfd 0%, #eaf0f5 100%);
+  --tier-border: #c8d4df;
+  --tier-mark-surface: #e2eaf1;
+}
+
+.sponsor-tier--gold {
+  --tier-accent: #c38a1f;
+  --tier-accent-strong: #8a6100;
+  --tier-surface: linear-gradient(135deg, #fffdf8 0%, #fff4dc 100%);
+  --tier-border: #e5d0a0;
+  --tier-mark-surface: #ffedbd;
+}
+
+.sponsor-tier__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: 0 0 var(--space-4);
+}
+
+.sponsor-tier__label {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.sponsor-tier__mark {
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  background: var(--tier-mark-surface);
+  border: 1px solid var(--tier-border);
+  border-radius: 50%;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.sponsor-tier__title {
+  margin: 0;
+  color: var(--tier-accent-strong);
+  font-size: 0.85rem;
+  font-weight: 780;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sponsor-tier .sponsor-card {
+  background: rgba(255, 255, 255, 0.86);
+  border-color: var(--tier-border);
+  box-shadow: 0 0.45rem 1.15rem rgba(16, 37, 63, 0.06);
+}
+
 .sponsors-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
@@ -1192,6 +1284,12 @@ a.button-link:hover {
 }
 
 @media (max-width: 640px) {
+  .sponsor-tier__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
   .workshop-brand {
     display: grid;
     gap: 0;
