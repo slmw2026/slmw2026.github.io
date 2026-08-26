@@ -10,7 +10,7 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 | Four invited panelists and their affiliations | Invited-speaker and panelist table | Matched |
 | Four organizers | Organizer Information | Matched |
 | Fourteen schedule entries | Section 4, Format and schedule | Matched |
-| Submission format and seven timeline entries | Section 8, Logistics | Page limits and the submission deadline revised after the proposal |
+| Submission format and seven timeline entries | Section 8, Logistics | Page limits and two deadlines revised after the proposal |
 | Sixteen meta-reviewers and seventeen reviewers | Scientific Committee table | Matched |
 | Edge Agent Efficiency Challenge description | Section 7 | Matched without unsupported operational details |
 
@@ -24,6 +24,7 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 ## Post-proposal changes
 
 - The paper submission deadline was extended from August 22 to August 29, 2026 (AoE) on the organizers' instruction. The reviewing period entry still begins August 30, leaving one day between the two.
+- The camera-ready deadline was brought forward from October 13 to October 4, 2026 on the organizers' instruction.
 - The submission tracks were changed on the organizers' instruction to a short paper of up to four content pages and a long paper of up to six content pages. The proposal specifies a four-page extended abstract and an optional eight-page full paper.
 - Walid Ahmed was added to the Executive Committee on the organizers' instruction. The proposal lists him as an invited panelist only, and he is not part of the Scientific Committee.
 - Walid Ahmed is listed as `Workday AI Research` in both his panelist and Executive Committee entries. This organizer-supplied affiliation supersedes the proposal affiliation `Workday`.
