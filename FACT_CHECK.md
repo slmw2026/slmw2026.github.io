@@ -23,7 +23,7 @@ The accepted proposal PDF is the authority for names, affiliations, the workshop
 
 ## Post-proposal changes
 
-- The paper submission deadline was extended from August 22 to August 29, 2026 (AoE) on the organizers' instruction. The reviewing period entry still begins August 30, leaving one day between the two.
+- The paper submission deadline was extended twice on the organizers' instruction: from August 22 to August 29, then to September 6, 2026 (AoE). The reviewing period start was moved from August 30 to September 7 to keep it after the deadline; the September 19 end and the September 22 acceptance notification are unchanged, so the review window is now twelve days instead of nineteen.
 - The camera-ready deadline was brought forward from October 13 to October 4, 2026 on the organizers' instruction.
 - The submission tracks were changed on the organizers' instruction to a short paper of up to four content pages and a long paper of up to six content pages. The proposal specifies a four-page extended abstract and an optional eight-page full paper.
 - Walid Ahmed was added to the Executive Committee on the organizers' instruction. The proposal lists him as an invited panelist only, and he is not part of the Scientific Committee.
