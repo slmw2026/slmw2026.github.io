@@ -11,7 +11,7 @@ location: Paris, France
 workshop_window: December 12–13, 2026
 workshop_day_status: Exact workshop day to be announced
 acceptance_status: Accepted at NeurIPS 2026
-submission_status: Submissions are now open through OpenReview. The deadline has been extended to August 29, 2026 (AoE).
+submission_status: Submissions are now open through OpenReview. The deadline has been extended to September 6, 2026 (AoE).
 # Clearing submission_url hides the submission links across the site.
 submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
@@ -27,9 +27,9 @@ important_dates:
   - label: Submission portal opens
     date: July 25, 2026
   - label: Paper submission deadline
-    date: August 29, 2026 (AoE)
+    date: September 6, 2026 (AoE)
   - label: Reviewing period
-    date: August 30–September 19, 2026
+    date: September 7–19, 2026
   - label: Acceptance notification
     date: September 22, 2026
   - label: Camera-ready deadline
