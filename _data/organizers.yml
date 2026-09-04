@@ -25,6 +25,15 @@
   scholar: https://scholar.google.com/citations?user=onMDIN4AAAAJ
   linkedin: https://www.linkedin.com/in/vahidpartovinia/
 
+- id: parsa-omidi
+  name: Parsa Omidi
+  affiliation: Huawei Toronto Research Centre
+  image: /images/people/parsa-omidi.jpeg
+  image_width: 1384
+  image_height: 1345
+  profile: https://parsaomidi.github.io/
+  linkedin: https://ca.linkedin.com/in/parsa-omidi-ph-d-4851457a
+
 - id: shahrzad-kianidehkordi
   name: Shahrzad Kianidehkordi
   affiliation: RBC Borealis
