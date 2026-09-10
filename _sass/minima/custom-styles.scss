@@ -361,7 +361,7 @@ ol {
   max-width: var(--content-width);
   margin: var(--space-5) auto 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   background: var(--surface);
   border-block: 1px solid var(--line-strong);
 }
@@ -578,6 +578,39 @@ ol {
   color: var(--ink-700);
   font-size: 0.94rem;
   font-weight: 650;
+}
+
+/* Milestones already behind us are struck through and recede visually.
+   Set by assets/js/important-dates.js from the ISO dates in _data/workshop.yml. */
+.date-card.is-past {
+  background: var(--surface-muted);
+  border-top-color: var(--line-strong);
+}
+
+.date-card.is-past h3,
+.date-card.is-past .date-card__date {
+  color: var(--ink-600);
+}
+
+.date-card.is-past .date-card__date {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--ink-600);
+}
+
+/* The milestone currently under way is highlighted rather than struck through. */
+.date-card.is-current {
+  border-top-color: var(--cyan-600);
+}
+
+.date-card__status {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--cyan-600);
+  font-size: 0.72rem;
+  font-weight: 720;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
 }
 
 /* People */

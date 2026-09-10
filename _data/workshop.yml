@@ -8,31 +8,58 @@ workshop_guidance_url: https://neurips.cc/Conferences/2026/WorkshopsGuidance
 code_of_conduct_url: https://neurips.cc/public/CodeOfConduct
 accessibility_url: https://neurips.cc/public/DiversityInclusion
 location: Paris, France
-workshop_window: December 12–13, 2026
-workshop_day_status: Exact workshop day to be announced
-acceptance_status: Accepted at NeurIPS 2026
-submission_status: Submissions are now open through OpenReview. The deadline has been extended to September 6, 2026 (AoE).
-# Clearing submission_url hides the submission links across the site.
+workshop_window: December 13, 2026
+event_label: NeurIPS 2026
+submission_status: Submissions are now closed. Thank you to everyone who submitted.
+# Submissions have closed. submissions_open: false hides the "Submit" call to
+# action in the header and the Call for Papers, while submission_url is kept so
+# readers can still reach the OpenReview venue page.
+submissions_open: false
 submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
+# The banner is the original composed artwork with three text lines rewritten in
+# place: the date now reads December 13, the "Accepted at" wording and the
+# "Exact workshop day to be announced" note are gone. Everything else, including
+# the illustration, the title and the subtitle, is the original pixel for pixel.
+# The superseded banner is kept at /images/branding/slm-agents-banner.webp; the
+# text-free illustration alone is at /images/branding/slm-agents-paris-art.webp.
+# Because the wording is baked into the image, event_label, location and
+# workshop_window above must be kept in step with it by hand.
 hero:
-  image: /images/branding/slm-agents-banner.webp
+  image: /images/branding/slm-agents-banner-dec13.webp
   width: 2172
   height: 724
   alt: SLM-Agents workshop banner with the Paris skyline and NeurIPS 2026 event details
+# start and end are machine-readable ISO dates used by assets/js/important-dates.js
+# to strike through milestones that have passed and flag the one in progress.
+# A single-day milestone repeats the same value in both fields.
 important_dates:
   - label: Call for Papers released
     date: July 18, 2026
+    start: 2026-07-18
+    end: 2026-07-18
   - label: Submission portal opens
     date: July 25, 2026
+    start: 2026-07-25
+    end: 2026-07-25
   - label: Paper submission deadline
     date: September 6, 2026 (AoE)
+    start: 2026-09-06
+    end: 2026-09-06
   - label: Reviewing period
     date: September 7–19, 2026
+    start: 2026-09-07
+    end: 2026-09-19
   - label: Acceptance notification
     date: September 22, 2026
+    start: 2026-09-22
+    end: 2026-09-22
   - label: Camera-ready deadline
     date: October 4, 2026
+    start: 2026-10-04
+    end: 2026-10-04
   - label: Workshop
-    date: December 12 or 13, 2026
+    date: December 13, 2026
+    start: 2026-12-13
+    end: 2026-12-13

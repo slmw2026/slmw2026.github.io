@@ -35,7 +35,7 @@
         </ul>
       </details>
 
-      {% if site.data.workshop.submission_url %}
+      {% if site.data.workshop.submissions_open and site.data.workshop.submission_url %}
         <a class="nav-submit" href="{{ site.data.workshop.submission_url }}">Submit</a>
       {% endif %}
     </nav>

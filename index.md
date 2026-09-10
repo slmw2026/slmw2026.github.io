@@ -14,11 +14,10 @@ description: The first workshop on small language models for agentic systems, ac
       fetchpriority="high"
       alt="">
     <div class="hero-summary">
-      <p class="hero-summary__eyebrow">{{ workshop.acceptance_status }}</p>
+      <p class="hero-summary__eyebrow">{{ workshop.event_label }}</p>
       <h1 id="hero-title">{{ workshop.short_title }}</h1>
       <p class="hero-summary__subtitle">{{ workshop.subtitle }}</p>
       <p class="hero-summary__meta">{{ workshop.location }} · {{ workshop.workshop_window }}</p>
-      <p class="hero-summary__note">{{ workshop.workshop_day_status }}</p>
     </div>
   </section>
 
@@ -26,8 +25,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div><span>Event</span><strong><a href="{{ workshop.conference_url }}">{{ workshop.conference }}</a></strong></div>
     <div><span>Location</span><strong>{{ workshop.location }}</strong></div>
     <div><span>Dates</span><strong>{{ workshop.workshop_window }}</strong></div>
-    <div><span>Workshop day</span><strong>To be announced</strong></div>
-    <div><span>Submissions</span><strong>{% if workshop.submission_url %}<a href="{{ workshop.submission_url }}">Open on OpenReview</a>{% else %}Portal coming soon{% endif %}</strong></div>
+    <div><span>Submissions</span><strong>{% if workshop.submissions_open %}<a href="{{ workshop.submission_url }}">Open on OpenReview</a>{% elsif workshop.submission_url %}Closed — <a href="{{ workshop.submission_url }}">view on OpenReview</a>{% else %}Closed{% endif %}</strong></div>
   </aside>
 
   <section class="content-section" id="overview" aria-labelledby="overview-title">
@@ -87,7 +85,7 @@ description: The first workshop on small language models for agentic systems, ac
       </ul>
     </div>
     <p class="status-box">{{ workshop.submission_status }}</p>
-    {% if workshop.submission_url %}
+    {% if workshop.submissions_open and workshop.submission_url %}
       <p class="cfp-submit"><a class="button-link" href="{{ workshop.submission_url }}">Submit on OpenReview</a></p>
     {% endif %}
   </section>
@@ -97,11 +95,11 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Submission timeline</p>
       <h2 id="dates-title">Important Dates</h2>
     </div>
-    <div class="date-grid">
+    <div class="date-grid" data-important-dates>
       {% for item in workshop.important_dates %}
-        <article class="date-card">
+        <article class="date-card" data-date-start="{{ item.start }}" data-date-end="{{ item.end | default: item.start }}">
           <h3>{{ item.label }}</h3>
-          <p>{{ item.date }}</p>
+          <p class="date-card__date">{{ item.date }}</p>
         </article>
       {% endfor %}
     </div>
