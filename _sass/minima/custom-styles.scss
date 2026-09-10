@@ -333,8 +333,12 @@ ol {
 /* Banner and event facts */
 .workshop-hero {
   position: relative;
-  width: 100%;
+  width: calc(100% - var(--page-gutter) - var(--page-gutter));
+  max-width: var(--content-width);
+  margin-inline: auto;
+  overflow: hidden;
   background: var(--navy-950);
+  border-radius: var(--radius-lg);
 }
 
 .workshop-hero__image {

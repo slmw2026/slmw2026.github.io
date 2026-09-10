@@ -1,8 +1,8 @@
 primary:
   - title: Overview
     url: /#overview
-  - title: Call for Papers
-    url: /#call-for-papers
+  - title: Accepted Papers
+    url: /accepted-papers/
   - title: Speakers
     url: /#speakers
   - title: Program
@@ -23,8 +23,8 @@ secondary:
     url: /#important-dates
   - title: Panelists
     url: /#panelists
-  - title: Accepted Papers
-    url: /accepted-papers/
+  - title: Call for Papers
+    url: /#call-for-papers
   - title: Policies
     url: /#policies
   - title: Contact
