@@ -25,6 +25,15 @@
   scholar: https://scholar.google.com/citations?user=onMDIN4AAAAJ
   linkedin: https://www.linkedin.com/in/vahidpartovinia/
 
+- id: mirhamed-jafarzadeh-asl
+  name: Hamed Jafarzadeh Asl
+  affiliation: Huawei Noah’s Ark Lab
+  image: /images/people/mirhamed-jafarzadeh-asl.webp
+  image_width: 400
+  image_height: 500
+  scholar: https://scholar.google.com/citations?user=M9ZC4mwAAAAJ
+  linkedin: https://www.linkedin.com/in/mirhamed-jafarzadeh/
+
 - id: parsa-omidi
   name: Parsa Omidi
   affiliation: Huawei Toronto Research Centre
