@@ -6,10 +6,37 @@ permalink: /accepted-papers/
 ---
 
 <div class="status-page">
-  <p class="page-lede">Accepted papers will be listed here after the review process is complete.</p>
+  <p class="page-lede">The list of accepted papers will be published soon.</p>
   <p>Submission information and important dates are available on the workshop homepage.</p>
   <div class="status-page__actions">
-    <a class="button-link" href="{{ '/#call-for-papers' | relative_url }}">View the Call for Papers</a>
+    <a class="button-link" href="{{ '/#important-dates' | relative_url }}">View important dates</a>
     <a class="text-link" href="{{ '/' | relative_url }}">Return to the workshop homepage</a>
   </div>
 </div>
+
+{% comment %}
+To publish the list, replace the status block above with the block below and
+fill _data/accepted_papers.yml with one entry per paper, for example:
+
+- title: Paper title
+  authors: First Author, Second Author, Third Author
+  openreview: https://openreview.net/forum?id=XXXXXXXXXX
+  presentation: Oral   # optional: Oral, Spotlight or Poster
+
+<p class="page-lede">{{ site.data.accepted_papers.size }} papers were accepted to the SLM-Agents workshop. Papers are hosted on OpenReview with the authors’ consent.</p>
+<ol class="paper-list">
+  {% for paper in site.data.accepted_papers %}
+    <li class="paper-item">
+      <h2 class="paper-item__title">
+        {% if paper.openreview %}
+          <a href="{{ paper.openreview }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+        {% else %}
+          {{ paper.title }}
+        {% endif %}
+      </h2>
+      <p class="paper-item__authors">{{ paper.authors }}</p>
+      {% if paper.presentation %}<p class="paper-item__tag">{{ paper.presentation }}</p>{% endif %}
+    </li>
+  {% endfor %}
+</ol>
+{% endcomment %}

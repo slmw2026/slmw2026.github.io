@@ -72,6 +72,16 @@
   scholar: https://scholar.google.com/citations?user=J9PoyoIAAAAJ
   linkedin: https://www.linkedin.com/in/pavlo-molchanov-08738a63/
 
+- id: masoud-asgharian-organizer
+  name: Masoud Asgharian
+  affiliation: McGill University
+  image: /images/masoud.jpg
+  image_width: 304
+  image_height: 304
+  profile: https://www.mcgill.ca/newsroom/masoud-asgharian
+  scholar: https://scholar.google.com/citations?user=WRlXfagAAAAJ
+  linkedin: https://ca.linkedin.com/in/masoud-asgharian-82019017
+
 # The following organizers are retained but not currently displayed.
 # - id: yue-dong
 #   name: Yue Dong

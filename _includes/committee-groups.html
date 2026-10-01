@@ -11,7 +11,9 @@
             {% for member in group.members %}
               <li>
                 <strong>
-                  {% if member.scholar %}
+                  {% if member.openreview %}
+                    <a href="{{ member.openreview }}" target="_blank" rel="noopener noreferrer" title="OpenReview profile for {{ member.name }}">{{ member.name }}</a>
+                  {% elsif member.scholar %}
                     <a href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer" title="Google Scholar profile for {{ member.name }}">{{ member.name }}</a>
                   {% else %}
                     {{ member.name }}

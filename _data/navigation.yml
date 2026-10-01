@@ -1,16 +1,14 @@
 primary:
-  - title: Overview
-    url: /#overview
-  - title: Accepted Papers
-    url: /accepted-papers/
-  - title: Speakers
-    url: /#speakers
+  - title: Important Dates
+    url: /#important-dates
   - title: Program
     url: /#program
+  - title: Speakers
+    url: /#speakers
+  - title: Accepted Papers
+    url: /accepted-papers/
   # - title: Challenge
   #   url: /#challenge
-  - title: Sponsors
-    url: /#sponsors
 committees:
   - title: Organizing Committee
     url: /#organizers
@@ -19,12 +17,12 @@ committees:
   - title: Scientific Committee
     url: /#scientific-committee
 secondary:
-  - title: Important Dates
-    url: /#important-dates
-  - title: Panelists
-    url: /#panelists
+  - title: Overview
+    url: /#overview
   - title: Call for Papers
     url: /#call-for-papers
+  - title: Sponsors
+    url: /#sponsors
   - title: Policies
     url: /#policies
   - title: Contact

@@ -16,6 +16,13 @@ submission_status: Submissions are now closed. Thank you to everyone who submitt
 # readers can still reach the OpenReview venue page.
 submissions_open: false
 submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
+# The fourth item of the facts strip under the banner. Update it as the
+# workshop moves through its phases; remove it to fall back to the
+# submissions open/closed status.
+status_fact:
+  label: Decisions
+  text: Final · camera-ready due October 4
+  url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
 # The banner is the original composed artwork with three text lines rewritten in
@@ -31,6 +38,11 @@ hero:
   width: 2172
   height: 724
   alt: SLM-Agents workshop banner with the Paris skyline and NeurIPS 2026 event details
+  # On phones the banner's built-in text is too small to read, so the text-free
+  # illustration is shown instead and the title is set as live text below it.
+  mobile_image: /images/branding/slm-agents-paris-art.webp
+  mobile_width: 1600
+  mobile_height: 900
 # start and end are machine-readable ISO dates used by assets/js/important-dates.js
 # to strike through milestones that have passed and flag the one in progress.
 # A single-day milestone repeats the same value in both fields.

@@ -18,7 +18,8 @@
   --content-width: 1120px;
   --header-height: 4.5rem;
   --page-gutter: clamp(1rem, 3.5vw, 2rem);
-  --section-space: clamp(3.75rem, 7vw, 6rem);
+  --section-space: clamp(3rem, 5.5vw, 4.5rem);
+  --box-space: clamp(1.75rem, 3.5vw, 2.75rem);
   --heading-gap: clamp(1rem, 2vw, 1.5rem);
   --card-gap: clamp(1rem, 2vw, 1.35rem);
   --component-padding: clamp(1.1rem, 2.4vw, 1.75rem);
@@ -32,7 +33,7 @@
   --radius-md: 0.85rem;
   --radius-lg: 1.2rem;
   --shadow-card: 0 0.5rem 1.4rem rgba(16, 37, 63, 0.08);
-  --person-card-width: 12.8rem;
+  --person-card-width: 9.6rem;
 }
 
 html {
@@ -159,6 +160,12 @@ ol {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
+}
+
+/* The theme's clearfix pseudo-element would otherwise take the last flex
+   slot, pulling the navigation and the phone menu button off the right edge. */
+.header-inner::after {
+  display: none;
 }
 
 .workshop-brand {
@@ -306,7 +313,8 @@ ol {
   display: none;
   align-items: center;
   gap: 0.6rem;
-  padding: 0.55rem 0.7rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.85rem;
   color: var(--navy-900);
   background: #fff;
   border: 1px solid var(--line-strong);
@@ -415,8 +423,11 @@ ol {
   border-top: 1px solid var(--line);
 }
 
+/* Boxed sections already have a visible edge, so they need less air inside
+   than the open sections do between them. */
 .content-section--tinted {
   margin-block: 0.75rem;
+  padding-block: var(--box-space);
   padding-inline: var(--component-padding);
   background: var(--surface-muted);
   border: 1px solid var(--line);
@@ -452,6 +463,25 @@ ol {
 
 .subsection-heading {
   margin: var(--section-space) 0 var(--space-5);
+}
+
+.people-subhead {
+  margin: var(--space-5) 0 var(--space-4);
+  color: var(--navy-900);
+  font-size: 1.15rem;
+}
+
+.people-subhead:first-of-type {
+  margin-top: 0;
+}
+
+/* Short lines read better ragged-right than justified. */
+.hero-summary p,
+.status-box,
+.date-card p,
+.accepted-papers-callout p,
+.contact-section p {
+  text-align: left;
 }
 
 .prose-columns {
@@ -555,6 +585,70 @@ ol {
   margin: var(--space-4) 0 0;
 }
 
+/* Collapsible call for papers: the summary reads as the status line. */
+.cfp-details__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.9rem 1rem;
+  color: var(--navy-900);
+  font-weight: 680;
+  list-style: none;
+  cursor: pointer;
+  background: #e7f4f7;
+  border-left: 4px solid var(--cyan-600);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.cfp-details__summary::-webkit-details-marker {
+  display: none;
+}
+
+.cfp-details__summary:hover .cfp-details__toggle,
+.cfp-details__summary:focus-visible .cfp-details__toggle {
+  text-decoration: underline;
+}
+
+.cfp-details__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--blue-700);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.cfp-details__toggle::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-top: -0.2rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.cfp-details[open] .cfp-details__toggle::after {
+  margin-top: 0.2rem;
+  transform: rotate(-135deg);
+}
+
+.cfp-details__hide,
+.cfp-details[open] .cfp-details__show {
+  display: none;
+}
+
+.cfp-details[open] .cfp-details__hide {
+  display: inline;
+}
+
+.cfp-details__body {
+  padding-top: var(--space-5);
+}
+
 /* Dates */
 .date-grid {
   display: grid;
@@ -644,7 +738,7 @@ ol {
 }
 
 .person-card__media {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   overflow: hidden;
   background: var(--surface-blue);
 }
@@ -654,17 +748,16 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 20%;
 }
 
 .person-card__body {
-  min-height: 15.2rem;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.85rem;
 }
 
 .person-card__role {
-  min-height: 2.6em;
   margin: 0 0 0.45rem;
   color: var(--cyan-600);
   font-size: 0.7rem;
@@ -680,18 +773,16 @@ ol {
 }
 
 .person-card h3 {
-  min-height: 2.5em;
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.35rem;
+  font-size: 0.98rem;
   line-height: 1.22;
 }
 
 .person-card__affiliation {
-  min-height: 3em;
   margin: 0;
   color: var(--ink-600);
-  font-size: 0.87rem;
-  line-height: 1.45;
+  font-size: 0.83rem;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -707,13 +798,13 @@ ol {
   align-items: center;
   gap: 0.45rem;
   margin: auto 0 0;
-  padding: 1rem 0 0;
+  padding: 0.7rem 0 0;
   list-style: none;
 }
 
 .person-card__links a {
-  width: 2rem;
-  height: 2rem;
+  width: 1.85rem;
+  height: 1.85rem;
   display: grid;
   place-items: center;
   color: var(--blue-700);
@@ -845,6 +936,10 @@ ol {
   border-radius: var(--radius-md);
 }
 
+.committee-group:not(.committee-group--featured) {
+  grid-column: span 2;
+}
+
 .committee-group h3 {
   margin: 0 0 var(--space-4);
 }
@@ -853,12 +948,14 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+  columns: 3;
+  column-gap: var(--space-5);
 }
 
 .committee-member-list li {
   break-inside: avoid;
-  margin: 0 0 0.9rem;
-  padding: 0 0 0.9rem;
+  margin: 0 0 0.7rem;
+  padding: 0 0 0.7rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -890,7 +987,7 @@ ol {
 }
 
 .people-grid--committee-head .person-card__body {
-  min-height: 9.5rem;
+  min-height: 0;
   padding: 0.85rem;
 }
 
@@ -912,121 +1009,79 @@ ol {
   height: 1.85rem;
 }
 
-/* Sponsors */
-.sponsors-tiers {
+/* Sponsors: one row, ordered by tier, each card marked with its tier colour. */
+.sponsors-row {
   display: grid;
-  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: var(--card-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.sponsor-tier {
+.sponsor-card {
   --tier-accent: var(--blue-700);
   --tier-accent-strong: var(--navy-900);
   --tier-surface: var(--surface);
   --tier-border: var(--line-strong);
-  --tier-mark-surface: var(--surface-blue);
   position: relative;
-  padding: clamp(1.15rem, 2.4vw, 1.5rem);
+  display: flex;
+  flex-direction: column;
+  min-height: 9.5rem;
+  padding: 1.1rem var(--space-3) var(--space-3);
   overflow: hidden;
   background: var(--tier-surface);
   border: 1px solid var(--tier-border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
+  box-shadow: 0 0.45rem 1.15rem rgba(16, 37, 63, 0.06);
 }
 
-.sponsor-tier::before {
+.sponsor-card::before {
   content: "";
   position: absolute;
   inset: 0 0 auto;
-  height: 0.35rem;
+  height: 0.3rem;
   background: var(--tier-accent);
 }
 
-.sponsor-tier--diamond {
+.sponsor-card--diamond {
   --tier-accent: #2f6fb4;
   --tier-accent-strong: #174b80;
   --tier-surface: linear-gradient(135deg, #f8fbff 0%, #eaf3fc 100%);
   --tier-border: #bfd2e6;
-  --tier-mark-surface: #dcecfb;
 }
 
-.sponsor-tier--platinum {
+.sponsor-card--platinum {
   --tier-accent: #657f98;
   --tier-accent-strong: #4a637b;
   --tier-surface: linear-gradient(135deg, #fbfcfd 0%, #eaf0f5 100%);
   --tier-border: #c8d4df;
-  --tier-mark-surface: #e2eaf1;
 }
 
-.sponsor-tier--gold {
+.sponsor-card--gold {
   --tier-accent: #c38a1f;
   --tier-accent-strong: #8a6100;
   --tier-surface: linear-gradient(135deg, #fffdf8 0%, #fff4dc 100%);
   --tier-border: #e5d0a0;
-  --tier-mark-surface: #ffedbd;
 }
 
-.sponsor-tier__heading {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-  margin: 0 0 var(--space-4);
-}
-
-.sponsor-tier__label {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.sponsor-tier__mark {
-  display: grid;
-  width: 2.35rem;
-  height: 2.35rem;
-  place-items: center;
-  background: var(--tier-mark-surface);
-  border: 1px solid var(--tier-border);
-  border-radius: 50%;
-  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
-  font-size: 1.35rem;
-  line-height: 1;
-}
-
-.sponsor-tier__title {
-  margin: 0;
+.sponsor-card__tier {
+  margin: 0 0 0.5rem;
   color: var(--tier-accent-strong);
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   font-weight: 780;
   letter-spacing: 0.12em;
+  text-align: center;
   text-transform: uppercase;
-}
-
-.sponsor-tier .sponsor-card {
-  background: rgba(255, 255, 255, 0.86);
-  border-color: var(--tier-border);
-  box-shadow: 0 0.45rem 1.15rem rgba(16, 37, 63, 0.06);
-}
-
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  gap: var(--card-gap);
-}
-
-.sponsor-card {
-  min-height: 12rem;
-  padding: var(--component-padding);
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
 }
 
 .sponsor-card a {
   display: flex;
-  width: 100%;
-  height: 100%;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.6rem;
   color: inherit;
   text-decoration: none;
 }
@@ -1034,14 +1089,14 @@ ol {
 .sponsor-card img {
   display: block;
   width: 100%;
-  max-width: 16rem;
-  height: 5.25rem;
+  max-width: 13rem;
+  height: 3.75rem;
   object-fit: contain;
 }
 
 .sponsor-card__name {
   color: var(--navy-900);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-align: center;
 }
@@ -1130,6 +1185,41 @@ a.button-link:hover {
   align-items: center;
   gap: var(--space-4);
   margin-top: var(--space-5);
+}
+
+.paper-list {
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paper-item {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.paper-item__title {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.paper-item__authors {
+  margin: 0.3rem 0 0;
+  color: var(--ink-600);
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.paper-item__tag {
+  display: inline-block;
+  margin: 0.45rem 0 0;
+  padding: 0.1rem 0.55rem;
+  color: var(--blue-700);
+  background: var(--surface-blue);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
 .text-link {
@@ -1275,7 +1365,7 @@ a.button-link:hover {
 
 @media (max-width: 760px) {
   :root {
-    --section-space: clamp(3.2rem, 11vw, 4.6rem);
+    --section-space: clamp(2.75rem, 9vw, 3.75rem);
   }
 
   .cfp-grid,
@@ -1287,9 +1377,14 @@ a.button-link:hover {
     grid-template-columns: 1fr;
   }
 
-  .committee-group--featured {
+  .committee-group--featured,
+  .committee-group:not(.committee-group--featured) {
     width: auto;
     grid-column: auto;
+  }
+
+  .committee-member-list {
+    columns: 2;
   }
 
   .topic-band ul {
@@ -1321,12 +1416,6 @@ a.button-link:hover {
 }
 
 @media (max-width: 640px) {
-  .sponsor-tier__heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
   .workshop-brand {
     display: grid;
     gap: 0;
@@ -1336,12 +1425,23 @@ a.button-link:hover {
     font-size: 0.68rem;
   }
 
+  .workshop-hero__image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  /* The event, place and date are in the facts strip right below. */
+  .hero-summary__eyebrow,
+  .hero-summary__meta {
+    display: none;
+  }
+
   .hero-summary {
     position: static;
     width: auto;
     height: auto;
     margin: 0;
-    padding: 1.15rem var(--page-gutter) 1.35rem;
+    padding: 1rem var(--page-gutter) 1.15rem;
     overflow: visible;
     clip: auto;
     white-space: normal;
@@ -1400,8 +1500,27 @@ a.button-link:hover {
     border-top: 1px solid var(--line);
   }
 
-  .committee-member-list {
-    columns: 1;
+  /* Justified text opens wide gaps between words on narrow screens. */
+  .workshop-home p,
+  .workshop-home li {
+    text-align: left;
+  }
+
+  .people-grid,
+  .sponsors-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sponsor-card {
+    min-height: 8rem;
+  }
+
+  .person-card {
+    width: auto;
+  }
+
+  .person-card__body {
+    padding: 0.7rem;
   }
 
   .status-page__actions {
@@ -1416,20 +1535,22 @@ a.button-link:hover {
     grid-template-columns: 1fr;
   }
 
-  .event-facts,
   .date-grid {
     grid-template-columns: 1fr;
+    gap: 0.6rem;
   }
 
-  .event-facts div,
-  .event-facts div:nth-child(even),
-  .event-facts div:nth-child(n + 3) {
-    border-left: 0;
-    border-top: 1px solid var(--line);
+  .date-card {
+    min-height: 0;
+    padding: 0.75rem 0.9rem;
   }
 
-  .event-facts div:first-child {
-    border-top: 0;
+  .date-card h3 {
+    margin-bottom: 0.3rem;
+  }
+
+  .event-facts div {
+    padding: 0.75rem 0.8rem;
   }
 
   .content-section--tinted {
