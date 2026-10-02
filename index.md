@@ -29,11 +29,25 @@ description: The first workshop on small language models for agentic systems, ac
     <div><span>Location</span><strong>{{ workshop.location }}</strong></div>
     <div><span>Dates</span><strong>{{ workshop.workshop_window }}</strong></div>
     {% if workshop.status_fact %}
-    <div><span>{{ workshop.status_fact.label }}</span><strong>{% if workshop.status_fact.url %}<a href="{{ workshop.status_fact.url }}">{{ workshop.status_fact.text }}</a>{% else %}{{ workshop.status_fact.text }}{% endif %}</strong></div>
+    <div><span>{{ workshop.status_fact.label }}</span><strong>{% if workshop.status_fact.url %}<a href="{{ workshop.status_fact.url | relative_url }}">{{ workshop.status_fact.text }}</a>{% else %}{{ workshop.status_fact.text }}{% endif %}</strong></div>
     {% else %}
-    <div><span>Submissions</span><strong>{% if workshop.submissions_open %}<a href="{{ workshop.submission_url }}">Open on OpenReview</a>{% elsif workshop.submission_url %}Closed — <a href="{{ workshop.submission_url }}">view on OpenReview</a>{% else %}Closed{% endif %}</strong></div>
+    <div><span>Submissions</span><strong>{% if workshop.submissions_open %}<a href="{{ workshop.submission_url }}">Open on OpenReview</a>{% elsif workshop.submission_url %}Closed (<a href="{{ workshop.submission_url }}">view on OpenReview</a>){% else %}Closed{% endif %}</strong></div>
     {% endif %}
   </aside>
+
+  {% if workshop.author_notice %}
+  <aside class="author-notice" data-author-notice aria-labelledby="author-notice-title">
+    <div class="author-notice__text">
+      <p class="author-notice__label" id="author-notice-title">{{ workshop.author_notice.label }}</p>
+      <ul>
+        {% for item in workshop.author_notice.items %}
+          <li data-hide-after="{{ item.date }}">{{ item.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="author-notice__link" href="{{ workshop.author_notice.url | relative_url }}">{{ workshop.author_notice.link_text }} <span aria-hidden="true">→</span></a>
+  </aside>
+  {% endif %}
 
   <section class="content-section" id="overview" aria-labelledby="overview-title">
     <div class="section-heading">
@@ -41,12 +55,12 @@ description: The first workshop on small language models for agentic systems, ac
       <h2 id="overview-title">Scope and objectives</h2>
     </div>
     <div class="overview-prose">
-      <p>This workshop is dedicated to small language models (SLMs) as the foundation of agentic AI systems. Although large language models (LLMs) have demonstrated remarkable capabilities, their dependence on cloud infrastructure creates fundamental barriers to deployment in agentic pipelines—latency, privacy, connectivity, and substantial computational cost. SLMs offer a compelling alternative: recent studies argue that SLMs, not LLMs, might be a right option for the repetitive, narrowly scoped sub-tasks that dominate real agentic workloads. SLMs make it possible for autonomous AI agents to plan, reason, and act directly on resource-constrained devices such as smartphones, IoT systems, robotics platforms, and embedded systems. The workshop sits at the intersection of three rapidly evolving fields: (1) efficient language model architectures and compression techniques, (2) agentic AI systems capable of autonomous reasoning and tool use, and (3) edge computing and on-device deployment.</p>
+      <p>This workshop is dedicated to small language models (SLMs) as the foundation of agentic AI systems. Although large language models (LLMs) have demonstrated remarkable capabilities, their dependence on cloud infrastructure creates fundamental barriers to deployment in agentic pipelines (latency, privacy, connectivity, and substantial computational cost). SLMs offer a compelling alternative: recent studies argue that SLMs, not LLMs, might be a right option for the repetitive, narrowly scoped sub-tasks that dominate real agentic workloads. SLMs make it possible for autonomous AI agents to plan, reason, and act directly on resource-constrained devices such as smartphones, IoT systems, robotics platforms, and embedded systems. The workshop sits at the intersection of three rapidly evolving fields: (1) efficient language model architectures and compression techniques, (2) agentic AI systems capable of autonomous reasoning and tool use, and (3) edge computing and on-device deployment.</p>
       <h3 class="overview-subhead">Open problems</h3>
       <ul class="open-problems">
         <li><strong>Compression and distillation:</strong> quantization, pruning, knowledge distillation, and architectural innovations for parameter-efficient LMs.</li>
         <li><strong>Hardware co-design:</strong> on-device inference optimization, NPU/accelerator-aware design, memory-bandwidth-bound serving, and energy-budgeted decoding.</li>
-        <li><strong>Training for cooperation:</strong> fine-tuning SLMs for tool use, planning, multi-step reasoning, and small–large model handoff in heterogeneous agent stacks.</li>
+        <li><strong>Training for cooperation:</strong> fine-tuning SLMs for tool use, planning, multi-step reasoning, and handoff between small and large models in heterogeneous agent stacks.</li>
         <li><strong>Evaluation and benchmarks:</strong> task-success-per-watt, latency- and memory-aware leaderboards, and reproducible on-device evaluation harnesses.</li>
         <li><strong>Applications and safety:</strong> privacy-preserving local processing, federated learning, and deployment case studies across mobile assistants, robotics, healthcare, automotive, and financial services, with associated safety, robustness, and provenance considerations.</li>
       </ul>
@@ -72,7 +86,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div>
       <p class="section-kicker">Review outcomes</p>
       <h2 id="accepted-papers-title">Accepted Papers</h2>
-      <p>The list of accepted papers will be published soon.</p>
+      <p>The list of accepted papers will be published soon. Authors of accepted papers can find camera-ready and registration details in the <a href="{{ '/authors/' | relative_url }}">instructions for accepted authors</a>.</p>
     </div>
     <a class="button-link" href="{{ '/accepted-papers/' | relative_url }}">View accepted papers</a>
   </section>
@@ -160,8 +174,8 @@ description: The first workshop on small language models for agentic systems, ac
           <div>
             <h3>Submission format</h3>
             <ul class="check-list">
-              <li>Short paper — up to 4 content pages</li>
-              <li>Long paper — up to 6 content pages</li>
+              <li>Short paper: up to 4 content pages</li>
+              <li>Long paper: up to 6 content pages</li>
               <li>NeurIPS workshop template</li>
               <li>Double-blind review through OpenReview</li>
               <li>Three reviewers per submission</li>

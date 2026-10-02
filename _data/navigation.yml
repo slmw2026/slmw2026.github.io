@@ -7,6 +7,8 @@ primary:
     url: /#speakers
   - title: Accepted Papers
     url: /accepted-papers/
+  - title: For Authors
+    url: /authors/
   # - title: Challenge
   #   url: /#challenge
 committees:

@@ -1,65 +1,65 @@
-- time: 09:00–09:15
+- time: 09:00-09:15
   title: Opening Remarks
   detail: Workshop introduction and framing
   type: opening
-- time: 09:15–10:00
+- time: 09:15-10:00
   title: Keynote 1
   speaker: Ali Ghodsi
   speaker_id: ali-ghodsi
   detail: Efficient architectures for edge LMs
   type: keynote
-- time: 10:00–10:45
+- time: 10:00-10:45
   title: Keynote 2
   speaker: Amir Gholami
   speaker_id: amir-gholami
   detail: Compression and distillation at scale
   type: keynote
-- time: 10:45–11:15
+- time: 10:45-11:15
   title: Coffee Break
   detail: Networking and poster setup
   type: break
-- time: 11:15–12:00
+- time: 11:15-12:00
   title: Keynote 3
   speaker: Marzena Karpinska
   speaker_id: marzena-karpinska
   detail: Agentic reasoning under constraints
   type: keynote
-- time: 12:00–12:45
+- time: 12:00-12:45
   title: Contributed Talks I
   detail: Three papers, with a 12-minute talk and 3-minute discussion for each
   type: contributed
-- time: 12:45–14:00
+- time: 12:45-14:00
   title: Lunch and Poster Session A
   type: break
-- time: 14:00–14:45
+- time: 14:00-14:45
   title: Keynote 4
   speaker: Fredrick Tung
   speaker_id: fredrick-tung
   detail: Privacy-preserving on-device AI
   type: keynote
-- time: 14:45–15:30
+- time: 14:45-15:30
   title: Keynote 5
   speaker: Michaela Blott
   speaker_id: michaela-blott
   detail: Edge AI accelerators
   type: keynote
-- time: 15:30–16:00
+- time: 15:30-16:00
   title: Coffee and Poster Session B
   detail: Junior-researcher lightning-talk track in parallel
   type: break
-- time: 16:00–16:30
+- time: 16:00-16:30
   title: Contributed Talks II
   detail: Two papers, with a 12-minute talk and 3-minute discussion for each
   type: contributed
-# - time: 16:30–17:00
+# - time: 16:30-17:00
 #   title: Live Demos and Challenge Results
 #   detail: Four seven-minute on-device-agent demonstrations and challenge winners
 #   type: demo
-- time: 17:00–17:30
+- time: 17:00-17:30
   title: Panel Discussion
   detail: Future of edge agentic AI
   type: panel
-- time: 17:30–17:45
+- time: 17:30-17:45
   title: Closing Remarks and Awards
   detail: Summary and community next steps
   type: closing

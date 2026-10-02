@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  var grid = document.querySelector("[data-important-dates]");
-  if (!grid) return;
-
   // Parse "YYYY-MM-DD" into a local-midnight Date. Passing the string straight
   // to the Date constructor would read it as UTC and shift the day for viewers
   // west of Greenwich, which is exactly the off-by-one we cannot afford here.
@@ -25,7 +22,7 @@
     card.appendChild(status);
   }
 
-  Array.prototype.forEach.call(grid.querySelectorAll(".date-card"), function (card) {
+  Array.prototype.forEach.call(document.querySelectorAll("[data-important-dates] .date-card"), function (card) {
     var start = parseLocalDate(card.getAttribute("data-date-start"));
     var end = parseLocalDate(card.getAttribute("data-date-end")) || start;
     if (!start || !end) return;
@@ -39,5 +36,20 @@
       card.classList.add("is-current");
       addStatus(card, start.getTime() === end.getTime() ? "Today" : "In progress", false);
     }
+  });
+
+  // The homepage notice for accepted authors drops each deadline once it has
+  // passed, and hides itself when none are left.
+  Array.prototype.forEach.call(document.querySelectorAll("[data-author-notice]"), function (notice) {
+    var items = notice.querySelectorAll("[data-hide-after]");
+    var remaining = items.length;
+    Array.prototype.forEach.call(items, function (item) {
+      var date = parseLocalDate(item.getAttribute("data-hide-after"));
+      if (date && date < today) {
+        item.hidden = true;
+        remaining -= 1;
+      }
+    });
+    if (items.length && !remaining) notice.hidden = true;
   });
 })();

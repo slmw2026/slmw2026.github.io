@@ -20,9 +20,21 @@ submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Age
 # workshop moves through its phases; remove it to fall back to the
 # submissions open/closed status.
 status_fact:
-  label: Decisions
-  text: Final · camera-ready due October 4
-  url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Agents
+  label: Accepted authors
+  text: Camera-ready due October 4 (AoE)
+  url: /authors/
+# The strip under the facts row on the homepage that points accepted authors
+# to /authors/. Each item disappears once its date has passed
+# (assets/js/important-dates.js), and the strip goes with the last one.
+author_notice:
+  label: Accepted authors
+  url: /authors/
+  link_text: Author instructions
+  items:
+    - text: Reserved-ticket form closes October 3 (AoE)
+      date: 2026-10-03
+    - text: Camera-ready due October 4 (AoE)
+      date: 2026-10-04
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
 # The banner is the original composed artwork with three text lines rewritten in
@@ -60,15 +72,19 @@ important_dates:
     start: 2026-09-06
     end: 2026-09-06
   - label: Reviewing period
-    date: September 7–19, 2026
+    date: September 7 to 19, 2026
     start: 2026-09-07
     end: 2026-09-19
   - label: Acceptance notification
     date: September 29, 2026
     start: 2026-09-29
     end: 2026-09-29
+  - label: Reserved-ticket form deadline
+    date: October 3, 2026 (AoE)
+    start: 2026-10-03
+    end: 2026-10-03
   - label: Camera-ready deadline
-    date: October 4, 2026
+    date: October 4, 2026 (AoE)
     start: 2026-10-04
     end: 2026-10-04
   - label: Workshop
