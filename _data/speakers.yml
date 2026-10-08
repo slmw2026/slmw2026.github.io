@@ -41,16 +41,6 @@
   image_height: 319
   linkedin: https://ch.linkedin.com/in/lcavigelli
 
-- id: amir-gholami
-  name: Amir Gholami
-  affiliation: University of California, Berkeley
-  image: /images/people/amir-gholami.webp
-  image_width: 400
-  image_height: 500
-  profile: https://amirgholami.org/
-  scholar: https://scholar.google.com/citations?user=b0ehAgIAAAAJ&hl=en
-  linkedin: https://www.linkedin.com/in/a-gholami
-
 - id: layla-el-asri
   name: Layla El Asri
   affiliation: RBC Borealis
@@ -59,6 +49,15 @@
   image_height: 1494
   profile: https://speakingmachines.com/
   linkedin: https://www.linkedin.com/in/laylaelasri
+
+- id: emad-barsoum
+  name: Emad Barsoum
+  affiliation: AMD
+  image: /images/people/emad-barsoum.jpeg
+  image_width: 358
+  image_height: 358
+  scholar: https://scholar.google.com/citations?hl=en&user=bX1YILcAAAAJ
+  linkedin: https://www.linkedin.com/in/ebarsoum
 
 # The following speakers are retained but not currently displayed.
 # - id: marzena-karpinska
