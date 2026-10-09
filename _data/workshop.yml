@@ -20,9 +20,9 @@ submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Age
 # workshop moves through its phases; remove it to fall back to the
 # submissions open/closed status.
 status_fact:
-  label: Accepted authors
-  text: Camera-ready due October 4 (AoE)
-  url: /authors/
+  label: Accepted papers
+  text: List coming soon
+  url: /accepted-papers/
 # The strip under the facts row on the homepage that points accepted authors
 # to /authors/. Each item disappears once its date has passed
 # (assets/js/important-dates.js), and the strip goes with the last one.

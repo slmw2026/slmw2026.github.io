@@ -1,6 +1,6 @@
 - name: Huawei
   tier: Diamond
-  logo: /images/huawei_logo.png
+  logo: /images/huawei_logo.webp
   url: https://www.huawei.com/
 
 - name: RBC Borealis AI

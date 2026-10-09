@@ -72,7 +72,7 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">Submission timeline</p>
       <h2 id="dates-title">Important Dates</h2>
     </div>
-    <div class="date-grid" data-important-dates>
+    <div class="date-grid" id="important-dates-list" data-important-dates>
       {% for item in workshop.important_dates %}
         <article class="date-card" data-date-start="{{ item.start }}" data-date-end="{{ item.end | default: item.start }}">
           <h3>{{ item.label }}</h3>

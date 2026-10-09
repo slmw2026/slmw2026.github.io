@@ -1,9 +1,9 @@
 - id: habib-hajimolahoseini
   name: Habib Hajimolahoseini
   affiliation: AMD
-  image: /images/Habib-Hajimolahoseini.png
-  image_width: 2811
-  image_height: 3021
+  image: /images/people/habib-hajimolahoseini.webp
+  image_width: 600
+  image_height: 645
   scholar: https://scholar.google.com/citations?user=ECIUuhoAAAAJ
   linkedin: https://www.linkedin.com/in/habib-h-669710a7
 
@@ -37,9 +37,9 @@
 - id: parsa-omidi
   name: Parsa Omidi
   affiliation: Huawei Toronto Research Centre
-  image: /images/people/parsa-omidi.jpeg
-  image_width: 1384
-  image_height: 1345
+  image: /images/people/parsa-omidi.webp
+  image_width: 600
+  image_height: 583
   profile: https://parsaomidi.github.io/
   linkedin: https://ca.linkedin.com/in/parsa-omidi-ph-d-4851457a
 
