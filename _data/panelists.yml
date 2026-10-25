@@ -15,3 +15,13 @@
   image_height: 500
   scholar: https://scholar.google.com/citations?user=3dDmYt0AAAAJ
   linkedin: https://ca.linkedin.com/in/gurpreetgosal
+
+- id: simon-lemay
+  name: Simon Lemay
+  role: Principal Machine Learning Software Engineer
+  affiliation: RBC Borealis
+  image: /images/people/simon-lemay-placeholder.svg
+  image_placeholder: true
+  image_width: 600
+  image_height: 600
+  linkedin: https://www.linkedin.com/in/silem/
