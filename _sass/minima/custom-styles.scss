@@ -525,6 +525,15 @@ a.author-notice__link:focus-visible {
   margin-bottom: 0.9rem;
 }
 
+.author-step h3 {
+  margin: var(--space-4) 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.poster-sessions {
+  width: auto;
+}
+
 .code-block {
   position: relative;
 }
