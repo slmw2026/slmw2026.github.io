@@ -86,7 +86,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div>
       <p class="section-kicker">Review outcomes</p>
       <h2 id="accepted-papers-title">Accepted Papers</h2>
-      <p>The list of accepted papers will be published soon. Authors of accepted papers can find camera-ready and registration details in the <a href="{{ '/authors/' | relative_url }}">instructions for accepted authors</a>.</p>
+      <p>The list of accepted papers will be published soon. Authors of accepted papers can find poster size, printing and session details in the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a>.</p>
     </div>
     <a class="button-link" href="{{ '/accepted-papers/' | relative_url }}">View accepted papers</a>
   </section>
@@ -230,7 +230,7 @@ description: The first workshop on small language models for agentic systems, ac
       </article>
       <article>
         <h3>Participation and inclusion</h3>
-        <p>The program includes mentorship for junior researchers, a dedicated lightning-talk track, outreach through affinity communities, and an inclusive workshop environment for participants across backgrounds and career stages.</p>
+        <p>The workshop welcomes participants across backgrounds and career stages, from students to industry practitioners, and is committed to an inclusive and respectful environment for everyone.</p>
       </article>
       <article>
         <h3>NeurIPS policies</h3>
