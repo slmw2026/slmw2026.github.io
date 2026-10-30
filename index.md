@@ -96,10 +96,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">One day · In person · Paris</p>
       <h2 id="schedule-title">Workshop Schedule</h2>
     </div>
-    <p class="status-box">The detailed schedule will be announced closer to the workshop.</p>
-    {% comment %} Schedule details are hidden until the program is confirmed.
+    <p class="schedule-meta"><strong>Sunday, 13 December 2026</strong> · Amphitheater 34B, Sorbonne University (Jussieu campus), Paris</p>
+    <p class="schedule-note">All times are Paris time (CET). The schedule may change slightly.</p>
     {% include schedule.html %}
-    {% endcomment %}
+    <p class="schedule-note"><strong>Posters.</strong> Accepted papers are presented in one of the two poster sessions in Caves Esclangon, a 5 to 8 minute walk from Amphitheater 34B. Session and board assignments will be announced before the workshop. See the <a href="{{ '/authors/' | relative_url }}">instructions for accepted authors</a> for poster size, printing and setup.</p>
   </section>
 
   <section class="content-section content-section--tinted" id="speakers" aria-labelledby="speakers-title">

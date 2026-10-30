@@ -1026,6 +1026,22 @@ a.author-notice__link:focus-visible {
 }
 
 /* Schedule */
+.schedule-meta {
+  margin: 0 0 var(--space-2);
+  color: var(--navy-900);
+  font-size: 1.05rem;
+}
+
+.schedule-note {
+  margin: 0 0 var(--space-4);
+  color: var(--ink-700);
+}
+
+.schedule-table-wrap + .schedule-note,
+.schedule-cards + .schedule-note {
+  margin: var(--space-4) 0 0;
+}
+
 .schedule-table-wrap {
   overflow: hidden;
   border: 1px solid var(--line);

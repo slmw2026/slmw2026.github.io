@@ -1,65 +1,65 @@
-- time: 09:00-09:15
+# Times are Paris time (CET). detail is rendered as HTML.
+- time: 08:30-08:40
   title: Opening Remarks
-  detail: Workshop introduction and framing
   type: opening
-- time: 09:15-10:00
-  title: Keynote 1
+- time: 08:40-09:15
+  title: Invited Talk
   speaker: Ali Ghodsi
   speaker_id: ali-ghodsi
-  detail: Efficient architectures for edge LMs
+  detail: University of Waterloo
   type: keynote
-- time: 10:00-10:45
-  title: Keynote 2
-  speaker: Amir Gholami
-  speaker_id: amir-gholami
-  detail: Compression and distillation at scale
+- time: 09:15-09:50
+  title: Invited Talk
+  speaker: Emad Barsoum
+  speaker_id: emad-barsoum
+  detail: AMD
   type: keynote
-- time: 10:45-11:15
-  title: Coffee Break
-  detail: Networking and poster setup
-  type: break
-- time: 11:15-12:00
-  title: Keynote 3
-  speaker: Marzena Karpinska
-  speaker_id: marzena-karpinska
-  detail: Agentic reasoning under constraints
-  type: keynote
-- time: 12:00-12:45
-  title: Contributed Talks I
-  detail: Three papers, with a 12-minute talk and 3-minute discussion for each
+- time: 09:50-10:50
+  title: Oral Presentations
+  detail: Four contributed papers, including the two Best Paper Award winners (to be announced)
   type: contributed
-- time: 12:45-14:00
-  title: Lunch and Poster Session A
-  type: break
-- time: 14:00-14:45
-  title: Keynote 4
-  speaker: Fredrick Tung
-  speaker_id: fredrick-tung
-  detail: Privacy-preserving on-device AI
+- time: 10:50-11:25
+  title: Invited Talk
+  speaker: Amin Karbasi
+  speaker_id: amin-karbasi
+  detail: Cisco Foundation AI
   type: keynote
-- time: 14:45-15:30
-  title: Keynote 5
-  speaker: Michaela Blott
-  speaker_id: michaela-blott
-  detail: Edge AI accelerators
-  type: keynote
-- time: 15:30-16:00
-  title: Coffee and Poster Session B
-  detail: Junior-researcher lightning-talk track in parallel
+- time: 11:30-13:00
+  title: Poster Session A &amp; Coffee Break
+  detail: Caves Esclangon; coffee 11:30-12:30
+  type: poster
+- time: 13:15-14:15
+  title: Lunch
   type: break
-- time: 16:00-16:30
-  title: Contributed Talks II
-  detail: Two papers, with a 12-minute talk and 3-minute discussion for each
-  type: contributed
-# - time: 16:30-17:00
-#   title: Live Demos and Challenge Results
-#   detail: Four seven-minute on-device-agent demonstrations and challenge winners
-#   type: demo
-- time: 17:00-17:30
-  title: Panel Discussion
-  detail: Future of edge agentic AI
+- time: 14:15-14:50
+  title: Invited Talk
+  speaker: Layla El Asri
+  speaker_id: layla-el-asri
+  detail: RBC Borealis
+  type: keynote
+- time: 14:50-15:25
+  title: Invited Talk
+  speaker: Lukas Cavigelli
+  speaker_id: lukas-cavigelli
+  detail: Huawei Technologies, Zurich Research Center
+  type: keynote
+- time: 15:25-15:45
+  title: Break
+  type: break
+- time: 15:45-17:00
+  title: Poster Session B &amp; Coffee Break
+  detail: Caves Esclangon; coffee 16:00-17:00
+  type: poster
+- time: 17:05-17:40
+  title: Invited Talk
+  speaker: Emmanuel Abbe
+  speaker_id: emmanuel-abbe
+  detail: EPFL and Apple
+  type: keynote
+- time: 17:40-18:10
+  title: "Panel Discussion: The Future of Small Language Model Agents"
+  detail: '<a href="#mehran-moghtadai">Mehran Moghtadai</a> (TD Insurance) · <a href="#gurpreet-gosal">Gurpreet Gosal</a> (Cerebras Systems) · <a href="#simon-lemay">Simon Lemay</a> (RBC Borealis)<br>Moderator: to be announced'
   type: panel
-- time: 17:30-17:45
-  title: Closing Remarks and Awards
-  detail: Summary and community next steps
+- time: 18:10-18:15
+  title: Closing Remarks &amp; Best Paper Awards
   type: closing
