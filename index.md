@@ -26,7 +26,7 @@ description: The first workshop on small language models for agentic systems, ac
 
   <aside class="event-facts" aria-label="Workshop facts">
     <div><span>Event</span><strong><a href="{{ workshop.conference_url }}">{{ workshop.conference }}</a></strong></div>
-    <div><span>Location</span><strong>{{ workshop.location }}</strong></div>
+    <div><span>Location</span><strong>{{ workshop.location }}</strong>{% if workshop.venue %}<small class="event-facts__venue">{{ workshop.venue }}</small>{% endif %}</div>
     <div><span>Dates</span><strong>{{ workshop.workshop_window }}</strong></div>
     {% if workshop.status_fact %}
     <div><span>{{ workshop.status_fact.label }}</span><strong>{% if workshop.status_fact.url %}<a href="{{ workshop.status_fact.url | relative_url }}">{{ workshop.status_fact.text }}</a>{% else %}{{ workshop.status_fact.text }}{% endif %}</strong></div>

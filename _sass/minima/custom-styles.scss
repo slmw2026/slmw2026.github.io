@@ -411,6 +411,14 @@ ol {
   color: inherit;
 }
 
+.event-facts__venue {
+  display: block;
+  margin-top: 0.2rem;
+  color: var(--ink-700);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
 /* Notice for accepted authors, directly under the facts strip. Dark so it is
    the first thing read after the banner; items and the whole strip are hidden
    by assets/js/important-dates.js once their dates pass. */
