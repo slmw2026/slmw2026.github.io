@@ -20,13 +20,13 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="hero-summary__eyebrow">{{ workshop.event_label }}</p>
       <h1 id="hero-title">{{ workshop.short_title }}</h1>
       <p class="hero-summary__subtitle">{{ workshop.subtitle }}</p>
-      <p class="hero-summary__meta">{{ workshop.location }} · {{ workshop.workshop_window }}</p>
+      <p class="hero-summary__meta">{{ workshop.venue_short }} · {{ workshop.workshop_window }}</p>
     </div>
   </section>
 
   <aside class="event-facts" aria-label="Workshop facts">
     <div><span>Event</span><strong><a href="{{ workshop.conference_url }}">{{ workshop.conference }}</a></strong></div>
-    <div><span>Location</span><strong>{{ workshop.location }}</strong>{% if workshop.venue %}<small class="event-facts__venue">{{ workshop.venue }}</small>{% endif %}</div>
+    <div><span>Venue</span><strong>{{ workshop.venue_name }}</strong><small class="event-facts__venue">{{ workshop.venue_room }} · <a href="{{ workshop.venue_map_url }}">{{ workshop.venue_address }}</a></small></div>
     <div><span>Dates</span><strong>{{ workshop.workshop_window }}</strong></div>
     {% if workshop.status_fact %}
     <div><span>{{ workshop.status_fact.label }}</span><strong>{% if workshop.status_fact.url %}<a href="{{ workshop.status_fact.url | relative_url }}">{{ workshop.status_fact.text }}</a>{% else %}{{ workshop.status_fact.text }}{% endif %}</strong></div>
@@ -86,7 +86,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div>
       <p class="section-kicker">Review outcomes</p>
       <h2 id="accepted-papers-title">Accepted Papers</h2>
-      <p>The list of accepted papers will be published soon. Authors of accepted papers can find poster size, printing and session details in the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a>.</p>
+      <p>The list of accepted papers is now available, with links to each paper and its camera-ready PDF on OpenReview. All accepted papers are presented in person in Paris. Presenting authors can find poster size, printing and session details in the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a>.</p>
     </div>
     <a class="button-link" href="{{ '/accepted-papers/' | relative_url }}">View accepted papers</a>
   </section>

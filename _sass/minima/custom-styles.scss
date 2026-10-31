@@ -642,7 +642,6 @@ a.author-notice__link:focus-visible {
 .hero-summary p,
 .status-box,
 .date-card p,
-.accepted-papers-callout p,
 .contact-section p {
   text-align: left;
 }
@@ -1342,7 +1341,6 @@ a.author-notice__link:focus-visible {
 }
 
 /* Calls to action, interior pages, and footer */
-.accepted-papers-callout,
 .contact-section {
   display: flex;
   align-items: center;
@@ -1350,11 +1348,25 @@ a.author-notice__link:focus-visible {
   gap: var(--space-5);
 }
 
-.accepted-papers-callout p:last-child,
 .contact-section p {
   max-width: 66ch;
   margin: 0.8rem 0 0;
   color: var(--ink-700);
+}
+
+/* Reads like the other open sections: full-width prose (justified by the
+   skin on wider screens), then the button below it. */
+.accepted-papers-callout h2 {
+  margin-bottom: var(--heading-gap);
+}
+
+.accepted-papers-callout p:last-child {
+  margin: 0;
+  color: var(--ink-700);
+}
+
+.accepted-papers-callout .button-link {
+  margin-top: var(--space-4);
 }
 
 a.button-link {
@@ -1448,13 +1460,182 @@ a.button-link:hover {
 
 .paper-item__tag {
   display: inline-block;
-  margin: 0.45rem 0 0;
   padding: 0.1rem 0.55rem;
   color: var(--blue-700);
   background: var(--surface-blue);
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.paper-item__tag--award {
+  color: #7a4b00;
+  background: #fdf0d5;
+}
+
+.paper-item[hidden] {
+  display: none;
+}
+
+.paper-item__id {
+  margin: 0 0 0.2rem;
+  color: var(--ink-600);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.post-content .paper-item__title {
+  max-width: none;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.paper-item__title a {
+  color: var(--navy-900);
+  text-decoration: none;
+}
+
+.paper-item__title a:hover,
+.paper-item__title a:focus-visible {
+  color: var(--blue-700);
+  text-decoration: underline;
+}
+
+.paper-item__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.paper-note {
+  color: var(--ink-600);
+  font-size: 0.92rem;
+}
+
+.paper-search {
+  margin: var(--space-4) 0 0;
+  padding: var(--space-3);
+  background: var(--surface-muted);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.paper-search[hidden],
+.paper-search__empty[hidden] {
+  display: none;
+}
+
+.paper-search label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--navy-900);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.paper-search input {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  color: var(--ink-900);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+.paper-search input:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.paper-search__count {
+  margin: 0.5rem 0 0;
+  color: var(--ink-600);
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.paper-search__empty {
+  margin-top: var(--space-4);
+  color: var(--ink-700);
+}
+
+/* Poster and presentation instructions (/authors/) */
+.author-glance {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: var(--space-4) 0 var(--space-5);
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+
+.author-glance li {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  background: var(--surface-muted);
+}
+
+.author-glance span,
+.author-glance strong {
+  display: block;
+  text-align: left;
+}
+
+.author-glance span {
+  margin-bottom: 0.2rem;
+  color: var(--ink-600);
+  font-size: 0.75rem;
+  font-weight: 720;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+}
+
+.author-glance strong {
+  color: var(--navy-900);
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.author-archive {
+  margin-top: var(--space-5);
+  border-top: 1px solid var(--line);
+}
+
+.author-archive__summary {
+  padding: var(--space-3) 0;
+  color: var(--blue-700);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.author-archive__state {
+  color: var(--ink-600);
+  font-weight: 500;
+}
+
+.author-archive .status-box {
+  margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  .author-glance {
+    grid-template-columns: 1fr;
+  }
 }
 
 .text-link {
@@ -1677,9 +1858,9 @@ a.button-link:hover {
     object-fit: cover;
   }
 
-  /* The event, place and date are in the facts strip right below. */
-  .hero-summary__eyebrow,
-  .hero-summary__meta {
+  /* The event is in the facts strip right below. The venue and date stay
+     here because the workshop is not at the main NeurIPS venue. */
+  .hero-summary__eyebrow {
     display: none;
   }
 
@@ -1724,6 +1905,10 @@ a.button-link:hover {
   .hero-summary__note {
     margin: 0.45rem 0 0;
     font-size: 0.85rem;
+  }
+
+  .hero-summary__meta {
+    color: #bcd0e6;
   }
 
   .hero-summary__note {

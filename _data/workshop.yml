@@ -8,7 +8,15 @@ workshop_guidance_url: https://neurips.cc/Conferences/2026/WorkshopsGuidance
 code_of_conduct_url: https://neurips.cc/public/CodeOfConduct
 accessibility_url: https://neurips.cc/public/DiversityInclusion
 location: Paris, France
-venue: Amphitheater 34B, Sorbonne University (Jussieu campus)
+# Where the workshop itself takes place. NeurIPS 2026 workshops in Paris are
+# not at the main conference venue (Paris Congress Center), so the facts strip,
+# the phone banner text and the schedule name the campus and room explicitly.
+# The desktop banner image has venue_short and workshop_window baked in.
+venue_short: Sorbonne University (Jussieu), Paris
+venue_name: Sorbonne University, Jussieu Campus
+venue_room: Amphitheater 34B
+venue_address: 4 Place Jussieu, 75005 Paris
+venue_map_url: https://www.openstreetmap.org/search?query=4%20Place%20Jussieu%2C%2075005%20Paris
 workshop_window: December 13, 2026
 event_label: NeurIPS 2026
 submission_status: Submissions are now closed. Thank you to everyone who submitted.
@@ -22,35 +30,40 @@ submission_url: https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/SLM-Age
 # submissions open/closed status.
 status_fact:
   label: Accepted papers
-  text: List coming soon
+  text: View the list
   url: /accepted-papers/
-# The strip under the facts row on the homepage that points accepted authors
-# to /authors/. Each item disappears once its date has passed
-# (assets/js/important-dates.js), and the strip goes with the last one.
+# The strip under the facts row on the homepage. It now points poster
+# presenters to the poster instructions on /authors/. Each item disappears once
+# its date has passed (assets/js/important-dates.js), and the strip goes with
+# the last one.
 author_notice:
-  label: Accepted authors
-  url: /authors/
-  link_text: Author instructions
+  label: Presenting a poster?
+  url: /authors/#posters
+  link_text: Poster instructions
   items:
-    - text: Reserved-ticket form closes October 3 (AoE)
-      date: 2026-10-03
-    - text: Camera-ready due October 4 (AoE)
-      date: 2026-10-04
+    - text: "Portrait posters, at most 61 × 85 cm"
+      date: 2026-12-13
+    - text: NeurIPS print orders close November 30
+      date: 2026-11-30
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
-# The banner is the original composed artwork with three text lines rewritten in
-# place: the date now reads December 13, the "Accepted at" wording and the
-# "Exact workshop day to be announced" note are gone. Everything else, including
-# the illustration, the title and the subtitle, is the original pixel for pixel.
-# The superseded banner is kept at /images/branding/slm-agents-banner.webp; the
-# text-free illustration alone is at /images/branding/slm-agents-paris-art.webp.
-# Because the wording is baked into the image, event_label, location and
-# workshop_window above must be kept in step with it by hand.
+# The banner is the original composed artwork with its text lines rewritten in
+# place: the date reads December 13, the "Accepted at" wording is gone, and
+# (October 31) the location line "Paris, France" became two lines, the venue
+# "Sorbonne University (Jussieu), Paris" with the pin and the date with a
+# matching calendar icon, set in Inter like the original. Everything else,
+# including the illustration, the title and the subtitle, is the original
+# pixel for pixel. The previous banner is kept at
+# /images/branding/slm-agents-banner-dec13.webp (it is the source for any
+# further text edits); the text-free illustration alone is at
+# /images/branding/slm-agents-paris-art.webp. Because the wording is baked into
+# the image, event_label, venue_short and workshop_window must be kept in step
+# with it by hand.
 hero:
-  image: /images/branding/slm-agents-banner-dec13.webp
+  image: /images/branding/slm-agents-banner-jussieu.webp
   width: 2172
   height: 724
-  alt: SLM-Agents workshop banner with the Paris skyline and NeurIPS 2026 event details
+  alt: "SLM-Agents workshop banner with the Paris skyline: NeurIPS 2026, Sorbonne University (Jussieu), Paris, December 13, 2026"
   # On phones the banner's built-in text is too small to read, so the text-free
   # illustration is shown instead and the title is set as live text below it.
   mobile_image: /images/branding/slm-agents-paris-art.webp
