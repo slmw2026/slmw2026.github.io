@@ -35,6 +35,16 @@ description: The first workshop on small language models for agentic systems, ac
     {% endif %}
   </aside>
 
+  {% if workshop.venue_update %}
+  <aside class="venue-notice" aria-labelledby="venue-notice-title">
+    <div class="venue-notice__text">
+      <p class="venue-notice__label" id="venue-notice-title"><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>{{ workshop.venue_update.label }}</p>
+      <p class="venue-notice__body">{{ workshop.venue_update.text }}</p>
+    </div>
+    <a class="venue-notice__link" href="{{ workshop.venue_map_url }}">{{ workshop.venue_update.link_text }} <span aria-hidden="true">→</span></a>
+  </aside>
+  {% endif %}
+
   {% if workshop.author_notice %}
   <aside class="author-notice" data-author-notice aria-labelledby="author-notice-title">
     <div class="author-notice__text">
@@ -86,7 +96,7 @@ description: The first workshop on small language models for agentic systems, ac
     <div>
       <p class="section-kicker">Review outcomes</p>
       <h2 id="accepted-papers-title">Accepted Papers</h2>
-      <p>The list of accepted papers is now available, with links to each paper and its camera-ready PDF on OpenReview. All accepted papers are presented in person in Paris. Presenting authors can find poster size, printing and session details in the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a>.</p>
+      <p>The list of accepted papers is now available, with links to each paper and its camera-ready PDF on OpenReview. All accepted papers are presented in person in Paris. Presenting authors can find poster size and session details in the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a>; printing and pick-up are on the <a href="{{ workshop.neurips_poster_url }}">NeurIPS poster instructions page</a>.</p>
     </div>
     <a class="button-link" href="{{ '/accepted-papers/' | relative_url }}">View accepted papers</a>
   </section>
@@ -96,10 +106,10 @@ description: The first workshop on small language models for agentic systems, ac
       <p class="section-kicker">One day · In person · Paris</p>
       <h2 id="schedule-title">Workshop Schedule</h2>
     </div>
-    <p class="schedule-meta"><strong>Sunday, 13 December 2026</strong> · Amphitheater 34B, Sorbonne University (Jussieu campus), Paris</p>
+    <p class="schedule-meta"><strong>Sunday, 13 December 2026</strong> · {{ workshop.venue_name }}, Paris · {{ workshop.venue_room }}</p>
     <p class="schedule-note">All times are Paris time (CET). The schedule may change slightly.</p>
     {% include schedule.html %}
-    <p class="schedule-note"><strong>Posters.</strong> Accepted papers are presented in one of the two poster sessions in Caves Esclangon, a 5 to 8 minute walk from Amphitheater 34B. Session and board assignments will be announced before the workshop. See the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a> for poster size, printing and setup.</p>
+    <p class="schedule-note"><strong>Posters.</strong> Accepted papers are presented in one of the two poster sessions, in the poster area at the {{ workshop.venue_name }}. Session and board assignments will be announced before the workshop. See the <a href="{{ '/authors/#posters' | relative_url }}">poster instructions</a> for poster size and setup, and the <a href="{{ workshop.neurips_poster_url }}">NeurIPS poster instructions page</a> for printing and pick-up.</p>
   </section>
 
   <section class="content-section content-section--tinted" id="speakers" aria-labelledby="speakers-title">

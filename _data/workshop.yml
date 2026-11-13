@@ -4,19 +4,31 @@ subtitle: 1st Workshop on SLMs for Agentic Systems
 tagline: Small language models for capable, efficient, and deployable agentic AI.
 conference: NeurIPS 2026
 conference_url: https://neurips.cc/Conferences/2026
+# Official NeurIPS poster page. Printing, ordering and pick-up are run by
+# NeurIPS, so every mention of them on the site links here.
+neurips_poster_url: https://neurips.cc/Conferences/2026/PosterInstructions
 workshop_guidance_url: https://neurips.cc/Conferences/2026/WorkshopsGuidance
 code_of_conduct_url: https://neurips.cc/public/CodeOfConduct
 accessibility_url: https://neurips.cc/public/DiversityInclusion
 location: Paris, France
-# Where the workshop itself takes place. NeurIPS 2026 workshops in Paris are
-# not at the main conference venue (Paris Congress Center), so the facts strip,
-# the phone banner text and the schedule name the campus and room explicitly.
-# The desktop banner image has venue_short and workshop_window baked in.
-venue_short: Sorbonne University (Jussieu), Paris
-venue_name: Sorbonne University, Jussieu Campus
-venue_room: Amphitheater 34B
-venue_address: 4 Place Jussieu, 75005 Paris
-venue_map_url: https://www.openstreetmap.org/search?query=4%20Place%20Jussieu%2C%2075005%20Paris
+# Where the workshop itself takes place. NeurIPS 2026 holds its Paris workshops
+# at two venues. SLM-Agents was first placed at Sorbonne University (Jussieu
+# campus) and in November 2026 moved to the main conference venue, the Paris
+# Congress Center (Palais des Congrès), Porte Maillot. The name follows the
+# NeurIPS hotels and poster pages, with the French name alongside. The facts
+# strip, the phone banner text, the schedule and the footer read these fields.
+# The desktop banner image has the venue and workshop_window baked in.
+venue_short: Paris Congress Center (Palais des Congrès), Paris
+venue_name: Paris Congress Center (Palais des Congrès)
+venue_room: Room to be announced
+venue_address: 2 Place de la Porte Maillot, 75017 Paris
+venue_map_url: https://www.google.com/maps/search/?api=1&query=Palais+des+Congr%C3%A8s+de+Paris%2C+2+Place+de+la+Porte+Maillot%2C+75017+Paris
+# Notice on the homepage, above the "Presenting a poster?" strip, telling
+# visitors that the venue changed. Remove the whole block to hide it.
+venue_update:
+  label: Venue update
+  text: "The workshop has moved to the main NeurIPS venue, the <strong>Paris Congress Center (Palais des Congrès)</strong> at Porte Maillot. It is no longer at Sorbonne University (Jussieu)."
+  link_text: Map and directions
 workshop_window: December 13, 2026
 event_label: NeurIPS 2026
 submission_status: Submissions are now closed. Thank you to everyone who submitted.
@@ -38,32 +50,34 @@ status_fact:
 # the last one.
 author_notice:
   label: Presenting a poster?
-  url: /authors/#posters
+  url: /authors/
   link_text: Poster instructions
   items:
     - text: "Portrait posters, at most 61 × 85 cm"
       date: 2026-12-13
-    - text: NeurIPS print orders close November 30
+    - text: '<a href="https://neurips.cc/Conferences/2026/PosterInstructions">NeurIPS print orders</a> close November 30'
       date: 2026-11-30
 contact_status: 'For questions, contact the organizers at <a href="mailto:neurips.slmagents.2026@gmail.com">neurips.slmagents.2026@gmail.com</a>.'
 non_archival_statement: Accepted workshop submissions are non-archival and may be submitted elsewhere after the workshop, subject to the policies of the other venue.
 # The banner is the original composed artwork with its text lines rewritten in
 # place: the date reads December 13, the "Accepted at" wording is gone, and
 # (October 31) the location line "Paris, France" became two lines, the venue
-# "Sorbonne University (Jussieu), Paris" with the pin and the date with a
-# matching calendar icon, set in Inter like the original. Everything else,
-# including the illustration, the title and the subtitle, is the original
-# pixel for pixel. The previous banner is kept at
+# with the pin and the date with a matching calendar icon, set in Inter 350 at
+# 39px like the original. On November 13 the venue line was changed from
+# "Sorbonne University (Jussieu), Paris" to "Paris Congress Center (Palais des
+# Congrès)" in the same font, size and position. Everything else, including
+# the illustration, the title and the subtitle, is the original pixel for
+# pixel. The previous banner is kept at
 # /images/branding/slm-agents-banner-dec13.webp (it is the source for any
 # further text edits); the text-free illustration alone is at
 # /images/branding/slm-agents-paris-art.webp. Because the wording is baked into
 # the image, event_label, venue_short and workshop_window must be kept in step
 # with it by hand.
 hero:
-  image: /images/branding/slm-agents-banner-jussieu.webp
+  image: /images/branding/slm-agents-banner-congress.webp
   width: 2172
   height: 724
-  alt: "SLM-Agents workshop banner with the Paris skyline: NeurIPS 2026, Sorbonne University (Jussieu), Paris, December 13, 2026"
+  alt: "SLM-Agents workshop banner with the Paris skyline: NeurIPS 2026, Paris Congress Center (Palais des Congrès), December 13, 2026"
   # On phones the banner's built-in text is too small to read, so the text-free
   # illustration is shown instead and the title is set as live text below it.
   mobile_image: /images/branding/slm-agents-paris-art.webp

@@ -419,6 +419,63 @@ ol {
   line-height: 1.35;
 }
 
+/* Venue change notice, directly under the facts strip and above the author
+   notice. Amber (the Gold sponsor tones) so it reads as a change, not as more
+   author information; same shape as the author notice so the two pair up. */
+.venue-notice {
+  width: calc(100% - var(--page-gutter) - var(--page-gutter));
+  max-width: var(--content-width);
+  margin: var(--space-4) auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-5);
+  padding: 1rem var(--component-padding);
+  color: var(--ink-900);
+  background: #fff4dc;
+  border: 1px solid #e5d0a0;
+  border-left: 5px solid #c38a1f;
+  border-radius: var(--radius-md);
+}
+
+.venue-notice__text p {
+  margin: 0;
+}
+
+p.venue-notice__label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.25rem;
+  color: #8a6100;
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+}
+
+.venue-notice__body {
+  text-align: left;
+}
+
+a.venue-notice__link,
+a.venue-notice__link:visited {
+  flex: 0 0 auto;
+  padding: 0.6rem 0.95rem;
+  color: #fff;
+  background: #8a6100;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a.venue-notice__link:hover,
+a.venue-notice__link:focus-visible {
+  color: #fff;
+  background: #6f4e00;
+}
+
 /* Notice for accepted authors, directly under the facts strip. Dark so it is
    the first thing read after the banner; items and the whole strip are hidden
    by assets/js/important-dates.js once their dates pass. */
@@ -465,6 +522,19 @@ ol {
   padding: 0;
   list-style: none;
   font-weight: 680;
+}
+
+.author-notice li a,
+.author-notice li a:visited {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #8fd8ec;
+  text-underline-offset: 0.2em;
+}
+
+.author-notice li a:hover,
+.author-notice li a:focus-visible {
+  color: #8fd8ec;
 }
 
 .author-notice li[hidden] {
@@ -1833,7 +1903,8 @@ a.button-link:hover {
 
   .accepted-papers-callout,
   .contact-section,
-  .author-notice {
+  .author-notice,
+  .venue-notice {
     align-items: flex-start;
     flex-direction: column;
   }
