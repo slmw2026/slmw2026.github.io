@@ -50,16 +50,24 @@
   profile: https://speakingmachines.com/
   linkedin: https://www.linkedin.com/in/laylaelasri
 
-- id: emad-barsoum
-  name: Emad Barsoum
-  affiliation: AMD
-  image: /images/people/emad-barsoum.jpeg
-  image_width: 358
-  image_height: 358
-  scholar: https://scholar.google.com/citations?hl=en&user=bX1YILcAAAAJ
-  linkedin: https://www.linkedin.com/in/ebarsoum
+- id: wen-tong
+  name: Wen Tong
+  affiliation: Huawei Technologies
+  image: /images/people/wen-tong.webp
+  image_width: 600
+  image_height: 600
+  profile: https://vtsociety.org/contact/wen-tong
 
 # The following speakers are retained but not currently displayed.
+# - id: emad-barsoum
+#   name: Emad Barsoum
+#   affiliation: AMD
+#   image: /images/people/emad-barsoum.jpeg
+#   image_width: 358
+#   image_height: 358
+#   scholar: https://scholar.google.com/citations?hl=en&user=bX1YILcAAAAJ
+#   linkedin: https://www.linkedin.com/in/ebarsoum
+#
 # - id: marzena-karpinska
 #   name: Marzena Karpinska
 #   affiliation: Simon Fraser University

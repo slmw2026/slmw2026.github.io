@@ -4,15 +4,15 @@
   type: opening
 - time: 08:40-09:15
   title: Invited Talk
-  speaker: Ali Ghodsi
-  speaker_id: ali-ghodsi
-  detail: University of Waterloo
+  speaker: Wen Tong
+  speaker_id: wen-tong
+  detail: Huawei Technologies
   type: keynote
 - time: 09:15-09:50
   title: Invited Talk
-  speaker: Emad Barsoum
-  speaker_id: emad-barsoum
-  detail: AMD
+  speaker: Ali Ghodsi
+  speaker_id: ali-ghodsi
+  detail: University of Waterloo
   type: keynote
 - time: 09:50-10:50
   title: Oral Presentations
